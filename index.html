@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <!-- CHARTS ROW -->
+    <!-- CHARTS ROW 1 -->
     <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <!-- P&L Over Time -->
       <div class="lg:col-span-2 bg-gray-800 rounded-xl p-5 border border-gray-700">
@@ -103,6 +103,17 @@
         <div class="chart-container">
           <canvas id="sportChart"></canvas>
         </div>
+      </div>
+    </section>
+
+    <!-- CHARTS ROW 2: Bankroll Growth -->
+    <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold text-gray-200">💰 Bankroll Growth</h2>
+        <span class="text-xs text-gray-400" id="bankroll-current"></span>
+      </div>
+      <div class="chart-container">
+        <canvas id="bankrollChart"></canvas>
       </div>
     </section>
 
@@ -384,6 +395,100 @@
     });
   }
 
+  // ─── RENDER BANKROLL CHART ───────────────────────────────────────────────────
+
+  function renderBankrollChart(curveData) {
+    if (!curveData || curveData.length < 2) return;
+
+    const labels = curveData.map(p => p.date || 'Start');
+    const values = curveData.map(p => p.bankroll);
+    const start = values[0];
+    const current = values[values.length - 1];
+    const isUp = current >= start;
+    const lineColor = isUp ? '#22c55e' : '#ef4444';
+    const fillColor = isUp ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)';
+
+    // Update header badge
+    const badge = document.getElementById('bankroll-current');
+    if (badge) {
+      const change = current - start;
+      const changePct = ((change / start) * 100).toFixed(1);
+      const sign = change >= 0 ? '+' : '';
+      badge.textContent = `Current: $${current.toFixed(2)} (${sign}$${change.toFixed(2)} / ${sign}${changePct}%)`;
+      badge.className = `text-xs font-semibold ${isUp ? 'text-green-400' : 'text-red-400'}`;
+    }
+
+    new Chart(document.getElementById('bankrollChart'), {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Bankroll ($)',
+          data: values,
+          borderColor: lineColor,
+          backgroundColor: fillColor,
+          borderWidth: 2.5,
+          pointRadius: 6,
+          pointHoverRadius: 8,
+          pointBackgroundColor: values.map((v, i) => {
+            if (i === 0) return '#6b7280';
+            return v > values[i-1] ? '#22c55e' : v < values[i-1] ? '#ef4444' : '#6b7280';
+          }),
+          fill: true,
+          tension: 0.3,
+        },
+        // Starting bankroll reference line
+        {
+          label: 'Starting Bankroll',
+          data: values.map(() => start),
+          borderColor: 'rgba(107,114,128,0.4)',
+          borderWidth: 1,
+          borderDash: [5, 5],
+          pointRadius: 0,
+          fill: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true,
+            labels: { color: '#9ca3af', boxWidth: 12, font: { size: 11 } }
+          },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                if (ctx.datasetIndex === 1) return `Starting: $${start.toFixed(2)}`;
+                const point = curveData[ctx.dataIndex];
+                const pl = point.pl;
+                const plStr = pl !== undefined ? ` (${pl >= 0 ? '+' : ''}$${pl.toFixed(2)})` : '';
+                return `Bankroll: $${ctx.raw.toFixed(2)}${plStr}`;
+              },
+              title: ctx => {
+                const point = curveData[ctx[0].dataIndex];
+                return point.label ? `${point.date} — ${point.label}` : point.date;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#9ca3af', maxTicksLimit: 8 }
+          },
+          y: {
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: {
+              color: '#9ca3af',
+              callback: v => `$${v}`
+            }
+          }
+        }
+      }
+    });
+  }
+
   // ─── RENDER SPORT BREAKDOWN CHART ───────────────────────────────────────────
 
   function renderSportChart(breakdown) {
@@ -592,6 +697,7 @@
       renderSummaryCards(data.summary);
       renderPLChart(data.pl_over_time || []);
       renderSportChart(data.sport_breakdown || []);
+      renderBankrollChart(data.bankroll_curve || []);
 
       betsData = data.bets || [];
       document.getElementById('bets-count').textContent = `${betsData.length} bets`;
