@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎰 Gambling Agent Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <style>
+    body { background-color: #111827; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #1f2937; }
+    ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }
+
+    /* Table sticky header */
+    .sticky-header th { position: sticky; top: 0; z-index: 10; }
+
+    /* Sortable column cursor */
+    .sortable { cursor: pointer; user-select: none; }
+    .sortable:hover { background-color: #374151 !important; }
+
+    /* Sort indicator */
+    .sort-asc::after  { content: ' ↑'; color: #60a5fa; }
+    .sort-desc::after { content: ' ↓'; color: #60a5fa; }
+
+    /* Row colors */
+    .row-win  { background-color: rgba(34, 197, 94, 0.08); }
+    .row-loss { background-color: rgba(239, 68, 68, 0.08); }
+    .row-pending { background-color: rgba(107, 114, 128, 0.08); }
+
+    /* Large movement highlight */
+    .large-move { background-color: rgba(234, 179, 8, 0.15) !important; border-left: 3px solid #eab308; }
+
+    /* Chart container */
+    .chart-container { position: relative; height: 300px; }
+
+    /* Card hover */
+    .stat-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    .stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.4); }
+
+    /* Loading spinner */
+    .spinner { border: 3px solid #374151; border-top-color: #3b82f6; border-radius: 50%; width: 32px; height: 32px; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Badge */
+    .badge { display: inline-block; padding: 1px 8px; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; }
+  </style>
+</head>
+<body class="text-gray-100 min-h-screen font-sans">
+
+  <!-- LOADING STATE -->
+  <div id="loading" class="flex items-center justify-center min-h-screen flex-col gap-4">
+    <div class="spinner"></div>
+    <p class="text-gray-400 text-sm">Loading dashboard data…</p>
+  </div>
+
+  <!-- ERROR STATE -->
+  <div id="error" class="hidden flex items-center justify-center min-h-screen flex-col gap-4 px-6 text-center">
+    <div class="text-red-400 text-5xl mb-2">⚠️</div>
+    <h2 class="text-xl font-semibold text-red-400">Failed to load dashboard data</h2>
+    <p class="text-gray-400 text-sm max-w-md" id="error-msg">
+      Make sure <code class="bg-gray-800 px-1 rounded">dashboard_data.json</code> exists.<br/>
+      Run: <code class="bg-gray-800 px-1 rounded">python3 generate_dashboard_data.py</code>
+    </p>
+  </div>
+
+  <!-- MAIN DASHBOARD -->
+  <div id="dashboard" class="hidden max-w-screen-2xl mx-auto px-4 py-6 space-y-6">
+
+    <!-- HEADER -->
+    <header class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-gray-700">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">🎰 Gambling Agent Dashboard</h1>
+        <p class="text-gray-400 text-sm mt-1" id="header-date"></p>
+      </div>
+      <div class="text-right">
+        <p class="text-xs text-gray-500">Last updated</p>
+        <p class="text-sm text-gray-300 font-medium" id="header-updated"></p>
+      </div>
+    </header>
+
+    <!-- SUMMARY CARDS -->
+    <section>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" id="summary-cards">
+        <!-- Injected by JS -->
+      </div>
+    </section>
+
+    <!-- CHARTS ROW -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- P&L Over Time -->
+      <div class="lg:col-span-2 bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <h2 class="text-lg font-semibold mb-4 text-gray-200">📈 P&amp;L Over Time</h2>
+        <div class="chart-container">
+          <canvas id="plChart"></canvas>
+        </div>
+      </div>
+      <!-- Sport Breakdown -->
+      <div class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <h2 class="text-lg font-semibold mb-4 text-gray-200">🏆 P&amp;L by Sport</h2>
+        <div class="chart-container">
+          <canvas id="sportChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- BETS TABLE -->
+    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+        <h2 class="text-lg font-semibold text-gray-200">🎯 All Bets</h2>
+        <span class="text-xs text-gray-400" id="bets-count"></span>
+      </div>
+      <div class="overflow-x-auto max-h-96">
+        <table class="w-full text-sm sticky-header" id="bets-table">
+          <thead>
+            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+              <th class="sortable px-4 py-3 text-left" data-col="date">Date</th>
+              <th class="sortable px-4 py-3 text-left" data-col="sport">Sport</th>
+              <th class="sortable px-4 py-3 text-left" data-col="game">Game</th>
+              <th class="sortable px-4 py-3 text-left" data-col="pick">Pick</th>
+              <th class="sortable px-4 py-3 text-right" data-col="odds">Odds</th>
+              <th class="sortable px-4 py-3 text-right" data-col="amount_wagered">Wagered</th>
+              <th class="sortable px-4 py-3 text-center" data-col="outcome">Outcome</th>
+              <th class="sortable px-4 py-3 text-right" data-col="profit_loss">P/L</th>
+              <th class="sortable px-4 py-3 text-right" data-col="clv">CLV</th>
+              <th class="px-4 py-3 text-left">Notes</th>
+            </tr>
+          </thead>
+          <tbody id="bets-tbody" class="divide-y divide-gray-700/50">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- LINE MOVEMENT ALERTS -->
+    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+        <h2 class="text-lg font-semibold text-gray-200">🚨 Line Movement Alerts <span class="text-sm font-normal text-gray-400">(last 7 days)</span></h2>
+        <span class="text-xs text-gray-400" id="alerts-count"></span>
+      </div>
+      <div class="overflow-x-auto max-h-80">
+        <table class="w-full text-sm sticky-header">
+          <thead>
+            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+              <th class="px-4 py-3 text-left">Date</th>
+              <th class="px-4 py-3 text-left">Sport</th>
+              <th class="px-4 py-3 text-left">Game</th>
+              <th class="px-4 py-3 text-left">Market</th>
+              <th class="px-4 py-3 text-left">Pick</th>
+              <th class="px-4 py-3 text-right">Open Line</th>
+              <th class="px-4 py-3 text-right">Current</th>
+              <th class="px-4 py-3 text-right">Move</th>
+              <th class="px-4 py-3 text-left">Book</th>
+            </tr>
+          </thead>
+          <tbody id="alerts-tbody" class="divide-y divide-gray-700/50">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TOP PLAYER PROPS -->
+    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+        <h2 class="text-lg font-semibold text-gray-200">🏀 Top Player Props <span class="text-sm font-normal text-gray-400" id="props-date"></span></h2>
+        <span class="text-xs text-gray-400">Top 20 by edge</span>
+      </div>
+      <div class="overflow-x-auto max-h-96">
+        <table class="w-full text-sm sticky-header">
+          <thead>
+            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+              <th class="px-4 py-3 text-left">Player</th>
+              <th class="px-4 py-3 text-left">Game</th>
+              <th class="px-4 py-3 text-left">Market</th>
+              <th class="px-4 py-3 text-right">Line</th>
+              <th class="px-4 py-3 text-right">Hit%</th>
+              <th class="px-4 py-3 text-right">Edge</th>
+              <th class="px-4 py-3 text-center">Rec</th>
+            </tr>
+          </thead>
+          <tbody id="props-tbody" class="divide-y divide-gray-700/50">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div><!-- /dashboard -->
+
+  <script>
+  // ─── DATA LOADING ────────────────────────────────────────────────────────────
+
+  async function loadData() {
+    try {
+      // Works on file:// protocol — we fetch relative to the HTML file
+      const resp = await fetch('./dashboard_data.json');
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      return await resp.json();
+    } catch (e) {
+      throw new Error(e.message);
+    }
+  }
+
+  // ─── FORMATTING HELPERS ──────────────────────────────────────────────────────
+
+  function fmtDate(str) {
+    if (!str) return '—';
+    try {
+      return new Date(str).toLocaleDateString('en-US', {
+        month: 'short', day: 'numeric', year: 'numeric'
+      });
+    } catch { return str; }
+  }
+
+  function fmtDateTime(str) {
+    if (!str) return '—';
+    try {
+      return new Date(str).toLocaleString('en-US', {
+        month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+      });
+    } catch { return str; }
+  }
+
+  function fmtOdds(val) {
+    if (val === null || val === undefined) return '—';
+    const n = Number(val);
+    if (isNaN(n)) return val;
+    return n > 0 ? `+${n}` : `${n}`;
+  }
+
+  function fmtMoney(val) {
+    if (val === null || val === undefined) return '—';
+    const n = Number(val);
+    if (isNaN(n)) return val;
+    const sign = n >= 0 ? '+' : '';
+    return `${sign}$${Math.abs(n).toFixed(2)}`;
+  }
+
+  function fmtPct(val) {
+    if (val === null || val === undefined) return '—';
+    return `${Number(val).toFixed(1)}%`;
+  }
+
+  function fmtNum(val, decimals = 2) {
+    if (val === null || val === undefined) return '—';
+    return Number(val).toFixed(decimals);
+  }
+
+  function sanitize(str) {
+    if (!str) return '';
+    return str.toString()
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function sportLabel(sport) {
+    const map = { basketball: 'NBA', football: 'NFL', baseball: 'MLB', nba: 'NBA', nfl: 'NFL', mlb: 'MLB', nhl: 'NHL', ncaab: 'NCAAB' };
+    return map[(sport||'').toLowerCase()] || (sport || '—').toUpperCase();
+  }
+
+  function marketLabel(m) {
+    const map = { player_points: 'Points', player_assists: 'Assists', player_rebounds: 'Rebounds',
+                  player_threes: '3-Ptrs', player_blocks: 'Blocks', player_steals: 'Steals',
+                  player_turnovers: 'TO', spreads: 'Spread', totals: 'Total', h2h: 'ML' };
+    return map[m] || m;
+  }
+
+  // ─── RENDER HEADER ───────────────────────────────────────────────────────────
+
+  function renderHeader(data) {
+    const today = new Date().toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    document.getElementById('header-date').textContent = today;
+    document.getElementById('header-updated').textContent = fmtDateTime(data.generated_at);
+  }
+
+  // ─── RENDER SUMMARY CARDS ────────────────────────────────────────────────────
+
+  function renderSummaryCards(summary) {
+    const pl = summary.total_pl;
+    const plColor = pl >= 0 ? 'text-green-400' : 'text-red-400';
+    const roiColor = summary.roi >= 0 ? 'text-green-400' : 'text-red-400';
+
+    const cards = [
+      {
+        label: 'Total P/L',
+        value: `<span class="${plColor} text-2xl font-bold">${fmtMoney(pl)}</span>`,
+        icon: pl >= 0 ? '💰' : '📉',
+        sub: 'All time'
+      },
+      {
+        label: 'Win Rate',
+        value: `<span class="text-blue-400 text-2xl font-bold">${fmtPct(summary.win_rate)}</span>`,
+        icon: '🎯',
+        sub: 'Settled bets only'
+      },
+      {
+        label: 'ROI',
+        value: `<span class="${roiColor} text-2xl font-bold">${fmtPct(summary.roi)}</span>`,
+        icon: '📊',
+        sub: 'Return on investment'
+      },
+      {
+        label: 'Total Bets',
+        value: `<span class="text-purple-400 text-2xl font-bold">${summary.total_bets}</span>`,
+        icon: '🎲',
+        sub: 'All bets placed'
+      },
+      {
+        label: 'Avg CLV',
+        value: `<span class="text-yellow-400 text-2xl font-bold">${summary.avg_clv !== null ? fmtNum(summary.avg_clv) : 'N/A'}</span>`,
+        icon: '📏',
+        sub: 'Closing line value'
+      },
+    ];
+
+    const container = document.getElementById('summary-cards');
+    container.innerHTML = cards.map(c => `
+      <div class="stat-card bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <div class="flex items-start justify-between mb-2">
+          <p class="text-xs text-gray-400 uppercase tracking-wider">${c.label}</p>
+          <span class="text-lg">${c.icon}</span>
+        </div>
+        <div class="mb-1">${c.value}</div>
+        <p class="text-xs text-gray-500">${c.sub}</p>
+      </div>
+    `).join('');
+  }
+
+  // ─── RENDER P&L CHART ────────────────────────────────────────────────────────
+
+  function renderPLChart(plData) {
+    const labels = plData.map(p => p.date);
+    const values = plData.map(p => p.cumulative_pl);
+    const lastVal = values[values.length - 1] || 0;
+    const lineColor = lastVal >= 0 ? '#22c55e' : '#ef4444';
+
+    new Chart(document.getElementById('plChart'), {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Cumulative P/L ($)',
+          data: values,
+          borderColor: lineColor,
+          backgroundColor: lastVal >= 0 ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)',
+          borderWidth: 2,
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          pointBackgroundColor: lineColor,
+          fill: true,
+          tension: 0.3,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => `P/L: ${fmtMoney(ctx.raw)}`,
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#9ca3af', maxTicksLimit: 8 }
+          },
+          y: {
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: {
+              color: '#9ca3af',
+              callback: v => `$${v}`
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // ─── RENDER SPORT BREAKDOWN CHART ───────────────────────────────────────────
+
+  function renderSportChart(breakdown) {
+    const labels = breakdown.map(b => sportLabel(b.sport));
+    const values = breakdown.map(b => b.pl);
+    const colors = values.map(v => v >= 0 ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)');
+    const borders = values.map(v => v >= 0 ? '#22c55e' : '#ef4444');
+
+    new Chart(document.getElementById('sportChart'), {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: 'P/L ($)',
+          data: values,
+          backgroundColor: colors,
+          borderColor: borders,
+          borderWidth: 1,
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => `P/L: ${fmtMoney(ctx.raw)}`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#9ca3af' }
+          },
+          y: {
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            ticks: {
+              color: '#9ca3af',
+              callback: v => `$${v}`
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // ─── RENDER BETS TABLE ───────────────────────────────────────────────────────
+
+  let betsData = [];
+  let betsSortCol = 'date';
+  let betsSortDir = -1; // -1 = desc, 1 = asc
+
+  function renderBetsTable() {
+    const sorted = [...betsData].sort((a, b) => {
+      let av = a[betsSortCol], bv = b[betsSortCol];
+      if (av === null || av === undefined) av = '';
+      if (bv === null || bv === undefined) bv = '';
+      if (typeof av === 'string') av = av.toLowerCase();
+      if (typeof bv === 'string') bv = bv.toLowerCase();
+      return av < bv ? betsSortDir : av > bv ? -betsSortDir : 0;
+    });
+
+    const tbody = document.getElementById('bets-tbody');
+    tbody.innerHTML = sorted.map(b => {
+      const outcome = (b.outcome || 'pending').toLowerCase();
+      const rowClass = outcome === 'win' ? 'row-win' : outcome === 'loss' ? 'row-loss' : 'row-pending';
+      const outcomeBadge = outcome === 'win'
+        ? `<span class="badge bg-green-900 text-green-300">Win</span>`
+        : outcome === 'loss'
+        ? `<span class="badge bg-red-900 text-red-300">Loss</span>`
+        : outcome === 'push'
+        ? `<span class="badge bg-gray-700 text-gray-300">Push</span>`
+        : `<span class="badge bg-gray-700 text-gray-400">Pending</span>`;
+
+      const pl = b.profit_loss;
+      const plStr = pl !== null && pl !== undefined
+        ? `<span class="${pl >= 0 ? 'text-green-400' : 'text-red-400'} font-medium">${fmtMoney(pl)}</span>`
+        : '—';
+
+      return `
+        <tr class="${rowClass} hover:bg-white/5 transition-colors">
+          <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDate(b.date)}</td>
+          <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize(sportLabel(b.sport))}</span></td>
+          <td class="px-4 py-3 text-gray-200 max-w-xs truncate" title="${sanitize(b.game)}">${sanitize(b.game)}</td>
+          <td class="px-4 py-3 text-gray-200">${sanitize(b.pick)}</td>
+          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtOdds(b.odds)}</td>
+          <td class="px-4 py-3 text-right text-gray-300">$${sanitize(b.amount_wagered)}</td>
+          <td class="px-4 py-3 text-center">${outcomeBadge}</td>
+          <td class="px-4 py-3 text-right">${plStr}</td>
+          <td class="px-4 py-3 text-right text-gray-400">${b.clv !== null && b.clv !== undefined ? fmtNum(b.clv) : '—'}</td>
+          <td class="px-4 py-3 text-gray-400 max-w-xs truncate" title="${sanitize(b.notes)}">${sanitize(b.notes) || '—'}</td>
+        </tr>
+      `;
+    }).join('');
+
+    // Update sort indicators
+    document.querySelectorAll('#bets-table .sortable').forEach(th => {
+      th.classList.remove('sort-asc', 'sort-desc');
+      if (th.dataset.col === betsSortCol) {
+        th.classList.add(betsSortDir === 1 ? 'sort-asc' : 'sort-desc');
+      }
+    });
+  }
+
+  function initBetsSort() {
+    document.querySelectorAll('#bets-table .sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.col;
+        if (betsSortCol === col) {
+          betsSortDir *= -1;
+        } else {
+          betsSortCol = col;
+          betsSortDir = -1;
+        }
+        renderBetsTable();
+      });
+    });
+  }
+
+  // ─── RENDER LINE ALERTS ──────────────────────────────────────────────────────
+
+  function renderLineAlerts(alerts) {
+    document.getElementById('alerts-count').textContent = `${alerts.length} alerts`;
+    const tbody = document.getElementById('alerts-tbody');
+
+    if (!alerts.length) {
+      tbody.innerHTML = `<tr><td colspan="9" class="px-4 py-8 text-center text-gray-500">No line movement alerts in the last 7 days.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = alerts.map(a => {
+      const move = a.movement;
+      const isLarge = Math.abs(move) > 2;
+      const rowClass = isLarge ? 'large-move' : 'hover:bg-white/5';
+      const moveColor = move > 0 ? 'text-green-400' : move < 0 ? 'text-red-400' : 'text-gray-400';
+      const game = `${sanitize(a.away_team)} @ ${sanitize(a.home_team)}`;
+      return `
+        <tr class="${rowClass} transition-colors">
+          <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDateTime(a.alerted_at)}</td>
+          <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize((a.sport||'').toUpperCase())}</span></td>
+          <td class="px-4 py-3 text-gray-200 whitespace-nowrap">${game}</td>
+          <td class="px-4 py-3 text-gray-300">${sanitize(marketLabel(a.market))}</td>
+          <td class="px-4 py-3 text-gray-300 max-w-xs truncate">${sanitize(a.outcome_name)}</td>
+          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.open_point, 1)}</td>
+          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.current_point, 1)}</td>
+          <td class="px-4 py-3 text-right font-mono font-semibold ${moveColor}">${move > 0 ? '+' : ''}${fmtNum(move, 1)} ${isLarge ? '🔥' : ''}</td>
+          <td class="px-4 py-3 text-gray-400">${sanitize(a.bookmaker)}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  // ─── RENDER TOP PLAYER PROPS ─────────────────────────────────────────────────
+
+  function renderPlayerProps(props, propsDate) {
+    if (propsDate) {
+      document.getElementById('props-date').textContent = `— ${fmtDate(propsDate)}`;
+    }
+    const tbody = document.getElementById('props-tbody');
+
+    if (!props.length) {
+      tbody.innerHTML = `<tr><td colspan="7" class="px-4 py-8 text-center text-gray-500">No player props data available.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = props.map(p => {
+      const hitColor = (p.hit_prob || 0) >= 70 ? 'text-green-400' : (p.hit_prob || 0) >= 55 ? 'text-yellow-400' : 'text-gray-400';
+      const edgeColor = (p.edge || 0) >= 20 ? 'text-green-400' : (p.edge || 0) >= 10 ? 'text-yellow-400' : 'text-gray-400';
+      const rec = (p.recommendation || '').toUpperCase();
+      const recBadge = rec === 'OVER'
+        ? `<span class="badge bg-green-900 text-green-300">OVER</span>`
+        : rec === 'UNDER'
+        ? `<span class="badge bg-blue-900 text-blue-300">UNDER</span>`
+        : `<span class="badge bg-gray-700 text-gray-300">${sanitize(rec) || '—'}</span>`;
+
+      const mkt = marketLabel(p.market);
+
+      return `
+        <tr class="hover:bg-white/5 transition-colors">
+          <td class="px-4 py-3 text-gray-200 font-medium">${sanitize(p.player)}</td>
+          <td class="px-4 py-3 text-gray-400 max-w-xs truncate text-xs" title="${sanitize(p.game)}">${sanitize(p.game)}</td>
+          <td class="px-4 py-3 text-gray-300">${sanitize(mkt)}</td>
+          <td class="px-4 py-3 text-right font-mono text-gray-200">${fmtNum(p.line, 1)}</td>
+          <td class="px-4 py-3 text-right font-semibold ${hitColor}">${fmtPct(p.hit_prob)}</td>
+          <td class="px-4 py-3 text-right font-semibold ${edgeColor}">${fmtNum(p.edge, 2)}</td>
+          <td class="px-4 py-3 text-center">${recBadge}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  // ─── MAIN ────────────────────────────────────────────────────────────────────
+
+  async function main() {
+    try {
+      const data = await loadData();
+
+      // Hide loading, show dashboard
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+
+      renderHeader(data);
+      renderSummaryCards(data.summary);
+      renderPLChart(data.pl_over_time || []);
+      renderSportChart(data.sport_breakdown || []);
+
+      betsData = data.bets || [];
+      document.getElementById('bets-count').textContent = `${betsData.length} bets`;
+      renderBetsTable();
+      initBetsSort();
+
+      renderLineAlerts(data.line_alerts || []);
+      renderPlayerProps(data.top_player_props || [], data.player_props_date);
+
+    } catch (err) {
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('error').classList.remove('hidden');
+      document.getElementById('error').classList.add('flex');
+      const msg = document.getElementById('error-msg');
+      msg.innerHTML += `<br/><br/><small class="text-red-400">${err.message}</small>`;
+    }
+  }
+
+  main();
+  </script>
+</body>
+</html>
