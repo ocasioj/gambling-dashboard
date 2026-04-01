@@ -1,93 +1,13 @@
 {
-  "generated_at": "2026-04-01T08:00:11.736492",
+  "generated_at": "2026-04-01T10:59:06.480286",
   "summary": {
-    "total_pl": -33.28,
+    "total_pl": 9.99,
     "win_rate": 50.0,
-    "roi": -35.78,
-    "total_bets": 19,
+    "roi": 124.88,
+    "total_bets": 14,
     "avg_clv": -1.95
   },
   "bets": [
-    {
-      "id": 4,
-      "date": "2026-03-15 14:30:00",
-      "sport": "basketball",
-      "game": "Celtics vs Lakers",
-      "pick": "Celtics -4.5",
-      "odds": -110.0,
-      "amount_wagered": 25.0,
-      "outcome": "win",
-      "profit_loss": 22.73,
-      "notes": "DraftKings",
-      "closing_odds": null,
-      "clv": null,
-      "clv_checked_at": null,
-      "bet_type": "moneyline"
-    },
-    {
-      "id": 5,
-      "date": "2026-03-16 19:00:00",
-      "sport": "football",
-      "game": "Chiefs vs Raiders",
-      "pick": "Chiefs ML",
-      "odds": 150.0,
-      "amount_wagered": 10.0,
-      "outcome": "loss",
-      "profit_loss": -10.0,
-      "notes": "DraftKings",
-      "closing_odds": null,
-      "clv": null,
-      "clv_checked_at": null,
-      "bet_type": "moneyline"
-    },
-    {
-      "id": 6,
-      "date": "2026-03-17 12:00:00",
-      "sport": "basketball",
-      "game": "Bucks vs Nets",
-      "pick": "Over 220",
-      "odds": -115.0,
-      "amount_wagered": 15.0,
-      "outcome": "push",
-      "profit_loss": 0.0,
-      "notes": "DraftKings",
-      "closing_odds": null,
-      "clv": null,
-      "clv_checked_at": null,
-      "bet_type": "moneyline"
-    },
-    {
-      "id": 7,
-      "date": "2026-03-18 09:00:00",
-      "sport": "baseball",
-      "game": "Yankees vs Red Sox ML",
-      "pick": "Yankees",
-      "odds": 120.0,
-      "amount_wagered": 20.0,
-      "outcome": "win",
-      "profit_loss": 4.0,
-      "notes": "FanDuel",
-      "closing_odds": null,
-      "clv": null,
-      "clv_checked_at": null,
-      "bet_type": "moneyline"
-    },
-    {
-      "id": 8,
-      "date": "2026-03-19 15:30:00",
-      "sport": "basketball",
-      "game": "Warriors vs Suns - Spread",
-      "pick": "Warriors -3.5",
-      "odds": -110.0,
-      "amount_wagered": 30.0,
-      "outcome": "loss",
-      "profit_loss": -60.0,
-      "notes": "FanDuel",
-      "closing_odds": null,
-      "clv": null,
-      "clv_checked_at": null,
-      "bet_type": "moneyline"
-    },
     {
       "id": 17,
       "date": "2026-03-31 09:11:43",
@@ -315,114 +235,77 @@
   ],
   "pl_over_time": [
     {
-      "date": "2026-03-15",
-      "cumulative_pl": 22.73,
-      "game": "Celtics vs Lakers"
-    },
-    {
-      "date": "2026-03-16",
-      "cumulative_pl": 12.73,
-      "game": "Chiefs vs Raiders"
-    },
-    {
-      "date": "2026-03-17",
-      "cumulative_pl": 12.73,
-      "game": "Bucks vs Nets"
-    },
-    {
-      "date": "2026-03-18",
-      "cumulative_pl": 16.73,
-      "game": "Yankees vs Red Sox ML"
-    },
-    {
-      "date": "2026-03-19",
-      "cumulative_pl": -43.27,
-      "game": "Warriors vs Suns - Spread"
-    },
-    {
       "date": "2026-03-31",
-      "cumulative_pl": -44.27,
+      "cumulative_pl": -1.0,
       "game": "Charlotte Hornets vs Brooklyn Nets"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -45.27,
+      "cumulative_pl": -2.0,
       "game": "Columbus Blue Jackets vs Carolina Hurricanes"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -44.53,
+      "cumulative_pl": -1.26,
       "game": "Washington Capitals vs Philadelphia Flyers"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -43.03,
+      "cumulative_pl": 0.24,
       "game": "Florida Panthers vs Ottawa Senators"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -43.03,
+      "cumulative_pl": 0.24,
       "game": "Arizona Wildcats vs Michigan Wolverines"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -43.03,
+      "cumulative_pl": 0.24,
       "game": "Lakers moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -43.03,
+      "cumulative_pl": 0.24,
       "game": "Under 6.5"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -44.03,
+      "cumulative_pl": -0.76,
       "game": "Florida Panthers moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -44.03,
+      "cumulative_pl": -0.76,
       "game": "Arizona moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -43.28,
+      "cumulative_pl": -0.01,
       "game": "Washington Capitals moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -44.28,
+      "cumulative_pl": -1.01,
       "game": "Columbus Blue Jackets moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -33.28,
+      "cumulative_pl": 9.99,
       "game": "Brooklyn Nets moneyline"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -33.28,
+      "cumulative_pl": 9.99,
       "game": "Over 11.5"
     },
     {
       "date": "2026-03-31",
-      "cumulative_pl": -33.28,
+      "cumulative_pl": 9.99,
       "game": "Over 5.5"
     }
   ],
   "sport_breakdown": [
-    {
-      "sport": "baseball",
-      "pl": 4.0
-    },
-    {
-      "sport": "basketball",
-      "pl": -37.27
-    },
-    {
-      "sport": "football",
-      "pl": -10.0
-    },
     {
       "sport": "nba",
       "pl": 10.0
@@ -438,85 +321,55 @@
   ],
   "bankroll_curve": [
     {
-      "date": "2026-03-15",
+      "date": "2026-03-31",
       "bankroll": 100.0,
       "label": "Start"
     },
     {
-      "date": "2026-03-15",
-      "bankroll": 122.73,
-      "label": "Celtics -4.5",
-      "pl": 22.73
-    },
-    {
-      "date": "2026-03-16",
-      "bankroll": 112.73,
-      "label": "Chiefs ML",
-      "pl": -10.0
-    },
-    {
-      "date": "2026-03-17",
-      "bankroll": 112.73,
-      "label": "Over 220",
-      "pl": 0
-    },
-    {
-      "date": "2026-03-18",
-      "bankroll": 116.73,
-      "label": "Yankees",
-      "pl": 4.0
-    },
-    {
-      "date": "2026-03-19",
-      "bankroll": 56.73,
-      "label": "Warriors -3.5",
-      "pl": -60.0
-    },
-    {
       "date": "2026-03-31",
-      "bankroll": 55.73,
+      "bankroll": 99.0,
       "label": "Brooklyn Nets",
       "pl": -1.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": 54.73,
+      "bankroll": 98.0,
       "label": "Columbus Blue Jackets",
       "pl": -1.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": 55.47,
+      "bankroll": 98.74,
       "label": "Washington Capitals",
       "pl": 0.74
     },
     {
       "date": "2026-03-31",
-      "bankroll": 56.97,
+      "bankroll": 100.24,
       "label": "Florida Panthers",
       "pl": 1.5
     },
     {
       "date": "2026-03-31",
-      "bankroll": 55.97,
+      "bankroll": 99.24,
       "label": "Florida Panthers moneyline",
       "pl": -1.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": 56.72,
+      "bankroll": 99.99,
       "label": "Washington Capitals moneyline",
       "pl": 0.75
     },
     {
       "date": "2026-03-31",
-      "bankroll": 55.72,
+      "bankroll": 98.99,
       "label": "Columbus Blue Jackets moneyline",
       "pl": -1.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": 66.72,
+      "bankroll": 109.99,
       "label": "Brooklyn Nets moneyline",
       "pl": 11.0
     }
@@ -13767,6 +13620,188 @@
       "notes": null
     },
     {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -91.0,
+      "under_odds": -9.666666666666666,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 86.19,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -91.0,
+      "under_odds": -9.666666666666666,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 86.19,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Eugenio Suarez",
+      "game": "Pittsburgh Pirates @ Cincinnati Reds",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": -1.75,
+      "under_odds": 106.5,
+      "recommendation": "OVER",
+      "hit_prob": 87.5,
+      "edge": 85.77,
+      "rolling_avg": 1.65,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Neemias Queta",
+      "game": "Boston Celtics @ Miami Heat",
+      "market": "player_points",
+      "line": 9.5,
+      "over_odds": -89.5,
+      "under_odds": -10.833333333333334,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 85.23,
+      "rolling_avg": 5.5,
+      "notes": null
+    },
+    {
+      "player": "Quentin Grimes",
+      "game": "Philadelphia 76ers @ Washington Wizards",
+      "market": "player_points",
+      "line": 11.5,
+      "over_odds": -88.16666666666667,
+      "under_odds": -11.5,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 84.69,
+      "rolling_avg": 7.0,
+      "notes": null
+    },
+    {
+      "player": "Quentin Grimes",
+      "game": "Philadelphia 76ers @ Washington Wizards",
+      "market": "player_points",
+      "line": 11.5,
+      "over_odds": -88.16666666666667,
+      "under_odds": -11.5,
+      "recommendation": "UNDER",
+      "hit_prob": 95.0,
+      "edge": 84.69,
+      "rolling_avg": 7.0,
+      "notes": null
+    },
+    {
+      "player": "Brent Rooker",
+      "game": "Athletics @ Atlanta Braves",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": -11.0,
+      "under_odds": 134.0,
+      "recommendation": "OVER",
+      "hit_prob": 94.2,
+      "edge": 84.27,
+      "rolling_avg": 2.07,
+      "notes": null
+    },
+    {
+      "player": "Ezequiel Tovar",
+      "game": "Colorado Rockies @ Toronto Blue Jays",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": -7.75,
+      "under_odds": 131.0,
+      "recommendation": "OVER",
+      "hit_prob": 90.5,
+      "edge": 83.3,
+      "rolling_avg": 1.81,
+      "notes": null
+    },
+    {
+      "player": "Andrew McCutchen",
+      "game": "Texas Rangers @ Baltimore Orioles",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": -2.25,
+      "under_odds": 124.0,
+      "recommendation": "OVER",
+      "hit_prob": 84.9,
+      "edge": 82.65,
+      "rolling_avg": 1.53,
+      "notes": null
+    },
+    {
       "player": "Toumani Camara",
       "game": "Portland Trail Blazers @ Los Angeles Clippers",
       "market": "player_points",
@@ -13780,397 +13815,92 @@
       "notes": null
     },
     {
-      "player": "Deni Avdija",
-      "game": "Portland Trail Blazers @ Los Angeles Clippers",
-      "market": "player_assists",
-      "line": 8.0,
-      "over_odds": -32.25,
-      "under_odds": -20.75,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 77.82,
-      "rolling_avg": 3.8,
-      "notes": null
-    },
-    {
-      "player": "Kawhi Leonard",
-      "game": "Portland Trail Blazers @ Los Angeles Clippers",
-      "market": "player_assists",
-      "line": 2.0,
-      "over_odds": -20.0,
-      "under_odds": -33.0,
-      "recommendation": "OVER",
-      "hit_prob": 89.8,
-      "edge": 73.12,
-      "rolling_avg": 3.6,
-      "notes": null
-    },
-    {
-      "player": "Neemias Queta",
-      "game": "Boston Celtics @ Miami Heat",
-      "market": "player_points",
-      "line": 9.5,
-      "over_odds": -126.66666666666667,
-      "under_odds": -37.333333333333336,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 67.82,
-      "rolling_avg": 5.5,
-      "notes": null
-    },
-    {
       "player": "Nickeil Alexander-Walker",
       "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_rebounds",
+      "market": "player_threes",
       "line": 3.0,
-      "over_odds": -25.5,
-      "under_odds": -19.5,
+      "over_odds": -30.166666666666668,
+      "under_odds": -15.166666666666666,
       "recommendation": "UNDER",
-      "hit_prob": 84.1,
-      "edge": 67.81,
-      "rolling_avg": 2.0,
+      "hit_prob": 95.0,
+      "edge": 81.83,
+      "rolling_avg": 1.27,
       "notes": null
     },
     {
       "player": "Nickeil Alexander-Walker",
       "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_points",
-      "line": 18.5,
-      "over_odds": -120.33333333333333,
-      "under_odds": -43.666666666666664,
+      "market": "player_threes",
+      "line": 3.0,
+      "over_odds": -29.5,
+      "under_odds": -15.5,
       "recommendation": "UNDER",
       "hit_prob": 95.0,
-      "edge": 64.61,
-      "rolling_avg": 8.0,
+      "edge": 81.58,
+      "rolling_avg": 1.27,
       "notes": null
     },
     {
-      "player": "Jalen Johnson",
+      "player": "Nickeil Alexander-Walker",
       "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_points",
-      "line": 23.5,
-      "over_odds": -115.0,
-      "under_odds": -48.0,
-      "recommendation": "UNDER",
-      "hit_prob": 91.0,
-      "edge": 58.55,
-      "rolling_avg": 16.0,
-      "notes": null
-    },
-    {
-      "player": "Kawhi Leonard",
-      "game": "Portland Trail Blazers @ Los Angeles Clippers",
-      "market": "player_rebounds",
-      "line": 8.0,
-      "over_odds": -7.5,
-      "under_odds": -34.0,
-      "recommendation": "UNDER",
-      "hit_prob": 81.3,
-      "edge": 55.95,
-      "rolling_avg": 6.1,
-      "notes": null
-    },
-    {
-      "player": "Dyson Daniels",
-      "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_assists",
-      "line": 5.5,
-      "over_odds": 25.666666666666668,
-      "under_odds": -65.0,
+      "market": "player_threes",
+      "line": 3.0,
+      "over_odds": -29.5,
+      "under_odds": -15.5,
       "recommendation": "UNDER",
       "hit_prob": 95.0,
-      "edge": 55.61,
-      "rolling_avg": 2.7,
-      "notes": null
-    },
-    {
-      "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Memphis Grizzlies",
-      "market": "player_rebounds",
-      "line": 11.5,
-      "over_odds": -122.5,
-      "under_odds": -58.0,
-      "recommendation": "UNDER",
-      "hit_prob": 86.5,
-      "edge": 49.76,
-      "rolling_avg": 8.3,
-      "notes": null
-    },
-    {
-      "player": "C.J. McCollum",
-      "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_assists",
-      "line": 3.5,
-      "over_odds": -34.333333333333336,
-      "under_odds": -131.33333333333334,
-      "recommendation": "OVER",
-      "hit_prob": 75.3,
-      "edge": 49.72,
-      "rolling_avg": 4.6,
-      "notes": null
-    },
-    {
-      "player": "Quentin Grimes",
-      "game": "Philadelphia 76ers @ Washington Wizards",
-      "market": "player_rebounds",
-      "line": 3.5,
-      "over_odds": -151.0,
-      "under_odds": 114.0,
-      "recommendation": "UNDER",
-      "hit_prob": 93.3,
-      "edge": 46.59,
-      "rolling_avg": 2.0,
-      "notes": null
-    },
-    {
-      "player": "Desmond Bane",
-      "game": "Atlanta Hawks @ Orlando Magic",
-      "market": "player_assists",
-      "line": 3.5,
-      "over_odds": -68.33333333333333,
-      "under_odds": 26.333333333333332,
-      "recommendation": "OVER",
-      "hit_prob": 85.1,
-      "edge": 44.47,
-      "rolling_avg": 5.5,
-      "notes": null
-    },
-    {
-      "player": "Davion Mitchell",
-      "game": "Boston Celtics @ Miami Heat",
-      "market": "player_points_rebounds_assists",
-      "line": 18.0,
-      "over_odds": -127.5,
-      "under_odds": -103.5,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 44.14,
-      "rolling_avg": 8.5,
-      "notes": null
-    },
-    {
-      "player": "G.G. Jackson",
-      "game": "New York Knicks @ Memphis Grizzlies",
-      "market": "player_rebounds",
-      "line": 4.5,
-      "over_odds": -128.5,
-      "under_odds": -103.5,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 44.14,
-      "rolling_avg": 1.9,
-      "notes": null
-    },
-    {
-      "player": "Deni Avdija",
-      "game": "Portland Trail Blazers @ Los Angeles Clippers",
-      "market": "player_points_rebounds_assists",
-      "line": 48.5,
-      "over_odds": -125.0,
-      "under_odds": -105.0,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 43.78,
-      "rolling_avg": 25.7,
-      "notes": null
-    },
-    {
-      "player": "Toumani Camara",
-      "game": "Portland Trail Blazers @ Los Angeles Clippers",
-      "market": "player_points_rebounds_assists",
-      "line": 25.5,
-      "over_odds": -125.0,
-      "under_odds": -105.0,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 43.78,
-      "rolling_avg": 13.6,
-      "notes": null
-    },
-    {
-      "player": "Quentin Grimes",
-      "game": "Philadelphia 76ers @ Washington Wizards",
-      "market": "player_points_rebounds_assists",
-      "line": 19.5,
-      "over_odds": -125.0,
-      "under_odds": -106.0,
-      "recommendation": "UNDER",
-      "hit_prob": 95.0,
-      "edge": 43.54,
-      "rolling_avg": 10.3,
+      "edge": 81.58,
+      "rolling_avg": 1.27,
       "notes": null
     }
   ],
   "player_props_date": "2026-04-01",
-  "user_bets": [
-    {
-      "id": 1,
-      "date": "2026-03-31 21:22:25",
-      "sport": "nba",
-      "game": "Celtics vs Lakers",
-      "pick": "Celtics -4.5",
-      "bet_type": "spread",
-      "odds": -110.0,
-      "stake": 25.0,
-      "outcome": "win",
-      "profit_loss": 22.73,
-      "closing_odds": -115.0,
-      "clv": 2.3,
-      "source": "manual",
-      "notes": "Model had this at 68%",
-      "created_at": "2026-04-01 01:22:25"
-    },
-    {
-      "id": 2,
-      "date": "2026-03-31 21:22:25",
-      "sport": "mlb",
-      "game": "Yankees vs Red Sox",
-      "pick": "Yankees ML",
-      "bet_type": "moneyline",
-      "odds": 130.0,
-      "stake": 20.0,
-      "outcome": "win",
-      "profit_loss": 26.0,
-      "closing_odds": 120.0,
-      "clv": 4.5,
-      "source": "manual",
-      "notes": "Sharp action on Yankees",
-      "created_at": "2026-04-01 01:22:25"
-    },
-    {
-      "id": 3,
-      "date": "2026-03-31 21:22:25",
-      "sport": "nba",
-      "game": "Bucks vs Nets",
-      "pick": "Over 224.5",
-      "bet_type": "totals",
-      "odds": -115.0,
-      "stake": 15.0,
-      "outcome": "loss",
-      "profit_loss": -15.0,
-      "closing_odds": -108.0,
-      "clv": -3.1,
-      "source": "manual",
-      "notes": "",
-      "created_at": "2026-04-01 01:22:25"
-    },
-    {
-      "id": 4,
-      "date": "2026-03-31 21:22:25",
-      "sport": "nhl",
-      "game": "Bruins vs Maple Leafs",
-      "pick": "Bruins ML",
-      "bet_type": "moneyline",
-      "odds": -135.0,
-      "stake": 30.0,
-      "outcome": "win",
-      "profit_loss": 22.22,
-      "closing_odds": -130.0,
-      "clv": 2.0,
-      "source": "agent",
-      "notes": "Agent pick, CLV +3.2",
-      "created_at": "2026-04-01 01:22:25"
-    },
-    {
-      "id": 5,
-      "date": "2026-03-31 21:22:25",
-      "sport": "nba",
-      "game": "Nuggets vs Thunder",
-      "pick": "Nuggets -6",
-      "bet_type": "spread",
-      "odds": -110.0,
-      "stake": 20.0,
-      "outcome": "pending",
-      "profit_loss": 0.0,
-      "closing_odds": null,
-      "clv": null,
-      "source": "manual",
-      "notes": "",
-      "created_at": "2026-04-01 01:22:25"
-    }
-  ],
+  "user_bets": [],
   "user_bets_summary": {
-    "total_pl": 55.95,
-    "win_rate": 75.0,
-    "roi": 62.17,
-    "total_bets": 5,
-    "settled_bets": 4,
-    "pending_bets": 1,
-    "avg_odds": -57.5,
-    "avg_clv": 1.42,
-    "clv_delta": 5.7
+    "total_pl": 0,
+    "win_rate": 0,
+    "roi": 0,
+    "total_bets": 0,
+    "settled_bets": 0,
+    "pending_bets": 0,
+    "avg_odds": null,
+    "avg_clv": null,
+    "clv_delta": null
   },
   "user_vs_model": {
-    "user": [
-      {
-        "date": "2026-03-31",
-        "value": 22.73
-      },
-      {
-        "date": "2026-03-31",
-        "value": 48.73
-      },
-      {
-        "date": "2026-03-31",
-        "value": 33.73
-      },
-      {
-        "date": "2026-03-31",
-        "value": 55.95
-      }
-    ],
+    "user": [],
     "model": [
       {
-        "date": "2026-03-15",
-        "value": 22.73
-      },
-      {
-        "date": "2026-03-16",
-        "value": 12.73
-      },
-      {
-        "date": "2026-03-17",
-        "value": 12.73
-      },
-      {
-        "date": "2026-03-18",
-        "value": 16.73
-      },
-      {
-        "date": "2026-03-19",
-        "value": -43.27
+        "date": "2026-03-31",
+        "value": -1.0
       },
       {
         "date": "2026-03-31",
-        "value": -44.27
+        "value": -2.0
       },
       {
         "date": "2026-03-31",
-        "value": -45.27
+        "value": -1.26
       },
       {
         "date": "2026-03-31",
-        "value": -44.53
+        "value": 0.24
       },
       {
         "date": "2026-03-31",
-        "value": -43.03
+        "value": -0.76
       },
       {
         "date": "2026-03-31",
-        "value": -44.03
+        "value": -0.01
       },
       {
         "date": "2026-03-31",
-        "value": -43.28
+        "value": -1.01
       },
       {
         "date": "2026-03-31",
-        "value": -44.28
-      },
-      {
-        "date": "2026-03-31",
-        "value": -33.28
+        "value": 9.99
       }
     ]
   }
