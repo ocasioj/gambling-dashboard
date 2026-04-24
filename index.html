@@ -9,43 +9,43 @@
   <style>
     body { background-color: #111827; }
 
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: #1f2937; }
     ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 3px; }
 
-    /* Table sticky header */
     .sticky-header th { position: sticky; top: 0; z-index: 10; }
 
-    /* Sortable column cursor */
     .sortable { cursor: pointer; user-select: none; }
     .sortable:hover { background-color: #374151 !important; }
-
-    /* Sort indicator */
     .sort-asc::after  { content: ' ↑'; color: #60a5fa; }
     .sort-desc::after { content: ' ↓'; color: #60a5fa; }
 
-    /* Row colors */
     .row-win  { background-color: rgba(34, 197, 94, 0.08); }
     .row-loss { background-color: rgba(239, 68, 68, 0.08); }
     .row-pending { background-color: rgba(107, 114, 128, 0.08); }
 
-    /* Large movement highlight */
     .large-move { background-color: rgba(234, 179, 8, 0.15) !important; border-left: 3px solid #eab308; }
 
-    /* Chart container */
     .chart-container { position: relative; height: 300px; }
+    .chart-container-sm { position: relative; height: 240px; }
 
-    /* Card hover */
     .stat-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
     .stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.4); }
 
-    /* Loading spinner */
     .spinner { border: 3px solid #374151; border-top-color: #3b82f6; border-radius: 50%; width: 32px; height: 32px; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* Badge */
     .badge { display: inline-block; padding: 1px 8px; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; }
+
+    /* My Bets section accent */
+    .mybets-accent { border-left: 4px solid #a855f7; }
+    .mybets-header { background: linear-gradient(135deg, rgba(168,85,247,0.15) 0%, rgba(59,130,246,0.1) 100%); }
+
+    /* Nav tabs */
+    .nav-tab { cursor: pointer; padding: 8px 20px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; transition: all 0.15s; }
+    .nav-tab.active { background-color: #3b82f6; color: white; }
+    .nav-tab:not(.active) { color: #9ca3af; }
+    .nav-tab:not(.active):hover { background-color: #1f2937; color: #e5e7eb; }
   </style>
 </head>
 <body class="text-gray-100 min-h-screen font-sans">
@@ -81,156 +81,273 @@
       </div>
     </header>
 
-    <!-- SUMMARY CARDS -->
-    <section>
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" id="summary-cards">
-        <!-- Injected by JS -->
-      </div>
-    </section>
+    <!-- NAV TABS -->
+    <nav class="flex gap-2 bg-gray-800/50 rounded-xl p-2 border border-gray-700 w-fit">
+      <div class="nav-tab active" onclick="switchTab('model')">🤖 Model Performance</div>
+      <div class="nav-tab" onclick="switchTab('mybets')">🎯 My Bets</div>
+    </nav>
 
-    <!-- CHARTS ROW 1 -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-      <!-- P&L Over Time -->
-      <div class="lg:col-span-2 bg-gray-800 rounded-xl p-5 border border-gray-700">
-        <h2 class="text-lg font-semibold mb-4 text-gray-200">📈 P&amp;L Over Time</h2>
-        <div class="chart-container">
-          <canvas id="plChart"></canvas>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- MODEL PERFORMANCE TAB                                           -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div id="tab-model" class="space-y-6">
+
+      <!-- SUMMARY CARDS -->
+      <section>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4" id="summary-cards"></div>
+      </section>
+
+      <!-- CHARTS ROW 1 -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="lg:col-span-2 bg-gray-800 rounded-xl p-5 border border-gray-700">
+          <h2 class="text-lg font-semibold mb-4 text-gray-200">📈 P&amp;L Over Time</h2>
+          <div class="chart-container"><canvas id="plChart"></canvas></div>
         </div>
-      </div>
-      <!-- Sport Breakdown -->
-      <div class="bg-gray-800 rounded-xl p-5 border border-gray-700">
-        <h2 class="text-lg font-semibold mb-4 text-gray-200">🏆 P&amp;L by Sport</h2>
-        <div class="chart-container">
-          <canvas id="sportChart"></canvas>
+        <div class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+          <h2 class="text-lg font-semibold mb-4 text-gray-200">🏆 P&amp;L by Sport</h2>
+          <div class="chart-container"><canvas id="sportChart"></canvas></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CHARTS ROW 2: Bankroll Growth -->
-    <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
-      <div class="flex items-center justify-between mb-4">
-        <h2 class="text-lg font-semibold text-gray-200">💰 Bankroll Growth</h2>
-        <span class="text-xs text-gray-400" id="bankroll-current"></span>
-      </div>
-      <div class="chart-container">
-        <canvas id="bankrollChart"></canvas>
-      </div>
-    </section>
+      <!-- BANKROLL GROWTH -->
+      <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-gray-200">💰 Bankroll Growth</h2>
+          <span class="text-xs text-gray-400 font-semibold" id="bankroll-current"></span>
+        </div>
+        <div class="chart-container"><canvas id="bankrollChart"></canvas></div>
+      </section>
 
-    <!-- BETS TABLE -->
-    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
-      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
-        <h2 class="text-lg font-semibold text-gray-200">🎯 All Bets</h2>
-        <span class="text-xs text-gray-400" id="bets-count"></span>
-      </div>
-      <div class="overflow-x-auto max-h-96">
-        <table class="w-full text-sm sticky-header" id="bets-table">
-          <thead>
-            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
-              <th class="sortable px-4 py-3 text-left" data-col="date">Date</th>
-              <th class="sortable px-4 py-3 text-left" data-col="sport">Sport</th>
-              <th class="sortable px-4 py-3 text-left" data-col="game">Game</th>
-              <th class="sortable px-4 py-3 text-left" data-col="pick">Pick</th>
-              <th class="sortable px-4 py-3 text-right" data-col="odds">Odds</th>
-              <th class="sortable px-4 py-3 text-right" data-col="amount_wagered">Wagered</th>
-              <th class="sortable px-4 py-3 text-center" data-col="outcome">Outcome</th>
-              <th class="sortable px-4 py-3 text-right" data-col="profit_loss">P/L</th>
-              <th class="sortable px-4 py-3 text-right" data-col="clv">CLV</th>
-              <th class="px-4 py-3 text-left">Notes</th>
-            </tr>
-          </thead>
-          <tbody id="bets-tbody" class="divide-y divide-gray-700/50">
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <!-- CLV DASHBOARD — Real Scoreboard (2026-04-24) -->
+      <section class="bg-gradient-to-br from-purple-900/40 to-gray-800 rounded-xl p-5 border border-purple-700/50">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-gray-200">📏 CLV Dashboard — Real Scoreboard</h2>
+          <span class="text-xs text-gray-400">CLV &gt; ROI: signals edge in ~50 bets vs ~2000 for ROI</span>
+        </div>
+        <div id="clv-decision-gate" class="mb-5"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-gray-900/50 rounded-lg p-4 border border-gray-700">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">CLV by Sport (all-time)</h3>
+            <div class="chart-container"><canvas id="clvBySportChart"></canvas></div>
+          </div>
+          <div class="bg-gray-900/50 rounded-lg p-4 border border-gray-700">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">CLV Trend (last 30 days)</h3>
+            <div class="chart-container"><canvas id="clvTrendChart"></canvas></div>
+          </div>
+        </div>
+      </section>
 
-    <!-- LINE MOVEMENT ALERTS -->
-    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
-      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
-        <h2 class="text-lg font-semibold text-gray-200">🚨 Line Movement Alerts <span class="text-sm font-normal text-gray-400">(last 7 days)</span></h2>
-        <span class="text-xs text-gray-400" id="alerts-count"></span>
-      </div>
-      <div class="overflow-x-auto max-h-80">
-        <table class="w-full text-sm sticky-header">
-          <thead>
-            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
-              <th class="px-4 py-3 text-left">Date</th>
-              <th class="px-4 py-3 text-left">Sport</th>
-              <th class="px-4 py-3 text-left">Game</th>
-              <th class="px-4 py-3 text-left">Market</th>
-              <th class="px-4 py-3 text-left">Pick</th>
-              <th class="px-4 py-3 text-right">Open Line</th>
-              <th class="px-4 py-3 text-right">Current</th>
-              <th class="px-4 py-3 text-right">Move</th>
-              <th class="px-4 py-3 text-left">Book</th>
-            </tr>
-          </thead>
-          <tbody id="alerts-tbody" class="divide-y divide-gray-700/50">
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <!-- MODEL BETS TABLE -->
+      <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+          <h2 class="text-lg font-semibold text-gray-200">🎯 All Model Bets</h2>
+          <span class="text-xs text-gray-400" id="bets-count"></span>
+        </div>
+        <div class="overflow-x-auto max-h-96">
+          <table class="w-full text-sm sticky-header" id="bets-table">
+            <thead>
+              <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+                <th class="sortable px-4 py-3 text-left" data-col="date">Date</th>
+                <th class="sortable px-4 py-3 text-left" data-col="sport">Sport</th>
+                <th class="sortable px-4 py-3 text-left" data-col="game">Game</th>
+                <th class="sortable px-4 py-3 text-left" data-col="pick">Pick</th>
+                <th class="sortable px-4 py-3 text-right" data-col="odds">Odds</th>
+                <th class="sortable px-4 py-3 text-right" data-col="amount_wagered">Wagered</th>
+                <th class="sortable px-4 py-3 text-center" data-col="outcome">Outcome</th>
+                <th class="sortable px-4 py-3 text-right" data-col="profit_loss">P/L</th>
+                <th class="sortable px-4 py-3 text-right" data-col="clv">CLV</th>
+                <th class="px-4 py-3 text-left">Notes</th>
+              </tr>
+            </thead>
+            <tbody id="bets-tbody" class="divide-y divide-gray-700/50"></tbody>
+          </table>
+        </div>
+      </section>
 
-    <!-- TOP PLAYER PROPS -->
-    <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
-      <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
-        <h2 class="text-lg font-semibold text-gray-200">🏀 Top Player Props <span class="text-sm font-normal text-gray-400" id="props-date"></span></h2>
-        <span class="text-xs text-gray-400">Top 20 by edge</span>
-      </div>
-      <div class="overflow-x-auto max-h-96">
-        <table class="w-full text-sm sticky-header">
-          <thead>
-            <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
-              <th class="px-4 py-3 text-left">Player</th>
-              <th class="px-4 py-3 text-left">Game</th>
-              <th class="px-4 py-3 text-left">Market</th>
-              <th class="px-4 py-3 text-right">Line</th>
-              <th class="px-4 py-3 text-right">Hit%</th>
-              <th class="px-4 py-3 text-right">Edge</th>
-              <th class="px-4 py-3 text-center">Rec</th>
-            </tr>
-          </thead>
-          <tbody id="props-tbody" class="divide-y divide-gray-700/50">
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <!-- LINE MOVEMENT ALERTS -->
+      <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+          <h2 class="text-lg font-semibold text-gray-200">🚨 Line Movement Alerts <span class="text-sm font-normal text-gray-400">(last 7 days)</span></h2>
+          <span class="text-xs text-gray-400" id="alerts-count"></span>
+        </div>
+        <div class="overflow-x-auto max-h-80">
+          <table class="w-full text-sm sticky-header">
+            <thead>
+              <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+                <th class="px-4 py-3 text-left">Date</th>
+                <th class="px-4 py-3 text-left">Sport</th>
+                <th class="px-4 py-3 text-left">Game</th>
+                <th class="px-4 py-3 text-left">Market</th>
+                <th class="px-4 py-3 text-left">Pick</th>
+                <th class="px-4 py-3 text-right">Open Line</th>
+                <th class="px-4 py-3 text-right">Current</th>
+                <th class="px-4 py-3 text-right">Move</th>
+                <th class="px-4 py-3 text-left">Book</th>
+              </tr>
+            </thead>
+            <tbody id="alerts-tbody" class="divide-y divide-gray-700/50"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TOP PLAYER PROPS -->
+      <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
+          <h2 class="text-lg font-semibold text-gray-200">🏀 Top Player Props <span class="text-sm font-normal text-gray-400" id="props-date"></span></h2>
+          <span class="text-xs text-gray-400">Top 20 by edge</span>
+        </div>
+        <div class="overflow-x-auto max-h-96">
+          <table class="w-full text-sm sticky-header">
+            <thead>
+              <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+                <th class="px-4 py-3 text-left">Player</th>
+                <th class="px-4 py-3 text-left">Game</th>
+                <th class="px-4 py-3 text-left">Market</th>
+                <th class="px-4 py-3 text-right">Line</th>
+                <th class="px-4 py-3 text-right">Hit%</th>
+                <th class="px-4 py-3 text-right">Edge</th>
+                <th class="px-4 py-3 text-center">Rec</th>
+              </tr>
+            </thead>
+            <tbody id="props-tbody" class="divide-y divide-gray-700/50"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div><!-- /tab-model -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- MY BETS TAB                                                     -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <div id="tab-mybets" class="hidden space-y-6">
+
+      <!-- MY BETS SUMMARY CARDS -->
+      <section>
+        <div class="mybets-header rounded-xl p-4 mb-4 border border-purple-800/40">
+          <p class="text-xs text-purple-300 uppercase tracking-wider mb-1">My Bets — Personal Tracker</p>
+          <p class="text-gray-400 text-sm">Stored in a separate table from model data. Tracks your real wagers, CLV, and performance vs. the model.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4" id="user-summary-cards"></div>
+      </section>
+
+      <!-- USER VS MODEL CHART + CLV CHART -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- User vs Model Cumulative P/L -->
+        <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 mybets-accent">
+          <h2 class="text-lg font-semibold mb-4 text-gray-200">📊 You vs. Model — Cumulative P/L</h2>
+          <p class="text-xs text-gray-500 mb-3">Purple = your actual bets · Blue = model theoretical performance</p>
+          <div class="chart-container"><canvas id="userVsModelChart"></canvas></div>
+        </div>
+        <!-- CLV Distribution -->
+        <div class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+          <h2 class="text-lg font-semibold mb-4 text-gray-200">📏 CLV by Bet</h2>
+          <p class="text-xs text-gray-500 mb-3">Closing line value per bet — positive means you beat the close</p>
+          <div class="chart-container"><canvas id="clvChart"></canvas></div>
+        </div>
+      </section>
+
+      <!-- MY BETS TABLE + EXPORT -->
+      <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between px-5 py-4 border-b border-gray-700 gap-3">
+          <div class="flex items-center gap-3">
+            <h2 class="text-lg font-semibold text-gray-200">🎯 My Bets Log</h2>
+            <span class="text-xs text-gray-400" id="user-bets-count"></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <!-- Filter by outcome -->
+            <select id="user-bets-filter" class="bg-gray-700 border border-gray-600 text-gray-200 text-xs rounded-lg px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-purple-500">
+              <option value="all">All outcomes</option>
+              <option value="win">Wins only</option>
+              <option value="loss">Losses only</option>
+              <option value="pending">Pending</option>
+            </select>
+            <!-- Filter by source -->
+            <select id="user-source-filter" class="bg-gray-700 border border-gray-600 text-gray-200 text-xs rounded-lg px-3 py-1.5 focus:outline-none focus:ring-1 focus:ring-purple-500">
+              <option value="all">All sources</option>
+              <option value="manual">Manual</option>
+              <option value="agent">Agent picks</option>
+            </select>
+            <!-- Export CSV -->
+            <button onclick="exportUserBetsCSV()" class="flex items-center gap-1.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
+              ⬇ Export CSV
+            </button>
+          </div>
+        </div>
+        <div class="overflow-x-auto max-h-[480px]">
+          <table class="w-full text-sm sticky-header" id="user-bets-table">
+            <thead>
+              <tr class="bg-gray-900 text-gray-400 text-xs uppercase tracking-wider">
+                <th class="sortable px-4 py-3 text-left" data-col="date">Date</th>
+                <th class="sortable px-4 py-3 text-left" data-col="sport">Sport</th>
+                <th class="sortable px-4 py-3 text-left" data-col="game">Game</th>
+                <th class="sortable px-4 py-3 text-left" data-col="pick">Pick</th>
+                <th class="sortable px-4 py-3 text-left" data-col="bet_type">Type</th>
+                <th class="sortable px-4 py-3 text-right" data-col="odds">Odds</th>
+                <th class="sortable px-4 py-3 text-right" data-col="stake">Stake</th>
+                <th class="sortable px-4 py-3 text-center" data-col="outcome">Result</th>
+                <th class="sortable px-4 py-3 text-right" data-col="profit_loss">P/L</th>
+                <th class="sortable px-4 py-3 text-right" data-col="clv">CLV</th>
+                <th class="sortable px-4 py-3 text-left" data-col="source">Source</th>
+                <th class="px-4 py-3 text-left">Notes</th>
+              </tr>
+            </thead>
+            <tbody id="user-bets-tbody" class="divide-y divide-gray-700/50"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- HOW TO LOG BETS -->
+      <section class="bg-gray-800/60 rounded-xl p-5 border border-gray-700">
+        <h2 class="text-base font-semibold mb-3 text-gray-300">📋 How to Log Your Bets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+          <div>
+            <p class="text-gray-300 font-medium mb-1">Natural language (CLI)</p>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-green-300 mb-1">python3 log_user_bet.py --parse "bet $25 Celtics -110 vs Lakers nba"</code>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-green-300">python3 log_user_bet.py --parse "bet $20 over 224.5 nba"</code>
+          </div>
+          <div>
+            <p class="text-gray-300 font-medium mb-1">Structured (CLI)</p>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-blue-300 mb-1">python3 log_user_bet.py --stake 25 --pick "Celtics" --odds -110 --sport nba</code>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-blue-300">python3 log_user_bet.py --update 3 --outcome win</code>
+          </div>
+          <div>
+            <p class="text-gray-300 font-medium mb-1">Via Joe (natural language)</p>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-purple-300">Tell Joe: "log a $25 bet on Celtics -110 spread"</code>
+          </div>
+          <div>
+            <p class="text-gray-300 font-medium mb-1">Export</p>
+            <code class="block bg-gray-900 rounded p-2 text-xs text-yellow-300">python3 log_user_bet.py --export my_bets.csv</code>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /tab-mybets -->
 
   </div><!-- /dashboard -->
 
   <script>
-  // ─── DATA LOADING ────────────────────────────────────────────────────────────
+  // ─── GLOBAL DATA ─────────────────────────────────────────────────────────────
+  let _data = null;
 
+  // ─── DATA LOADING ────────────────────────────────────────────────────────────
   async function loadData() {
-    try {
-      // Works on file:// protocol — we fetch relative to the HTML file
-      const resp = await fetch('./dashboard_data.json');
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      return await resp.json();
-    } catch (e) {
-      throw new Error(e.message);
-    }
+    const resp = await fetch('./dashboard_data.json');
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return await resp.json();
   }
 
   // ─── FORMATTING HELPERS ──────────────────────────────────────────────────────
-
   function fmtDate(str) {
     if (!str) return '—';
-    try {
-      return new Date(str).toLocaleDateString('en-US', {
-        month: 'short', day: 'numeric', year: 'numeric'
-      });
-    } catch { return str; }
+    try { return new Date(str).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
+    catch { return str; }
   }
 
   function fmtDateTime(str) {
     if (!str) return '—';
-    try {
-      return new Date(str).toLocaleString('en-US', {
-        month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
-      });
-    } catch { return str; }
+    try { return new Date(str).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); }
+    catch { return str; }
   }
 
   function fmtOdds(val) {
@@ -244,8 +361,7 @@
     if (val === null || val === undefined) return '—';
     const n = Number(val);
     if (isNaN(n)) return val;
-    const sign = n >= 0 ? '+' : '';
-    return `${sign}$${Math.abs(n).toFixed(2)}`;
+    return `${n >= 0 ? '+' : ''}$${Math.abs(n).toFixed(2)}`;
   }
 
   function fmtPct(val) {
@@ -253,84 +369,82 @@
     return `${Number(val).toFixed(1)}%`;
   }
 
-  function fmtNum(val, decimals = 2) {
+  function fmtNum(val, d = 2) {
     if (val === null || val === undefined) return '—';
-    return Number(val).toFixed(decimals);
+    return Number(val).toFixed(d);
   }
 
   function sanitize(str) {
     if (!str) return '';
-    return str.toString()
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+    return str.toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
   function sportLabel(sport) {
-    const map = { basketball: 'NBA', football: 'NFL', baseball: 'MLB', nba: 'NBA', nfl: 'NFL', mlb: 'MLB', nhl: 'NHL', ncaab: 'NCAAB' };
-    return map[(sport||'').toLowerCase()] || (sport || '—').toUpperCase();
+    const map = { basketball:'NBA', football:'NFL', baseball:'MLB', nba:'NBA', nfl:'NFL', mlb:'MLB', nhl:'NHL', ncaab:'NCAAB' };
+    return map[(sport||'').toLowerCase()] || (sport||'—').toUpperCase();
   }
 
   function marketLabel(m) {
-    const map = { player_points: 'Points', player_assists: 'Assists', player_rebounds: 'Rebounds',
-                  player_threes: '3-Ptrs', player_blocks: 'Blocks', player_steals: 'Steals',
-                  player_turnovers: 'TO', spreads: 'Spread', totals: 'Total', h2h: 'ML' };
+    const map = { player_points:'Points', player_assists:'Assists', player_rebounds:'Rebounds',
+                  player_threes:'3-Ptrs', player_blocks:'Blocks', player_steals:'Steals',
+                  player_turnovers:'TO', spreads:'Spread', totals:'Total', h2h:'ML' };
     return map[m] || m;
   }
 
-  // ─── RENDER HEADER ───────────────────────────────────────────────────────────
+  function outcomeBadge(outcome) {
+    const o = (outcome||'pending').toLowerCase();
+    if (o === 'win')  return `<span class="badge bg-green-900 text-green-300">Win</span>`;
+    if (o === 'loss') return `<span class="badge bg-red-900 text-red-300">Loss</span>`;
+    if (o === 'push') return `<span class="badge bg-gray-700 text-gray-300">Push</span>`;
+    return `<span class="badge bg-gray-700 text-gray-400">Pending</span>`;
+  }
 
+  function sourceBadge(source) {
+    if ((source||'').toLowerCase() === 'agent')
+      return `<span class="badge bg-purple-900 text-purple-300">🤖 Agent</span>`;
+    if ((source||'').toLowerCase() === 'import')
+      return `<span class="badge bg-yellow-900 text-yellow-300">Import</span>`;
+    return `<span class="badge bg-gray-700 text-gray-400">Manual</span>`;
+  }
+
+  function clvBadge(val) {
+    if (val === null || val === undefined) return '—';
+    const n = Number(val);
+    const color = n > 0 ? 'text-green-400' : n < 0 ? 'text-red-400' : 'text-gray-400';
+    const sign = n > 0 ? '+' : '';
+    return `<span class="${color} font-medium">${sign}${n.toFixed(2)}</span>`;
+  }
+
+  // ─── NAV TABS ─────────────────────────────────────────────────────────────────
+  function switchTab(tab) {
+    document.getElementById('tab-model').classList.toggle('hidden', tab !== 'model');
+    document.getElementById('tab-mybets').classList.toggle('hidden', tab !== 'mybets');
+    document.querySelectorAll('.nav-tab').forEach((el, i) => {
+      const tabs = ['model', 'mybets'];
+      el.classList.toggle('active', tabs[i] === tab);
+    });
+  }
+
+  // ─── RENDER HEADER ───────────────────────────────────────────────────────────
   function renderHeader(data) {
-    const today = new Date().toLocaleDateString('en-US', {
+    document.getElementById('header-date').textContent = new Date().toLocaleDateString('en-US', {
       weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
     });
-    document.getElementById('header-date').textContent = today;
     document.getElementById('header-updated').textContent = fmtDateTime(data.generated_at);
   }
 
-  // ─── RENDER SUMMARY CARDS ────────────────────────────────────────────────────
-
+  // ─── RENDER MODEL SUMMARY CARDS ──────────────────────────────────────────────
   function renderSummaryCards(summary) {
-    const pl = summary.total_pl;
-    const plColor = pl >= 0 ? 'text-green-400' : 'text-red-400';
+    const plColor  = summary.total_pl >= 0 ? 'text-green-400' : 'text-red-400';
     const roiColor = summary.roi >= 0 ? 'text-green-400' : 'text-red-400';
-
     const cards = [
-      {
-        label: 'Total P/L',
-        value: `<span class="${plColor} text-2xl font-bold">${fmtMoney(pl)}</span>`,
-        icon: pl >= 0 ? '💰' : '📉',
-        sub: 'All time'
-      },
-      {
-        label: 'Win Rate',
-        value: `<span class="text-blue-400 text-2xl font-bold">${fmtPct(summary.win_rate)}</span>`,
-        icon: '🎯',
-        sub: 'Settled bets only'
-      },
-      {
-        label: 'ROI',
-        value: `<span class="${roiColor} text-2xl font-bold">${fmtPct(summary.roi)}</span>`,
-        icon: '📊',
-        sub: 'Return on investment'
-      },
-      {
-        label: 'Total Bets',
-        value: `<span class="text-purple-400 text-2xl font-bold">${summary.total_bets}</span>`,
-        icon: '🎲',
-        sub: 'All bets placed'
-      },
-      {
-        label: 'Avg CLV',
-        value: `<span class="text-yellow-400 text-2xl font-bold">${summary.avg_clv !== null ? fmtNum(summary.avg_clv) : 'N/A'}</span>`,
-        icon: '📏',
-        sub: 'Closing line value'
-      },
+      { label:'Total P/L', value:`<span class="${plColor} text-2xl font-bold">${fmtMoney(summary.total_pl)}</span>`, icon: summary.total_pl >= 0 ? '💰' : '📉', sub:'All time' },
+      { label:'Win Rate',  value:`<span class="text-blue-400 text-2xl font-bold">${fmtPct(summary.win_rate)}</span>`, icon:'🎯', sub:'Settled bets' },
+      { label:'ROI',       value:`<span class="${roiColor} text-2xl font-bold">${fmtPct(summary.roi)}</span>`, icon:'📊', sub:'Return on investment' },
+      { label:'Total Bets',value:`<span class="text-purple-400 text-2xl font-bold">${summary.total_bets}</span>`, icon:'🎲', sub:'All bets placed' },
+      { label:'Avg CLV',   value:`<span class="text-yellow-400 text-2xl font-bold">${summary.avg_clv !== null ? fmtNum(summary.avg_clv) : 'N/A'}</span>`, icon:'📏', sub:'Closing line value' },
     ];
-
-    const container = document.getElementById('summary-cards');
-    container.innerHTML = cards.map(c => `
+    document.getElementById('summary-cards').innerHTML = cards.map(c => `
       <div class="stat-card bg-gray-800 rounded-xl p-5 border border-gray-700">
         <div class="flex items-start justify-between mb-2">
           <p class="text-xs text-gray-400 uppercase tracking-wider">${c.label}</p>
@@ -342,377 +456,497 @@
     `).join('');
   }
 
-  // ─── RENDER P&L CHART ────────────────────────────────────────────────────────
+  // ─── RENDER USER BETS SUMMARY CARDS ─────────────────────────────────────────
+  function renderUserSummaryCards(s) {
+    const plColor  = s.total_pl >= 0 ? 'text-green-400' : 'text-red-400';
+    const roiColor = s.roi >= 0 ? 'text-green-400' : 'text-red-400';
+    const clvColor = (s.avg_clv||0) >= 0 ? 'text-green-400' : 'text-red-400';
 
+    const fmtAvgOdds = (v) => {
+      if (v === null || v === undefined) return 'N/A';
+      return v > 0 ? `+${v.toFixed(0)}` : `${v.toFixed(0)}`;
+    };
+
+    const cards = [
+      { label:'My Total P/L',  value:`<span class="${plColor} text-2xl font-bold">${fmtMoney(s.total_pl)}</span>`, icon: s.total_pl >= 0 ? '💰' : '📉', sub:'All my bets' },
+      { label:'My Win Rate',   value:`<span class="text-blue-400 text-2xl font-bold">${fmtPct(s.win_rate)}</span>`, icon:'🎯', sub:`${s.settled_bets} settled` },
+      { label:'My ROI',        value:`<span class="${roiColor} text-2xl font-bold">${fmtPct(s.roi)}</span>`, icon:'📊', sub:'On settled bets' },
+      { label:'Avg Odds',      value:`<span class="text-yellow-400 text-2xl font-bold">${fmtAvgOdds(s.avg_odds)}</span>`, icon:'📐', sub:'American odds' },
+      { label:'Avg CLV',       value:`<span class="${clvColor} text-2xl font-bold">${s.avg_clv !== null ? (s.avg_clv >= 0 ? '+' : '') + s.avg_clv.toFixed(2) : 'N/A'}</span>`, icon:'📏', sub:'Per bet CLV' },
+      { label:'Total CLV Edge',value:`<span class="${(s.clv_delta||0) >= 0 ? 'text-green-400' : 'text-red-400'} text-2xl font-bold">${s.clv_delta !== null ? ((s.clv_delta >= 0 ? '+' : '') + s.clv_delta.toFixed(2)) : 'N/A'}</span>`, icon:'⚡', sub:'Cumulative CLV delta' },
+    ];
+    document.getElementById('user-summary-cards').innerHTML = cards.map(c => `
+      <div class="stat-card bg-gray-800 rounded-xl p-5 border border-purple-800/30">
+        <div class="flex items-start justify-between mb-2">
+          <p class="text-xs text-purple-300 uppercase tracking-wider">${c.label}</p>
+          <span class="text-lg">${c.icon}</span>
+        </div>
+        <div class="mb-1">${c.value}</div>
+        <p class="text-xs text-gray-500">${c.sub}</p>
+      </div>
+    `).join('');
+  }
+
+  // ─── RENDER P&L CHART ────────────────────────────────────────────────────────
   function renderPLChart(plData) {
     const labels = plData.map(p => p.date);
     const values = plData.map(p => p.cumulative_pl);
-    const lastVal = values[values.length - 1] || 0;
+    const lastVal = values[values.length-1] || 0;
     const lineColor = lastVal >= 0 ? '#22c55e' : '#ef4444';
-
     new Chart(document.getElementById('plChart'), {
       type: 'line',
-      data: {
-        labels,
-        datasets: [{
-          label: 'Cumulative P/L ($)',
-          data: values,
-          borderColor: lineColor,
-          backgroundColor: lastVal >= 0 ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)',
-          borderWidth: 2,
-          pointRadius: 5,
-          pointHoverRadius: 7,
-          pointBackgroundColor: lineColor,
-          fill: true,
-          tension: 0.3,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: ctx => `P/L: ${fmtMoney(ctx.raw)}`,
-            }
-          }
-        },
+      data: { labels, datasets: [{
+        label: 'Cumulative P/L ($)', data: values, borderColor: lineColor,
+        backgroundColor: lastVal >= 0 ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)',
+        borderWidth: 2, pointRadius: 5, pointHoverRadius: 7,
+        pointBackgroundColor: lineColor, fill: true, tension: 0.3,
+      }]},
+      options: { responsive:true, maintainAspectRatio:false,
+        plugins: { legend:{display:false}, tooltip:{callbacks:{label:ctx=>`P/L: ${fmtMoney(ctx.raw)}`}} },
         scales: {
-          x: {
-            grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { color: '#9ca3af', maxTicksLimit: 8 }
-          },
-          y: {
-            grid: { color: 'rgba(255,255,255,0.07)' },
-            ticks: {
-              color: '#9ca3af',
-              callback: v => `$${v}`
-            }
-          }
+          x: { grid:{color:'rgba(255,255,255,0.05)'}, ticks:{color:'#9ca3af',maxTicksLimit:8} },
+          y: { grid:{color:'rgba(255,255,255,0.07)'}, ticks:{color:'#9ca3af',callback:v=>`$${v}`} },
         }
       }
     });
   }
 
   // ─── RENDER BANKROLL CHART ───────────────────────────────────────────────────
-
   function renderBankrollChart(curveData) {
     if (!curveData || curveData.length < 2) return;
-
     const labels = curveData.map(p => p.date || 'Start');
     const values = curveData.map(p => p.bankroll);
-    const start = values[0];
-    const current = values[values.length - 1];
+    const start = values[0], current = values[values.length-1];
     const isUp = current >= start;
     const lineColor = isUp ? '#22c55e' : '#ef4444';
-    const fillColor = isUp ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)';
-
-    // Update header badge
     const badge = document.getElementById('bankroll-current');
     if (badge) {
       const change = current - start;
-      const changePct = ((change / start) * 100).toFixed(1);
+      const pct = ((change/start)*100).toFixed(1);
       const sign = change >= 0 ? '+' : '';
-      badge.textContent = `Current: $${current.toFixed(2)} (${sign}$${change.toFixed(2)} / ${sign}${changePct}%)`;
+      badge.textContent = `Current: $${current.toFixed(2)} (${sign}$${change.toFixed(2)} / ${sign}${pct}%)`;
       badge.className = `text-xs font-semibold ${isUp ? 'text-green-400' : 'text-red-400'}`;
     }
-
     new Chart(document.getElementById('bankrollChart'), {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [{
-          label: 'Bankroll ($)',
-          data: values,
-          borderColor: lineColor,
-          backgroundColor: fillColor,
-          borderWidth: 2.5,
-          pointRadius: 6,
-          pointHoverRadius: 8,
-          pointBackgroundColor: values.map((v, i) => {
-            if (i === 0) return '#6b7280';
-            return v > values[i-1] ? '#22c55e' : v < values[i-1] ? '#ef4444' : '#6b7280';
-          }),
-          fill: true,
-          tension: 0.3,
+      type:'line',
+      data:{ labels, datasets:[
+        { label:'Bankroll ($)', data:values, borderColor:lineColor,
+          backgroundColor:isUp?'rgba(34,197,94,0.08)':'rgba(239,68,68,0.08)',
+          borderWidth:2.5, pointRadius:6, pointHoverRadius:8,
+          pointBackgroundColor:values.map((v,i)=>i===0?'#6b7280':v>values[i-1]?'#22c55e':v<values[i-1]?'#ef4444':'#6b7280'),
+          fill:true, tension:0.3 },
+        { label:'Starting Bankroll', data:values.map(()=>start),
+          borderColor:'rgba(107,114,128,0.4)', borderWidth:1, borderDash:[5,5], pointRadius:0, fill:false },
+      ]},
+      options:{ responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:true,labels:{color:'#9ca3af',boxWidth:12,font:{size:11}}},
+          tooltip:{callbacks:{
+            label:ctx=>{ if(ctx.datasetIndex===1) return `Starting: $${start.toFixed(2)}`; const p=curveData[ctx.dataIndex]; return `Bankroll: $${ctx.raw.toFixed(2)}${p.pl!==undefined?` (${p.pl>=0?'+':''}$${p.pl.toFixed(2)})`:''}` },
+            title:ctx=>{ const p=curveData[ctx[0].dataIndex]; return p.label?`${p.date} — ${p.label}`:p.date; }
+          }}
         },
-        // Starting bankroll reference line
-        {
-          label: 'Starting Bankroll',
-          data: values.map(() => start),
-          borderColor: 'rgba(107,114,128,0.4)',
-          borderWidth: 1,
-          borderDash: [5, 5],
-          pointRadius: 0,
-          fill: false,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: true,
-            labels: { color: '#9ca3af', boxWidth: 12, font: { size: 11 } }
-          },
-          tooltip: {
-            callbacks: {
-              label: ctx => {
-                if (ctx.datasetIndex === 1) return `Starting: $${start.toFixed(2)}`;
-                const point = curveData[ctx.dataIndex];
-                const pl = point.pl;
-                const plStr = pl !== undefined ? ` (${pl >= 0 ? '+' : ''}$${pl.toFixed(2)})` : '';
-                return `Bankroll: $${ctx.raw.toFixed(2)}${plStr}`;
-              },
-              title: ctx => {
-                const point = curveData[ctx[0].dataIndex];
-                return point.label ? `${point.date} — ${point.label}` : point.date;
-              }
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { color: '#9ca3af', maxTicksLimit: 8 }
-          },
-          y: {
-            grid: { color: 'rgba(255,255,255,0.07)' },
-            ticks: {
-              color: '#9ca3af',
-              callback: v => `$${v}`
-            }
-          }
+        scales:{
+          x:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af',maxTicksLimit:8}},
+          y:{grid:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#9ca3af',callback:v=>`$${v}`}},
         }
       }
     });
   }
 
-  // ─── RENDER SPORT BREAKDOWN CHART ───────────────────────────────────────────
-
+  // ─── RENDER SPORT CHART ──────────────────────────────────────────────────────
   function renderSportChart(breakdown) {
     const labels = breakdown.map(b => sportLabel(b.sport));
     const values = breakdown.map(b => b.pl);
-    const colors = values.map(v => v >= 0 ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)');
-    const borders = values.map(v => v >= 0 ? '#22c55e' : '#ef4444');
-
     new Chart(document.getElementById('sportChart'), {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [{
-          label: 'P/L ($)',
-          data: values,
-          backgroundColor: colors,
-          borderColor: borders,
-          borderWidth: 1,
-          borderRadius: 4,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: ctx => `P/L: ${fmtMoney(ctx.raw)}`
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { color: '#9ca3af' }
-          },
-          y: {
-            grid: { color: 'rgba(255,255,255,0.07)' },
-            ticks: {
-              color: '#9ca3af',
-              callback: v => `$${v}`
-            }
-          }
+      type:'bar',
+      data:{ labels, datasets:[{ label:'P/L ($)', data:values,
+        backgroundColor:values.map(v=>v>=0?'rgba(34,197,94,0.7)':'rgba(239,68,68,0.7)'),
+        borderColor:values.map(v=>v>=0?'#22c55e':'#ef4444'),
+        borderWidth:1, borderRadius:4 }]},
+      options:{ responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>`P/L: ${fmtMoney(ctx.raw)}`}} },
+        scales:{
+          x:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af'}},
+          y:{grid:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#9ca3af',callback:v=>`$${v}`}},
         }
       }
     });
   }
 
-  // ─── RENDER BETS TABLE ───────────────────────────────────────────────────────
+  // ─── RENDER USER vs MODEL CHART ──────────────────────────────────────────────
+  function renderUserVsModelChart(uvmData) {
+    const userSeries  = (uvmData && uvmData.user)  || [];
+    const modelSeries = (uvmData && uvmData.model) || [];
 
-  let betsData = [];
-  let betsSortCol = 'date';
-  let betsSortDir = -1; // -1 = desc, 1 = asc
+    const allDates = [...new Set([
+      ...userSeries.map(p => p.date),
+      ...modelSeries.map(p => p.date)
+    ])].sort();
+
+    // Forward-fill values onto shared date axis
+    function fillSeries(series, dates) {
+      const map = {};
+      series.forEach(p => { map[p.date] = p.value; });
+      let last = 0;
+      return dates.map(d => { if (map[d] !== undefined) last = map[d]; return last; });
+    }
+
+    new Chart(document.getElementById('userVsModelChart'), {
+      type: 'line',
+      data: {
+        labels: allDates,
+        datasets: [
+          { label: 'Your Bets', data: fillSeries(userSeries, allDates),
+            borderColor: '#a855f7', backgroundColor: 'rgba(168,85,247,0.1)',
+            borderWidth: 2.5, pointRadius: 5, fill: true, tension: 0.3 },
+          { label: 'Model', data: fillSeries(modelSeries, allDates),
+            borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.08)',
+            borderWidth: 2, pointRadius: 4, fill: true, tension: 0.3, borderDash: [4,3] },
+        ]
+      },
+      options: { responsive:true, maintainAspectRatio:false,
+        plugins: { legend:{display:true,labels:{color:'#9ca3af',boxWidth:12,font:{size:11}}},
+          tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: ${fmtMoney(ctx.raw)}`}} },
+        scales: {
+          x:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af',maxTicksLimit:8}},
+          y:{grid:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#9ca3af',callback:v=>`$${v}`}},
+        }
+      }
+    });
+  }
+
+  // ─── RENDER CLV BAR CHART ────────────────────────────────────────────────────
+  function renderClvChart(userBets) {
+    const withClv = userBets.filter(b => b.clv !== null && b.clv !== undefined);
+    if (!withClv.length) return;
+    const labels = withClv.map(b => `${b.pick.substring(0,12)} (${b.date ? b.date.substring(5,10) : ''})`);
+    const values = withClv.map(b => Number(b.clv));
+    new Chart(document.getElementById('clvChart'), {
+      type: 'bar',
+      data: { labels, datasets:[{ label:'CLV', data:values,
+        backgroundColor:values.map(v=>v>=0?'rgba(34,197,94,0.7)':'rgba(239,68,68,0.7)'),
+        borderColor:values.map(v=>v>=0?'#22c55e':'#ef4444'),
+        borderWidth:1, borderRadius:3 }]},
+      options: { responsive:true, maintainAspectRatio:false, indexAxis:'y',
+        plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>`CLV: ${ctx.raw>=0?'+':''}${ctx.raw.toFixed(2)}`}} },
+        scales:{
+          x:{grid:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#9ca3af'},
+            title:{display:true,text:'CLV (+ = beat the close)',color:'#6b7280',font:{size:10}}},
+          y:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af',font:{size:10}}},
+        }
+      }
+    });
+  }
+
+  // ─── RENDER CLV DECISION GATE ────────────────────────────────────────────
+  function renderClvDecisionGate(gate, bySport) {
+    const el = document.getElementById('clv-decision-gate');
+    if (!el) return;
+    if (!gate) { el.innerHTML = ''; return; }
+    const n = gate.n_eligible || 0;
+    const min = gate.min_bets_required || 500;
+    const avg = gate.avg_clv;
+    const target = gate.target_clv || 1.0;
+    const ready = !!gate.ready_for_live;
+    const pct = Math.min(100, Math.round(100 * n / Math.max(min, 1)));
+
+    const readyBadge = ready
+      ? '<span class="px-3 py-1 rounded-full bg-green-600/30 text-green-300 text-xs font-semibold border border-green-500/40">✅ READY FOR LIVE</span>'
+      : '<span class="px-3 py-1 rounded-full bg-yellow-600/20 text-yellow-300 text-xs font-semibold border border-yellow-500/40">🔴 NOT READY — paper trade</span>';
+
+    const avgColor = (avg != null && avg >= target) ? 'text-green-400' : (avg != null && avg >= 0 ? 'text-yellow-400' : 'text-red-400');
+    const avgStr = (avg == null) ? 'N/A' : (avg >= 0 ? '+' + avg.toFixed(2) : avg.toFixed(2));
+
+    el.innerHTML = `
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🎯</span>
+          <div>
+            <div class="text-sm text-gray-400">Go-Live Decision Gate</div>
+            <div class="text-xl font-semibold text-gray-100">
+              Sample: <span class="text-purple-300">${n}</span> / ${min} bets
+              · Avg CLV: <span class="${avgColor}">${avgStr}</span> (target ≥ +${target.toFixed(2)})
+            </div>
+          </div>
+        </div>
+        ${readyBadge}
+      </div>
+      <div class="w-full bg-gray-900 rounded-full h-2.5 overflow-hidden">
+        <div class="bg-gradient-to-r from-purple-600 to-blue-500 h-2.5 transition-all" style="width:${pct}%"></div>
+      </div>
+      <div class="text-xs text-gray-400 mt-2">${pct}% of minimum sample size. Both conditions must hold to flip to real money.</div>
+    `;
+  }
+
+  // ─── RENDER CLV BY SPORT CHART ───────────────────────────────────────────
+  function renderClvBySport(bySport) {
+    const sports = Object.keys(bySport || {}).sort();
+    if (!sports.length) return;
+    const labels = sports.map(s => s.toUpperCase());
+    const vals = sports.map(s => bySport[s].avg_clv);
+    const ns   = sports.map(s => bySport[s].n);
+    new Chart(document.getElementById('clvBySportChart'), {
+      type:'bar',
+      data:{ labels, datasets:[{
+        label:'Avg CLV (pp)',
+        data:vals,
+        backgroundColor:vals.map(v=>v>=1?'rgba(34,197,94,0.7)':(v>=0?'rgba(234,179,8,0.6)':'rgba(239,68,68,0.65)')),
+        borderColor:vals.map(v=>v>=1?'#22c55e':(v>=0?'#eab308':'#ef4444')),
+        borderWidth:1, borderRadius:4,
+      }]},
+      options:{ responsive:true, maintainAspectRatio:false, indexAxis:'y',
+        plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>`CLV: ${ctx.raw.toFixed(2)}pp (n=${ns[ctx.dataIndex]})`}} },
+        scales:{
+          x:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af',callback:v=>v+'pp'}},
+          y:{grid:{display:false},ticks:{color:'#9ca3af'}},
+        }
+      }
+    });
+  }
+
+  // ─── RENDER CLV OVER TIME ────────────────────────────────────────────────
+  function renderClvTrend(series) {
+    if (!series || !series.length) return;
+    const labels = series.map(r => r.date);
+    const vals = series.map(r => r.avg_clv);
+    new Chart(document.getElementById('clvTrendChart'), {
+      type:'line',
+      data:{ labels, datasets:[{
+        label:'Daily Avg CLV',
+        data:vals,
+        borderColor:'#a855f7',
+        backgroundColor:'rgba(168,85,247,0.12)',
+        borderWidth:2, pointRadius:2.5, fill:true, tension:0.25,
+      }]},
+      options:{ responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>`CLV: ${ctx.raw.toFixed(2)}pp`}} },
+        scales:{
+          x:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#9ca3af',maxTicksLimit:10}},
+          y:{grid:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#9ca3af',callback:v=>v+'pp'}},
+        }
+      }
+    });
+  }
+
+  // ─── RENDER MODEL BETS TABLE ─────────────────────────────────────────────────
+  let betsData = [], betsSortCol = 'date', betsSortDir = -1;
 
   function renderBetsTable() {
-    const sorted = [...betsData].sort((a, b) => {
-      let av = a[betsSortCol], bv = b[betsSortCol];
-      if (av === null || av === undefined) av = '';
-      if (bv === null || bv === undefined) bv = '';
+    const sorted = [...betsData].sort((a,b) => {
+      let av = a[betsSortCol] ?? '', bv = b[betsSortCol] ?? '';
       if (typeof av === 'string') av = av.toLowerCase();
       if (typeof bv === 'string') bv = bv.toLowerCase();
       return av < bv ? betsSortDir : av > bv ? -betsSortDir : 0;
     });
-
-    const tbody = document.getElementById('bets-tbody');
-    tbody.innerHTML = sorted.map(b => {
-      const outcome = (b.outcome || 'pending').toLowerCase();
-      const rowClass = outcome === 'win' ? 'row-win' : outcome === 'loss' ? 'row-loss' : 'row-pending';
-      const outcomeBadge = outcome === 'win'
-        ? `<span class="badge bg-green-900 text-green-300">Win</span>`
-        : outcome === 'loss'
-        ? `<span class="badge bg-red-900 text-red-300">Loss</span>`
-        : outcome === 'push'
-        ? `<span class="badge bg-gray-700 text-gray-300">Push</span>`
-        : `<span class="badge bg-gray-700 text-gray-400">Pending</span>`;
-
+    document.getElementById('bets-tbody').innerHTML = sorted.map(b => {
+      const o = (b.outcome||'pending').toLowerCase();
+      const rowCls = o==='win'?'row-win':o==='loss'?'row-loss':'row-pending';
       const pl = b.profit_loss;
-      const plStr = pl !== null && pl !== undefined
-        ? `<span class="${pl >= 0 ? 'text-green-400' : 'text-red-400'} font-medium">${fmtMoney(pl)}</span>`
-        : '—';
-
-      return `
-        <tr class="${rowClass} hover:bg-white/5 transition-colors">
-          <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDate(b.date)}</td>
-          <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize(sportLabel(b.sport))}</span></td>
-          <td class="px-4 py-3 text-gray-200 max-w-xs truncate" title="${sanitize(b.game)}">${sanitize(b.game)}</td>
-          <td class="px-4 py-3 text-gray-200">${sanitize(b.pick)}</td>
-          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtOdds(b.odds)}</td>
-          <td class="px-4 py-3 text-right text-gray-300">$${sanitize(b.amount_wagered)}</td>
-          <td class="px-4 py-3 text-center">${outcomeBadge}</td>
-          <td class="px-4 py-3 text-right">${plStr}</td>
-          <td class="px-4 py-3 text-right text-gray-400">${b.clv !== null && b.clv !== undefined ? fmtNum(b.clv) : '—'}</td>
-          <td class="px-4 py-3 text-gray-400 max-w-xs truncate" title="${sanitize(b.notes)}">${sanitize(b.notes) || '—'}</td>
-        </tr>
-      `;
+      const plHtml = pl !== null && pl !== undefined
+        ? `<span class="${pl>=0?'text-green-400':'text-red-400'} font-medium">${fmtMoney(pl)}</span>` : '—';
+      return `<tr class="${rowCls} hover:bg-white/5 transition-colors">
+        <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDate(b.date)}</td>
+        <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize(sportLabel(b.sport))}</span></td>
+        <td class="px-4 py-3 text-gray-200 max-w-xs truncate" title="${sanitize(b.game)}">${sanitize(b.game)}</td>
+        <td class="px-4 py-3 text-gray-200">${sanitize(b.pick)}</td>
+        <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtOdds(b.odds)}</td>
+        <td class="px-4 py-3 text-right text-gray-300">$${sanitize(String(b.amount_wagered))}</td>
+        <td class="px-4 py-3 text-center">${outcomeBadge(b.outcome)}</td>
+        <td class="px-4 py-3 text-right">${plHtml}</td>
+        <td class="px-4 py-3 text-right text-gray-400">${b.clv !== null && b.clv !== undefined ? fmtNum(b.clv) : '—'}</td>
+        <td class="px-4 py-3 text-gray-400 max-w-xs truncate">${sanitize(b.notes)||'—'}</td>
+      </tr>`;
     }).join('');
-
-    // Update sort indicators
     document.querySelectorAll('#bets-table .sortable').forEach(th => {
-      th.classList.remove('sort-asc', 'sort-desc');
-      if (th.dataset.col === betsSortCol) {
-        th.classList.add(betsSortDir === 1 ? 'sort-asc' : 'sort-desc');
-      }
+      th.classList.remove('sort-asc','sort-desc');
+      if (th.dataset.col === betsSortCol) th.classList.add(betsSortDir===1?'sort-asc':'sort-desc');
     });
   }
 
   function initBetsSort() {
     document.querySelectorAll('#bets-table .sortable').forEach(th => {
       th.addEventListener('click', () => {
-        const col = th.dataset.col;
-        if (betsSortCol === col) {
-          betsSortDir *= -1;
-        } else {
-          betsSortCol = col;
-          betsSortDir = -1;
-        }
+        if (betsSortCol === th.dataset.col) betsSortDir *= -1;
+        else { betsSortCol = th.dataset.col; betsSortDir = -1; }
         renderBetsTable();
       });
     });
   }
 
-  // ─── RENDER LINE ALERTS ──────────────────────────────────────────────────────
+  // ─── RENDER USER BETS TABLE ──────────────────────────────────────────────────
+  let userBetsData = [], userSortCol = 'date', userSortDir = -1;
 
+  function renderUserBetsTable() {
+    const outcomeFilter = document.getElementById('user-bets-filter').value;
+    const sourceFilter  = document.getElementById('user-source-filter').value;
+
+    let filtered = [...userBetsData];
+    if (outcomeFilter !== 'all') filtered = filtered.filter(b => (b.outcome||'pending') === outcomeFilter);
+    if (sourceFilter  !== 'all') filtered = filtered.filter(b => (b.source||'manual')   === sourceFilter);
+
+    const sorted = filtered.sort((a,b) => {
+      let av = a[userSortCol] ?? '', bv = b[userSortCol] ?? '';
+      if (typeof av === 'string') av = av.toLowerCase();
+      if (typeof bv === 'string') bv = bv.toLowerCase();
+      return av < bv ? userSortDir : av > bv ? -userSortDir : 0;
+    });
+
+    document.getElementById('user-bets-count').textContent = `${sorted.length} of ${userBetsData.length} bets`;
+    document.getElementById('user-bets-tbody').innerHTML = sorted.length ? sorted.map(b => {
+      const o = (b.outcome||'pending').toLowerCase();
+      const rowCls = o==='win'?'row-win':o==='loss'?'row-loss':'row-pending';
+      const pl = b.profit_loss;
+      const plHtml = pl !== null && pl !== undefined
+        ? `<span class="${pl>=0?'text-green-400':'text-red-400'} font-medium">${fmtMoney(pl)}</span>` : '—';
+      const betTypeLabel = { moneyline:'ML', spread:'Spread', totals:'O/U', prop:'Prop' };
+      return `<tr class="${rowCls} hover:bg-white/5 transition-colors">
+        <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDate(b.date)}</td>
+        <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize(sportLabel(b.sport))}</span></td>
+        <td class="px-4 py-3 text-gray-200 max-w-xs truncate" title="${sanitize(b.game)}">${sanitize(b.game)}</td>
+        <td class="px-4 py-3 text-gray-200 font-medium">${sanitize(b.pick)}</td>
+        <td class="px-4 py-3 text-gray-400 text-xs">${betTypeLabel[b.bet_type] || sanitize(b.bet_type)||'ML'}</td>
+        <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtOdds(b.odds)}</td>
+        <td class="px-4 py-3 text-right text-gray-300">$${Number(b.stake).toFixed(2)}</td>
+        <td class="px-4 py-3 text-center">${outcomeBadge(b.outcome)}</td>
+        <td class="px-4 py-3 text-right">${plHtml}</td>
+        <td class="px-4 py-3 text-right">${clvBadge(b.clv)}</td>
+        <td class="px-4 py-3">${sourceBadge(b.source)}</td>
+        <td class="px-4 py-3 text-gray-400 text-xs max-w-xs truncate" title="${sanitize(b.notes)}">${sanitize(b.notes)||'—'}</td>
+      </tr>`;
+    }).join('') : `<tr><td colspan="12" class="px-4 py-10 text-center text-gray-500">No bets match the current filter.</td></tr>`;
+
+    document.querySelectorAll('#user-bets-table .sortable').forEach(th => {
+      th.classList.remove('sort-asc','sort-desc');
+      if (th.dataset.col === userSortCol) th.classList.add(userSortDir===1?'sort-asc':'sort-desc');
+    });
+  }
+
+  function initUserBetsSort() {
+    document.querySelectorAll('#user-bets-table .sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        if (userSortCol === th.dataset.col) userSortDir *= -1;
+        else { userSortCol = th.dataset.col; userSortDir = -1; }
+        renderUserBetsTable();
+      });
+    });
+    document.getElementById('user-bets-filter').addEventListener('change', renderUserBetsTable);
+    document.getElementById('user-source-filter').addEventListener('change', renderUserBetsTable);
+  }
+
+  // ─── EXPORT USER BETS CSV ────────────────────────────────────────────────────
+  function exportUserBetsCSV() {
+    const fields = ['id','date','sport','game','pick','bet_type','odds','stake','outcome','profit_loss','closing_odds','clv','source','notes'];
+    const rows   = [fields.join(',')];
+    userBetsData.forEach(b => {
+      rows.push(fields.map(f => {
+        const v = b[f] === null || b[f] === undefined ? '' : String(b[f]);
+        return v.includes(',') || v.includes('"') || v.includes('\n') ? `"${v.replace(/"/g,'""')}"` : v;
+      }).join(','));
+    });
+    const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url;
+    a.download = `my_bets_${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  // ─── RENDER LINE ALERTS ──────────────────────────────────────────────────────
   function renderLineAlerts(alerts) {
     document.getElementById('alerts-count').textContent = `${alerts.length} alerts`;
     const tbody = document.getElementById('alerts-tbody');
-
     if (!alerts.length) {
       tbody.innerHTML = `<tr><td colspan="9" class="px-4 py-8 text-center text-gray-500">No line movement alerts in the last 7 days.</td></tr>`;
       return;
     }
-
     tbody.innerHTML = alerts.map(a => {
-      const move = a.movement;
-      const isLarge = Math.abs(move) > 2;
-      const rowClass = isLarge ? 'large-move' : 'hover:bg-white/5';
+      const move = a.movement, isLarge = Math.abs(move) > 2;
+      const rowCls = isLarge ? 'large-move' : 'hover:bg-white/5';
       const moveColor = move > 0 ? 'text-green-400' : move < 0 ? 'text-red-400' : 'text-gray-400';
-      const game = `${sanitize(a.away_team)} @ ${sanitize(a.home_team)}`;
-      return `
-        <tr class="${rowClass} transition-colors">
-          <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDateTime(a.alerted_at)}</td>
-          <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize((a.sport||'').toUpperCase())}</span></td>
-          <td class="px-4 py-3 text-gray-200 whitespace-nowrap">${game}</td>
-          <td class="px-4 py-3 text-gray-300">${sanitize(marketLabel(a.market))}</td>
-          <td class="px-4 py-3 text-gray-300 max-w-xs truncate">${sanitize(a.outcome_name)}</td>
-          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.open_point, 1)}</td>
-          <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.current_point, 1)}</td>
-          <td class="px-4 py-3 text-right font-mono font-semibold ${moveColor}">${move > 0 ? '+' : ''}${fmtNum(move, 1)} ${isLarge ? '🔥' : ''}</td>
-          <td class="px-4 py-3 text-gray-400">${sanitize(a.bookmaker)}</td>
-        </tr>
-      `;
+      return `<tr class="${rowCls} transition-colors">
+        <td class="px-4 py-3 whitespace-nowrap text-gray-300">${fmtDateTime(a.alerted_at)}</td>
+        <td class="px-4 py-3"><span class="badge bg-blue-900 text-blue-300">${sanitize((a.sport||'').toUpperCase())}</span></td>
+        <td class="px-4 py-3 text-gray-200 whitespace-nowrap">${sanitize(a.away_team)} @ ${sanitize(a.home_team)}</td>
+        <td class="px-4 py-3 text-gray-300">${sanitize(marketLabel(a.market))}</td>
+        <td class="px-4 py-3 text-gray-300 max-w-xs truncate">${sanitize(a.outcome_name)}</td>
+        <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.open_point, 1)}</td>
+        <td class="px-4 py-3 text-right font-mono text-gray-300">${fmtNum(a.current_point, 1)}</td>
+        <td class="px-4 py-3 text-right font-mono font-semibold ${moveColor}">${move > 0 ? '+' : ''}${fmtNum(move, 1)} ${isLarge ? '🔥' : ''}</td>
+        <td class="px-4 py-3 text-gray-400">${sanitize(a.bookmaker)}</td>
+      </tr>`;
     }).join('');
   }
 
   // ─── RENDER TOP PLAYER PROPS ─────────────────────────────────────────────────
-
   function renderPlayerProps(props, propsDate) {
-    if (propsDate) {
-      document.getElementById('props-date').textContent = `— ${fmtDate(propsDate)}`;
-    }
+    if (propsDate) document.getElementById('props-date').textContent = `— ${fmtDate(propsDate)}`;
     const tbody = document.getElementById('props-tbody');
-
     if (!props.length) {
       tbody.innerHTML = `<tr><td colspan="7" class="px-4 py-8 text-center text-gray-500">No player props data available.</td></tr>`;
       return;
     }
-
     tbody.innerHTML = props.map(p => {
-      const hitColor = (p.hit_prob || 0) >= 70 ? 'text-green-400' : (p.hit_prob || 0) >= 55 ? 'text-yellow-400' : 'text-gray-400';
-      const edgeColor = (p.edge || 0) >= 20 ? 'text-green-400' : (p.edge || 0) >= 10 ? 'text-yellow-400' : 'text-gray-400';
-      const rec = (p.recommendation || '').toUpperCase();
-      const recBadge = rec === 'OVER'
+      const hitColor  = (p.hit_prob||0) >= 70 ? 'text-green-400' : (p.hit_prob||0) >= 55 ? 'text-yellow-400' : 'text-gray-400';
+      const edgeColor = (p.edge||0) >= 20 ? 'text-green-400' : (p.edge||0) >= 10 ? 'text-yellow-400' : 'text-gray-400';
+      const rec = (p.recommendation||'').toUpperCase();
+      const recBadge = rec==='OVER'
         ? `<span class="badge bg-green-900 text-green-300">OVER</span>`
-        : rec === 'UNDER'
+        : rec==='UNDER'
         ? `<span class="badge bg-blue-900 text-blue-300">UNDER</span>`
-        : `<span class="badge bg-gray-700 text-gray-300">${sanitize(rec) || '—'}</span>`;
-
-      const mkt = marketLabel(p.market);
-
-      return `
-        <tr class="hover:bg-white/5 transition-colors">
-          <td class="px-4 py-3 text-gray-200 font-medium">${sanitize(p.player)}</td>
-          <td class="px-4 py-3 text-gray-400 max-w-xs truncate text-xs" title="${sanitize(p.game)}">${sanitize(p.game)}</td>
-          <td class="px-4 py-3 text-gray-300">${sanitize(mkt)}</td>
-          <td class="px-4 py-3 text-right font-mono text-gray-200">${fmtNum(p.line, 1)}</td>
-          <td class="px-4 py-3 text-right font-semibold ${hitColor}">${fmtPct(p.hit_prob)}</td>
-          <td class="px-4 py-3 text-right font-semibold ${edgeColor}">${fmtNum(p.edge, 2)}</td>
-          <td class="px-4 py-3 text-center">${recBadge}</td>
-        </tr>
-      `;
+        : `<span class="badge bg-gray-700 text-gray-300">${sanitize(rec)||'—'}</span>`;
+      return `<tr class="hover:bg-white/5 transition-colors">
+        <td class="px-4 py-3 text-gray-200 font-medium">${sanitize(p.player)}</td>
+        <td class="px-4 py-3 text-gray-400 max-w-xs truncate text-xs" title="${sanitize(p.game)}">${sanitize(p.game)}</td>
+        <td class="px-4 py-3 text-gray-300">${sanitize(marketLabel(p.market))}</td>
+        <td class="px-4 py-3 text-right font-mono text-gray-200">${fmtNum(p.line, 1)}</td>
+        <td class="px-4 py-3 text-right font-semibold ${hitColor}">${fmtPct(p.hit_prob)}</td>
+        <td class="px-4 py-3 text-right font-semibold ${edgeColor}">${fmtNum(p.edge, 2)}</td>
+        <td class="px-4 py-3 text-center">${recBadge}</td>
+      </tr>`;
     }).join('');
   }
 
   // ─── MAIN ────────────────────────────────────────────────────────────────────
-
   async function main() {
     try {
       const data = await loadData();
+      _data = data;
 
-      // Hide loading, show dashboard
       document.getElementById('loading').classList.add('hidden');
       document.getElementById('dashboard').classList.remove('hidden');
 
       renderHeader(data);
+
+      // Model tab
       renderSummaryCards(data.summary);
       renderPLChart(data.pl_over_time || []);
       renderSportChart(data.sport_breakdown || []);
       renderBankrollChart(data.bankroll_curve || []);
-
+      renderClvDecisionGate(data.clv_decision_gate || null, data.clv_by_sport || {});
+      renderClvBySport(data.clv_by_sport || {});
+      renderClvTrend(data.clv_over_time || []);
       betsData = data.bets || [];
       document.getElementById('bets-count').textContent = `${betsData.length} bets`;
       renderBetsTable();
       initBetsSort();
-
       renderLineAlerts(data.line_alerts || []);
       renderPlayerProps(data.top_player_props || [], data.player_props_date);
+
+      // My Bets tab
+      userBetsData = data.user_bets || [];
+      renderUserSummaryCards(data.user_bets_summary || {});
+      renderUserVsModelChart(data.user_vs_model || {});
+      renderClvChart(userBetsData);
+      renderUserBetsTable();
+      initUserBetsSort();
 
     } catch (err) {
       document.getElementById('loading').classList.add('hidden');
       document.getElementById('error').classList.remove('hidden');
       document.getElementById('error').classList.add('flex');
-      const msg = document.getElementById('error-msg');
-      msg.innerHTML += `<br/><br/><small class="text-red-400">${err.message}</small>`;
+      document.getElementById('error-msg').innerHTML +=
+        `<br/><br/><small class="text-red-400">${err.message}</small>`;
     }
   }
 
