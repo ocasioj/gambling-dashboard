@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T00:35:50.849662",
+  "generated_at": "2026-04-25T00:39:52.566554",
   "summary": {
     "total_pl": -558.2,
     "win_rate": 50.6,
@@ -54161,6 +54161,10 @@
         "delta_pp": 25.5
       }
     }
+  },
+  "todays_filter_decisions": {
+    "timestamp": "2026-04-25T00:38:41.781517",
+    "decisions": []
   },
   "user_bets": [
     {

@@ -137,6 +137,28 @@
         </div>
       </section>
 
+      <!-- TODAY'S FILTER DECISIONS (2026-04-24) -->
+      <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-lg font-semibold text-gray-200">🪟 Today's Filter Decisions</h2>
+          <span class="text-xs text-gray-400" id="filter-decisions-summary"></span>
+        </div>
+        <div class="overflow-x-auto" style="max-height:280px">
+          <table class="w-full text-xs">
+            <thead><tr class="text-gray-400 border-b border-gray-700">
+              <th class="text-left py-1">Action</th>
+              <th class="text-left">Sport</th>
+              <th class="text-left">Pick</th>
+              <th class="text-left">Game</th>
+              <th class="text-right">Conf</th>
+              <th class="text-right">Edge</th>
+              <th class="text-left">Reason</th>
+            </tr></thead>
+            <tbody id="filter-decisions-body"></tbody>
+          </table>
+        </div>
+      </section>
+
       <!-- CALIBRATION PLOT (2026-04-24): predicted vs actual win rate per bucket -->
       <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
         <div class="flex items-center justify-between mb-4">
@@ -666,6 +688,47 @@
     });
   }
 
+  // ─── TODAY'S FILTER DECISIONS ────────────────────────────────────────────
+  function renderFilterDecisions(payload) {
+    const decisions = (payload && payload.decisions) || [];
+    const ts = payload && payload.timestamp;
+    const summaryEl = document.getElementById("filter-decisions-summary");
+    const tbody = document.getElementById("filter-decisions-body");
+    if (!tbody) return;
+
+    if (!decisions.length) {
+      tbody.innerHTML = `<tr><td colspan="7" class="py-3 text-gray-500 italic text-center">No decisions logged yet today (cron fires at 09:00 ET).</td></tr>`;
+      if (summaryEl) summaryEl.textContent = ts ? `Last run: ${new Date(ts).toLocaleString()} · 0 decisions` : "Awaiting today's pick run";
+      return;
+    }
+    const logged = decisions.filter(d => d.action === "logged").length;
+    const skipped = decisions.length - logged;
+    if (summaryEl) {
+      summaryEl.textContent = `${decisions.length} total · ${logged} logged · ${skipped} skipped · ${ts ? new Date(ts).toLocaleTimeString() : ""}`;
+    }
+    // Sort: logged first, then by reason
+    decisions.sort((a, b) => {
+      if (a.action !== b.action) return a.action === "logged" ? -1 : 1;
+      return (a.reason || "").localeCompare(b.reason || "");
+    });
+    tbody.innerHTML = decisions.map(d => {
+      const actionPill = d.action === "logged"
+        ? '<span class="px-2 py-0.5 rounded bg-green-600/30 text-green-300 border border-green-500/30">✅ logged</span>'
+        : '<span class="px-2 py-0.5 rounded bg-red-600/20 text-red-300 border border-red-500/30">⨯ skipped</span>';
+      const conf = d.confidence == null ? "—" : `${(+d.confidence).toFixed(1)}%`;
+      const edge = d.edge == null ? "—" : `${(+d.edge).toFixed(1)}%`;
+      return `<tr class="border-b border-gray-800 hover:bg-gray-800/40">
+        <td class="py-1.5">${actionPill}</td>
+        <td class="text-gray-400">${(d.sport || "").toUpperCase()}</td>
+        <td class="text-gray-200">${d.pick || ""}</td>
+        <td class="text-gray-400">${d.game || ""}</td>
+        <td class="text-right text-gray-300">${conf}</td>
+        <td class="text-right text-gray-300">${edge}</td>
+        <td class="text-gray-400">${d.reason || ""}</td>
+      </tr>`;
+    }).join("");
+  }
+
   // ─── CALIBRATION CHART (2026-04-24) ─────────────────────────────────────
   function renderCalibration(buckets) {
     if (!buckets) buckets = {};
@@ -1064,6 +1127,7 @@
       renderClvDecisionGate(data.clv_decision_gate || null, data.clv_by_sport || {});
       renderClvBySport(data.clv_by_sport || {});
       renderClvTrend(data.clv_over_time || []);
+      renderFilterDecisions(data.todays_filter_decisions || {});
       renderCalibration(data.calibration_buckets || {});
       betsData = data.bets || [];
       document.getElementById('bets-count').textContent = `${betsData.length} bets`;
