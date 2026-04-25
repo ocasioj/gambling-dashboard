@@ -137,6 +137,34 @@
         </div>
       </section>
 
+      <!-- CALIBRATION PLOT (2026-04-24): predicted vs actual win rate per bucket -->
+      <section class="bg-gray-800 rounded-xl p-5 border border-gray-700">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-gray-200">🎯 Calibration: Predicted vs Actual</h2>
+          <span class="text-xs text-gray-400">y=x = perfectly calibrated · above line = overconfident</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-gray-900/50 rounded-lg p-4 border border-gray-700">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">Calibration Scatter (n &ge; 5 only)</h3>
+            <div class="chart-container"><canvas id="calibrationChart"></canvas></div>
+          </div>
+          <div class="bg-gray-900/50 rounded-lg p-4 border border-gray-700 overflow-y-auto" style="max-height:340px">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">Bucket details</h3>
+            <table class="w-full text-xs text-gray-300">
+              <thead><tr class="text-gray-400 border-b border-gray-700">
+                <th class="text-left py-1">Sport / Type</th>
+                <th class="text-left">Bucket</th>
+                <th class="text-right">n</th>
+                <th class="text-right">Pred</th>
+                <th class="text-right">Actual</th>
+                <th class="text-right">Δ (pp)</th>
+              </tr></thead>
+              <tbody id="calibration-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <!-- MODEL BETS TABLE -->
       <section class="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
         <div class="flex items-center justify-between px-5 py-4 border-b border-gray-700">
@@ -638,6 +666,116 @@
     });
   }
 
+  // ─── CALIBRATION CHART (2026-04-24) ─────────────────────────────────────
+  function renderCalibration(buckets) {
+    if (!buckets) buckets = {};
+    const BUCKET_MID = { "<55": 50, "55-60": 57.5, "60-65": 62.5,
+                          "65-70": 67.5, "70-75": 72.5, "75-80": 77.5, "80+": 85 };
+    const SPORT_COLOR = { mlb: "#3b82f6", nhl: "#a855f7", nba: "#ef4444",
+                          ncaab: "#f59e0b", unknown: "#6b7280" };
+
+    // Flatten into chart points: filter n >= 5 only to reduce noise
+    const points = [];
+    const tableRows = [];
+    for (const key of Object.keys(buckets).sort()) {
+      const [sport, bt] = key.split(":");
+      const sportBuckets = buckets[key];
+      for (const label of Object.keys(sportBuckets)) {
+        const v = sportBuckets[label];
+        const x = BUCKET_MID[label] || (label === "<55" ? 52.5 : 85);
+        const y = v.win_rate;
+        if (v.n >= 5 && y !== null) {
+          points.push({
+            x, y, n: v.n, label,
+            sport, bt, delta: v.delta_pp,
+            backgroundColor: SPORT_COLOR[sport] || SPORT_COLOR.unknown,
+          });
+        }
+        tableRows.push({ sport, bt, label, ...v });
+      }
+    }
+
+    // Group by sport for the dataset legend
+    const datasets = [];
+    for (const sport of Object.keys(SPORT_COLOR)) {
+      const pts = points.filter(p => p.sport === sport);
+      if (!pts.length) continue;
+      datasets.push({
+        label: sport.toUpperCase(),
+        data: pts.map(p => ({ x: p.x, y: p.y, n: p.n, bt: p.bt, label: p.label, delta: p.delta })),
+        backgroundColor: SPORT_COLOR[sport],
+        borderColor: SPORT_COLOR[sport],
+        pointRadius: pts.map(p => Math.min(14, 4 + Math.sqrt(p.n))),
+        pointHoverRadius: 12,
+      });
+    }
+    // y = x reference line (perfectly calibrated)
+    datasets.push({
+      label: "Perfect calibration (y=x)",
+      data: [{x: 50, y: 50}, {x: 100, y: 100}],
+      type: "line",
+      borderColor: "rgba(255,255,255,0.4)",
+      borderWidth: 1.5,
+      borderDash: [6, 4],
+      pointRadius: 0,
+      fill: false,
+    });
+
+    new Chart(document.getElementById("calibrationChart"), {
+      type: "scatter",
+      data: { datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: true, labels: { color: "#9ca3af", boxWidth: 10, font: {size: 10} } },
+          tooltip: { callbacks: {
+            label: (ctx) => {
+              const r = ctx.raw;
+              if (r.n === undefined) return `${ctx.dataset.label}`;
+              return `${ctx.dataset.label} ${r.bt} ${r.label}: pred=${r.x}% actual=${r.y}% n=${r.n} Δ=${r.delta>=0?"+":""}${r.delta}pp`;
+            }
+          }}
+        },
+        scales: {
+          x: {
+            min: 50, max: 100,
+            title: { display: true, text: "Predicted win % (bucket midpoint)", color: "#9ca3af" },
+            grid: { color: "rgba(255,255,255,0.05)" },
+            ticks: { color: "#9ca3af", callback: v => v + "%" },
+          },
+          y: {
+            min: 0, max: 100,
+            title: { display: true, text: "Actual win %", color: "#9ca3af" },
+            grid: { color: "rgba(255,255,255,0.07)" },
+            ticks: { color: "#9ca3af", callback: v => v + "%" },
+          },
+        },
+      },
+    });
+
+    // Render table — sort by sport then bucket
+    const tbody = document.getElementById("calibration-table-body");
+    if (tbody) {
+      tableRows.sort((a, b) => (a.sport + a.bt + a.label).localeCompare(b.sport + b.bt + b.label));
+      tbody.innerHTML = tableRows.map(r => {
+        const dColor = (r.delta_pp == null) ? "" :
+          (r.delta_pp >= 15) ? "text-red-400" :
+          (r.delta_pp <= -15) ? "text-blue-400" :
+          (Math.abs(r.delta_pp) <= 5) ? "text-green-400" : "text-yellow-400";
+        const deltaStr = (r.delta_pp == null) ? "—" :
+          (r.delta_pp >= 0 ? "+" : "") + r.delta_pp + "pp";
+        return `<tr class="border-b border-gray-800">
+          <td class="py-1 text-gray-300">${r.sport.toUpperCase()} ${r.bt}</td>
+          <td>${r.label}</td>
+          <td class="text-right">${r.n}</td>
+          <td class="text-right">${r.avg_conf == null ? "—" : r.avg_conf + "%"}</td>
+          <td class="text-right">${r.win_rate == null ? "—" : r.win_rate + "%"}</td>
+          <td class="text-right ${dColor}">${deltaStr}</td>
+        </tr>`;
+      }).join("");
+    }
+  }
+
   // ─── RENDER CLV DECISION GATE ────────────────────────────────────────────
   function renderClvDecisionGate(gate, bySport) {
     const el = document.getElementById('clv-decision-gate');
@@ -926,6 +1064,7 @@
       renderClvDecisionGate(data.clv_decision_gate || null, data.clv_by_sport || {});
       renderClvBySport(data.clv_by_sport || {});
       renderClvTrend(data.clv_over_time || []);
+      renderCalibration(data.calibration_buckets || {});
       betsData = data.bets || [];
       document.getElementById('bets-count').textContent = `${betsData.length} bets`;
       renderBetsTable();
