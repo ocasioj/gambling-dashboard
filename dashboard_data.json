@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-25T08:00:01.621791",
+  "generated_at": "2026-04-26T08:00:01.436318",
   "summary": {
-    "total_pl": -762.26,
-    "win_rate": 50.4,
-    "roi": -3.21,
-    "total_bets": 1904,
+    "total_pl": -835.53,
+    "win_rate": 50.2,
+    "roi": -3.46,
+    "total_bets": 1922,
     "avg_clv": -1.39
   },
   "bets": [
@@ -37181,7 +37181,7 @@
       "notes": "spread: Atlanta Braves -1.5 | Under 9.0 | inj: ",
       "closing_odds": 107.0,
       "clv": 1.58,
-      "clv_checked_at": "2026-04-25T01:30:24.712607",
+      "clv_checked_at": "2026-04-26T01:30:34.400811",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 58.0,
@@ -37201,7 +37201,7 @@
       "notes": "spread: Milwaukee Brewers 1.5 | Under 7.0 | inj: ",
       "closing_odds": -136.66666666666666,
       "clv": -11.95,
-      "clv_checked_at": "2026-04-25T01:30:25.188172",
+      "clv_checked_at": "2026-04-26T01:30:34.824233",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 68.0,
@@ -37261,7 +37261,7 @@
       "notes": "spread: San Diego Padres -1.5 | Over 11.0 | inj: ",
       "closing_odds": 184.66666666666666,
       "clv": -8.54,
-      "clv_checked_at": "2026-04-25T01:30:26.521491",
+      "clv_checked_at": "2026-04-26T01:30:36.155878",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 55.9,
@@ -37341,7 +37341,7 @@
       "notes": "spread: New York Yankees -1.5 | Under 8.5 | inj: ",
       "closing_odds": 54.5,
       "clv": 3.79,
-      "clv_checked_at": "2026-04-25T01:30:28.343672",
+      "clv_checked_at": "2026-04-26T01:30:38.044282",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 58.1,
@@ -37361,7 +37361,7 @@
       "notes": "spread: Pittsburgh Pirates 1.5 | Under 8.0 | inj: ",
       "closing_odds": -157.8,
       "clv": -2.03,
-      "clv_checked_at": "2026-04-25T01:30:28.863423",
+      "clv_checked_at": "2026-04-26T01:30:38.457801",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 57.2,
@@ -37381,7 +37381,7 @@
       "notes": "spread: Vegas Golden Knights 1.5 | Over 5.5 | inj: ",
       "closing_odds": -106.0,
       "clv": -0.47,
-      "clv_checked_at": "2026-04-25T01:30:29.401535",
+      "clv_checked_at": "2026-04-26T01:30:38.965607",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 58.1,
@@ -38041,7 +38041,7 @@
       "notes": "spread: Edmonton Oilers 1.5 | Over 6.5 | inj: ",
       "closing_odds": -139.0,
       "clv": 1.64,
-      "clv_checked_at": "2026-04-25T01:30:02.885393",
+      "clv_checked_at": "2026-04-26T01:30:13.132467",
       "bet_type": "moneyline",
       "source": "model",
       "confidence": 68.0,
@@ -38061,7 +38061,7 @@
       "notes": "cover_prob: 85.7%",
       "closing_odds": -139.0,
       "clv": 5.78,
-      "clv_checked_at": "2026-04-25T01:30:03.358735",
+      "clv_checked_at": "2026-04-26T01:30:13.555589",
       "bet_type": "spread",
       "source": "model",
       "confidence": 85.7,
@@ -38085,6 +38085,366 @@
       "bet_type": "total",
       "source": "model",
       "confidence": 56.8,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3345,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Washington Nationals @ Chicago White Sox",
+      "pick": "Joey Wiemer OVER 0.5",
+      "odds": 280.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 76.3,
+      "model_edge": 42.87,
+      "edge_novig": null
+    },
+    {
+      "id": 3346,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Seattle Mariners @ St. Louis Cardinals",
+      "pick": "Masyn Winn OVER 0.5",
+      "odds": 200.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 77.5,
+      "model_edge": 34.71,
+      "edge_novig": null
+    },
+    {
+      "id": 3347,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Minnesota Twins @ Tampa Bay Rays",
+      "pick": "Brooks Lee OVER 0.5",
+      "odds": 180.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 76.5,
+      "model_edge": 33.8,
+      "edge_novig": null
+    },
+    {
+      "id": 3348,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Miami Marlins @ San Francisco Giants",
+      "pick": "Connor Norby OVER 0.5",
+      "odds": 188.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 76.1,
+      "model_edge": 32.76,
+      "edge_novig": null
+    },
+    {
+      "id": 3349,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "San Diego Padres @ Arizona Diamondbacks",
+      "pick": "Lourdes Gurriel Jr. UNDER 0.5",
+      "odds": 105.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 77.9,
+      "model_edge": 31.21,
+      "edge_novig": null
+    },
+    {
+      "id": 3350,
+      "date": "2026-04-25",
+      "sport": "nhl",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "pick": "Nikita Kucherov OVER 1.5",
+      "odds": 130.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.2,
+      "model_edge": 37.16,
+      "edge_novig": null
+    },
+    {
+      "id": 3351,
+      "date": "2026-04-25",
+      "sport": "nhl",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
+      "pick": "Shayne Gostisbehere OVER 0.5",
+      "odds": 125.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.4,
+      "model_edge": 36.41,
+      "edge_novig": null
+    },
+    {
+      "id": 3352,
+      "date": "2026-04-25",
+      "sport": "nhl",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "pick": "Cole Caufield OVER 3.5",
+      "odds": 120.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.3,
+      "model_edge": 35.07,
+      "edge_novig": null
+    },
+    {
+      "id": 3353,
+      "date": "2026-04-25",
+      "sport": "nhl",
+      "game": "Dallas Stars @ Minnesota Wild",
+      "pick": "Quinn Hughes OVER 2.5",
+      "odds": 110.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 79.8,
+      "model_edge": 34.82,
+      "edge_novig": null
+    },
+    {
+      "id": 3354,
+      "date": "2026-04-25",
+      "sport": "nhl",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
+      "pick": "K'Andre Miller OVER 1.5",
+      "odds": 114.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.2,
+      "model_edge": 34.1,
+      "edge_novig": null
+    },
+    {
+      "id": 3355,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "San Diego Padres @ Arizona Diamondbacks",
+      "pick": "NRFI",
+      "odds": 210.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 52.5,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 64.6,
+      "model_edge": 32.39,
+      "edge_novig": null
+    },
+    {
+      "id": 3356,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Philadelphia Phillies @ Atlanta Braves",
+      "pick": "NRFI",
+      "odds": -105.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 67.0,
+      "model_edge": 15.78,
+      "edge_novig": null
+    },
+    {
+      "id": 3357,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Chicago Cubs @ Los Angeles Dodgers",
+      "pick": "NRFI",
+      "odds": 106.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 26.5,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 62.9,
+      "model_edge": 14.41,
+      "edge_novig": null
+    },
+    {
+      "id": 3358,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "Seattle Mariners @ St. Louis Cardinals",
+      "pick": "NRFI",
+      "odds": -119.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 65.9,
+      "model_edge": 11.56,
+      "edge_novig": null
+    },
+    {
+      "id": 3359,
+      "date": "2026-04-25",
+      "sport": "mlb",
+      "game": "New York Yankees @ Houston Astros",
+      "pick": "NRFI",
+      "odds": 102.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 60.8,
+      "model_edge": 11.25,
+      "edge_novig": null
+    },
+    {
+      "id": 3342,
+      "date": "2026-04-25 09:01:54",
+      "sport": "nhl",
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
+      "pick": "Philadelphia Flyers",
+      "odds": -115.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": "spread: Pittsburgh Penguins 1.5 | Under 5.5 | inj: ",
+      "closing_odds": -122.25,
+      "clv": 1.52,
+      "clv_checked_at": "2026-04-26T01:30:03.172423",
+      "bet_type": "moneyline",
+      "source": "model",
+      "confidence": 68.0,
+      "model_edge": 5.9,
+      "edge_novig": 7.2
+    },
+    {
+      "id": 3343,
+      "date": "2026-04-25 09:01:54",
+      "sport": "nhl",
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
+      "pick": "Pittsburgh Penguins +1.5",
+      "odds": -110.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 22.73,
+      "notes": "cover_prob: 62.4%",
+      "closing_odds": 104.5,
+      "clv": -3.48,
+      "clv_checked_at": "2026-04-26T01:30:03.549306",
+      "bet_type": "spread",
+      "source": "model",
+      "confidence": 62.4,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3344,
+      "date": "2026-04-25 09:01:54",
+      "sport": "nhl",
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
+      "pick": "Under 5.5",
+      "odds": -110.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": "ou_prob: 83.8%",
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "total",
+      "source": "model",
+      "confidence": 83.8,
       "model_edge": null,
       "edge_novig": null
     }
@@ -47609,6 +47969,96 @@
       "date": "2026-04-24",
       "cumulative_pl": -762.26,
       "game": "Edmonton Oilers @ Anaheim Ducks"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "Washington Nationals @ Chicago White Sox"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "Seattle Mariners @ St. Louis Cardinals"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "Minnesota Twins @ Tampa Bay Rays"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "Miami Marlins @ San Francisco Giants"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "San Diego Padres @ Arizona Diamondbacks"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -762.26,
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -787.26,
+      "game": "Carolina Hurricanes @ Ottawa Senators"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -787.26,
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -812.26,
+      "game": "Dallas Stars @ Minnesota Wild"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -812.26,
+      "game": "Carolina Hurricanes @ Ottawa Senators"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -759.76,
+      "game": "San Diego Padres @ Arizona Diamondbacks"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -784.76,
+      "game": "Philadelphia Phillies @ Atlanta Braves"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -758.26,
+      "game": "Chicago Cubs @ Los Angeles Dodgers"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -783.26,
+      "game": "Seattle Mariners @ St. Louis Cardinals"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -808.26,
+      "game": "New York Yankees @ Houston Astros"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -833.26,
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -810.53,
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers"
+    },
+    {
+      "date": "2026-04-25",
+      "cumulative_pl": -835.53,
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers"
     }
   ],
   "sport_breakdown": [
@@ -47618,7 +48068,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -898.96
+      "pl": -894.96
     },
     {
       "sport": "nba",
@@ -47630,5816 +48080,5912 @@
     },
     {
       "sport": "nhl",
-      "pl": 917.79
+      "pl": 840.52
     }
   ],
   "bankroll_curve": [
     {
       "date": "2026-03-04",
-      "bankroll": -175.38,
+      "bankroll": -202.65,
       "label": "Start"
     },
     {
       "date": "2026-03-04",
-      "bankroll": -200.38,
+      "bankroll": -227.65,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-04",
-      "bankroll": -194.43,
+      "bankroll": -221.7,
       "label": "Philadelphia 76ers",
       "pl": 5.95
     },
     {
       "date": "2026-03-04",
-      "bankroll": -186.97,
+      "bankroll": -214.24,
       "label": "Portland Trail Blazers",
       "pl": 7.46
     },
     {
       "date": "2026-03-04",
-      "bankroll": -162.46,
+      "bankroll": -189.73,
       "label": "Atlanta Hawks",
       "pl": 24.51
     },
     {
       "date": "2026-03-04",
-      "bankroll": -42.46,
+      "bankroll": -69.73,
       "label": "Indiana Pacers",
       "pl": 120.0
     },
     {
       "date": "2026-03-04",
-      "bankroll": -24.08,
+      "bankroll": -51.35,
       "label": "Detroit Red Wings",
       "pl": 18.38
     },
     {
       "date": "2026-03-04",
-      "bankroll": -49.08,
+      "bankroll": -76.35,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-04",
-      "bankroll": -25.93,
+      "bankroll": -53.2,
       "label": "Anaheim Ducks",
       "pl": 23.15
     },
     {
       "date": "2026-03-04",
-      "bankroll": -17.19,
+      "bankroll": -44.46,
       "label": "Carolina Hurricanes",
       "pl": 8.74
     },
     {
       "date": "2026-03-04",
-      "bankroll": 12.31,
+      "bankroll": -14.96,
       "label": "St Louis Blues",
       "pl": 29.5
     },
     {
       "date": "2026-03-05",
-      "bankroll": 12.31,
+      "bankroll": -14.96,
       "label": "Dallas Mavericks",
       "pl": 0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -12.69,
+      "bankroll": -39.96,
       "label": "Washington Wizards",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -9.57,
+      "bankroll": -36.84,
       "label": "Miami Heat",
       "pl": 3.12
     },
     {
       "date": "2026-03-05",
-      "bankroll": 0.63,
+      "bankroll": -26.64,
       "label": "Minnesota Timberwolves",
       "pl": 10.2
     },
     {
       "date": "2026-03-05",
-      "bankroll": -24.37,
+      "bankroll": -51.64,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -11.87,
+      "bankroll": -39.14,
       "label": "Denver Nuggets",
       "pl": 12.5
     },
     {
       "date": "2026-03-05",
-      "bankroll": -36.87,
+      "bankroll": -64.14,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -61.87,
+      "bankroll": -89.14,
       "label": "Pittsburgh Penguins",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -40.5,
+      "bankroll": -67.77,
       "label": "Columbus Blue Jackets",
       "pl": 21.37
     },
     {
       "date": "2026-03-05",
-      "bankroll": -65.5,
+      "bankroll": -92.77,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -46.27,
+      "bankroll": -73.54,
       "label": "Utah Mammoth",
       "pl": 19.23
     },
     {
       "date": "2026-03-05",
-      "bankroll": -23.12,
+      "bankroll": -50.39,
       "label": "Nashville Predators",
       "pl": 23.15
     },
     {
       "date": "2026-03-05",
-      "bankroll": 14.38,
+      "bankroll": -12.89,
       "label": "Winnipeg Jets",
       "pl": 37.5
     },
     {
       "date": "2026-03-05",
-      "bankroll": -10.62,
+      "bankroll": -37.89,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -35.62,
+      "bankroll": -62.89,
       "label": "Florida Panthers",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -12.04,
+      "bankroll": -39.31,
       "label": "Dallas Stars",
       "pl": 23.58
     },
     {
       "date": "2026-03-05",
-      "bankroll": -37.04,
+      "bankroll": -64.31,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -62.04,
+      "bankroll": -89.31,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-03-05",
-      "bankroll": -33.54,
+      "bankroll": -60.81,
       "label": "St Louis Blues",
       "pl": 28.5
     },
     {
       "date": "2026-03-06",
-      "bankroll": -30.76,
+      "bankroll": -58.03,
       "label": "Boston Celtics",
       "pl": 2.78
     },
     {
       "date": "2026-03-06",
-      "bankroll": 27.99,
+      "bankroll": 0.72,
       "label": "Miami Heat",
       "pl": 58.75
     },
     {
       "date": "2026-03-06",
-      "bankroll": 38.63,
+      "bankroll": 11.36,
       "label": "Houston Rockets",
       "pl": 10.64
     },
     {
       "date": "2026-03-06",
-      "bankroll": 13.63,
+      "bankroll": -13.64,
       "label": "Denver Nuggets",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -11.37,
+      "bankroll": -38.64,
       "label": "Los Angeles Clippers",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -36.37,
+      "bankroll": -63.64,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -4.37,
+      "bankroll": -31.64,
       "label": "Florida Panthers",
       "pl": 32.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -29.37,
+      "bankroll": -56.64,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -54.37,
+      "bankroll": -81.64,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -79.37,
+      "bankroll": -106.64,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-03-06",
-      "bankroll": -51.87,
+      "bankroll": -79.14,
       "label": "St Louis Blues",
       "pl": 27.5
     },
     {
       "date": "2026-03-07",
-      "bankroll": 0.63,
+      "bankroll": -26.64,
       "label": "Orlando Magic",
       "pl": 52.5
     },
     {
       "date": "2026-03-07",
-      "bankroll": -24.37,
+      "bankroll": -51.64,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 128.13,
+      "bankroll": 100.86,
       "label": "Brooklyn Nets",
       "pl": 152.5
     },
     {
       "date": "2026-03-07",
-      "bankroll": 137.93,
+      "bankroll": 110.66,
       "label": "Los Angeles Clippers",
       "pl": 9.8
     },
     {
       "date": "2026-03-07",
-      "bankroll": 142.93,
+      "bankroll": 115.66,
       "label": "Milwaukee Bucks",
       "pl": 5.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 146.26,
+      "bankroll": 118.99,
       "label": "Oklahoma City Thunder",
       "pl": 3.33
     },
     {
       "date": "2026-03-07",
-      "bankroll": 164.64,
+      "bankroll": 137.37,
       "label": "Boston Bruins",
       "pl": 18.38
     },
     {
       "date": "2026-03-07",
-      "bankroll": 139.64,
+      "bankroll": 112.37,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 152.8,
+      "bankroll": 125.53,
       "label": "Buffalo Sabres",
       "pl": 13.16
     },
     {
       "date": "2026-03-07",
-      "bankroll": 170.28,
+      "bankroll": 143.01,
       "label": "Pittsburgh Penguins",
       "pl": 17.48
     },
     {
       "date": "2026-03-07",
-      "bankroll": 193.01,
+      "bankroll": 165.74,
       "label": "Utah Mammoth",
       "pl": 22.73
     },
     {
       "date": "2026-03-07",
-      "bankroll": 212.24,
+      "bankroll": 184.97,
       "label": "Los Angeles Kings",
       "pl": 19.23
     },
     {
       "date": "2026-03-07",
-      "bankroll": 187.24,
+      "bankroll": 159.97,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 196.67,
+      "bankroll": 169.4,
       "label": "Winnipeg Jets",
       "pl": 9.43
     },
     {
       "date": "2026-03-07",
-      "bankroll": 171.67,
+      "bankroll": 144.4,
       "label": "Carolina Hurricanes",
       "pl": -25.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 146.67,
+      "bankroll": 119.4,
       "label": "New York Islanders",
       "pl": -25.0
     },
     {
       "date": "2026-03-07",
-      "bankroll": 121.67,
+      "bankroll": 94.4,
       "label": "Seattle Kraken",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 144.82,
+      "bankroll": 117.55,
       "label": "Boston Celtics",
       "pl": 23.15
     },
     {
       "date": "2026-03-08",
-      "bankroll": 177.32,
+      "bankroll": 150.05,
       "label": "Los Angeles Lakers",
       "pl": 32.5
     },
     {
       "date": "2026-03-08",
-      "bankroll": 152.32,
+      "bankroll": 125.05,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 177.32,
+      "bankroll": 150.05,
       "label": "Miami Heat",
       "pl": 25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 152.32,
+      "bankroll": 125.05,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 163.68,
+      "bankroll": 136.41,
       "label": "San Antonio Spurs",
       "pl": 11.36
     },
     {
       "date": "2026-03-08",
-      "bankroll": 138.68,
+      "bankroll": 111.41,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 168.68,
+      "bankroll": 141.41,
       "label": "Sacramento Kings",
       "pl": 30.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 143.68,
+      "bankroll": 116.41,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 118.68,
+      "bankroll": 91.41,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 144.93,
+      "bankroll": 117.66,
       "label": "Boston Bruins",
       "pl": 26.25
     },
     {
       "date": "2026-03-08",
-      "bankroll": 168.74,
+      "bankroll": 141.47,
       "label": "Buffalo Sabres",
       "pl": 23.81
     },
     {
       "date": "2026-03-08",
-      "bankroll": 178.0,
+      "bankroll": 150.73,
       "label": "Dallas Stars",
       "pl": 9.26
     },
     {
       "date": "2026-03-08",
-      "bankroll": 200.73,
+      "bankroll": 173.46,
       "label": "Detroit Red Wings",
       "pl": 22.73
     },
     {
       "date": "2026-03-08",
-      "bankroll": 236.98,
+      "bankroll": 209.71,
       "label": "St Louis Blues",
       "pl": 36.25
     },
     {
       "date": "2026-03-08",
-      "bankroll": 257.64,
+      "bankroll": 230.37,
       "label": "Columbus Blue Jackets",
       "pl": 20.66
     },
     {
       "date": "2026-03-08",
-      "bankroll": 232.64,
+      "bankroll": 205.37,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-08",
-      "bankroll": 246.93,
+      "bankroll": 219.66,
       "label": "Philadelphia Flyers",
       "pl": 14.29
     },
     {
       "date": "2026-03-08",
-      "bankroll": 264.66,
+      "bankroll": 237.39,
       "label": "Utah Mammoth",
       "pl": 17.73
     },
     {
       "date": "2026-03-09",
-      "bankroll": 239.66,
+      "bankroll": 212.39,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-03-09",
-      "bankroll": 265.16,
+      "bankroll": 237.89,
       "label": "Brooklyn Nets",
       "pl": 25.5
     },
     {
       "date": "2026-03-09",
-      "bankroll": 274.42,
+      "bankroll": 247.15,
       "label": "Oklahoma City Thunder",
       "pl": 9.26
     },
     {
       "date": "2026-03-09",
-      "bankroll": 303.42,
+      "bankroll": 276.15,
       "label": "Los Angeles Clippers",
       "pl": 29.0
     },
     {
       "date": "2026-03-09",
-      "bankroll": 278.42,
+      "bankroll": 251.15,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-09",
-      "bankroll": 253.42,
+      "bankroll": 226.15,
       "label": "Philadelphia Flyers",
       "pl": -25.0
     },
     {
       "date": "2026-03-09",
-      "bankroll": 265.32,
+      "bankroll": 238.05,
       "label": "Utah Mammoth",
       "pl": 11.9
     },
     {
       "date": "2026-03-09",
-      "bankroll": 265.32,
+      "bankroll": 238.05,
       "label": "Ottawa Senators",
       "pl": 0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 280.2,
+      "bankroll": 252.93,
       "label": "Philadelphia 76ers",
       "pl": 14.88
     },
     {
       "date": "2026-03-10",
-      "bankroll": 255.2,
+      "bankroll": 227.93,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 230.2,
+      "bankroll": 202.93,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 232.47,
+      "bankroll": 205.2,
       "label": "Miami Heat",
       "pl": 2.27
     },
     {
       "date": "2026-03-10",
-      "bankroll": 207.47,
+      "bankroll": 180.2,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 182.47,
+      "bankroll": 155.2,
       "label": "Houston Rockets",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 157.47,
+      "bankroll": 130.2,
       "label": "Portland Trail Blazers",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 191.47,
+      "bankroll": 164.2,
       "label": "Indiana Pacers",
       "pl": 34.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 166.47,
+      "bankroll": 139.2,
       "label": "Los Angeles Lakers",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 141.47,
+      "bankroll": 114.2,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 151.47,
+      "bankroll": 124.2,
       "label": "Tampa Bay Lightning",
       "pl": 10.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 163.67,
+      "bankroll": 136.4,
       "label": "Buffalo Sabres",
       "pl": 12.2
     },
     {
       "date": "2026-03-10",
-      "bankroll": 138.67,
+      "bankroll": 111.4,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 113.67,
+      "bankroll": 86.4,
       "label": "Carolina Hurricanes",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 132.33,
+      "bankroll": 105.06,
       "label": "Florida Panthers",
       "pl": 18.66
     },
     {
       "date": "2026-03-10",
-      "bankroll": 158.33,
+      "bankroll": 131.06,
       "label": "St Louis Blues",
       "pl": 26.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 174.36,
+      "bankroll": 147.09,
       "label": "Dallas Stars",
       "pl": 16.03
     },
     {
       "date": "2026-03-10",
-      "bankroll": 149.36,
+      "bankroll": 122.09,
       "label": "Utah Mammoth",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 124.36,
+      "bankroll": 97.09,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-03-10",
-      "bankroll": 161.86,
+      "bankroll": 134.59,
       "label": "Edmonton Oilers",
       "pl": 37.5
     },
     {
       "date": "2026-03-10",
-      "bankroll": 136.86,
+      "bankroll": 109.59,
       "label": "Seattle Kraken",
       "pl": -25.0
     },
     {
       "date": "2026-03-11",
-      "bankroll": 171.36,
+      "bankroll": 144.09,
       "label": "Orlando Magic",
       "pl": 34.5
     },
     {
       "date": "2026-03-11",
-      "bankroll": 146.36,
+      "bankroll": 119.09,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-11",
-      "bankroll": 121.36,
+      "bankroll": 94.09,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-11",
-      "bankroll": 132.72,
+      "bankroll": 105.45,
       "label": "Denver Nuggets",
       "pl": 11.36
     },
     {
       "date": "2026-03-11",
-      "bankroll": 107.72,
+      "bankroll": 80.45,
       "label": "Los Angeles Clippers",
       "pl": -25.0
     },
     {
       "date": "2026-03-11",
-      "bankroll": 82.72,
+      "bankroll": 55.45,
       "label": "Ottawa Senators",
       "pl": -25.0
     },
     {
       "date": "2026-03-11",
-      "bankroll": 106.76,
+      "bankroll": 79.49,
       "label": "Philadelphia Flyers",
       "pl": 24.04
     },
     {
       "date": "2026-03-12",
-      "bankroll": 81.76,
+      "bankroll": 54.49,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 56.76,
+      "bankroll": 29.49,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 31.76,
+      "bankroll": 4.49,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 41.96,
+      "bankroll": 14.69,
       "label": "Miami Heat",
       "pl": 10.2
     },
     {
       "date": "2026-03-12",
-      "bankroll": 16.96,
+      "bankroll": -10.31,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 66.46,
+      "bankroll": 39.19,
       "label": "Denver Nuggets",
       "pl": 49.5
     },
     {
       "date": "2026-03-12",
-      "bankroll": 76.26,
+      "bankroll": 48.99,
       "label": "Oklahoma City Thunder",
       "pl": 9.8
     },
     {
       "date": "2026-03-12",
-      "bankroll": 81.07,
+      "bankroll": 53.8,
       "label": "Los Angeles Lakers",
       "pl": 4.81
     },
     {
       "date": "2026-03-12",
-      "bankroll": 104.22,
+      "bankroll": 76.95,
       "label": "Toronto Maple Leafs",
       "pl": 23.15
     },
     {
       "date": "2026-03-12",
-      "bankroll": 118.11,
+      "bankroll": 90.84,
       "label": "Boston Bruins",
       "pl": 13.89
     },
     {
       "date": "2026-03-12",
-      "bankroll": 93.11,
+      "bankroll": 65.84,
       "label": "Buffalo Sabres",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 131.86,
+      "bankroll": 104.59,
       "label": "Calgary Flames",
       "pl": 38.75
     },
     {
       "date": "2026-03-12",
-      "bankroll": 106.86,
+      "bankroll": 79.59,
       "label": "Carolina Hurricanes",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 129.59,
+      "bankroll": 102.32,
       "label": "Florida Panthers",
       "pl": 22.73
     },
     {
       "date": "2026-03-12",
-      "bankroll": 140.95,
+      "bankroll": 113.68,
       "label": "Tampa Bay Lightning",
       "pl": 11.36
     },
     {
       "date": "2026-03-12",
-      "bankroll": 115.95,
+      "bankroll": 88.68,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 125.38,
+      "bankroll": 98.11,
       "label": "Minnesota Wild",
       "pl": 9.43
     },
     {
       "date": "2026-03-12",
-      "bankroll": 100.38,
+      "bankroll": 73.11,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 111.02,
+      "bankroll": 83.75,
       "label": "Utah Mammoth",
       "pl": 10.64
     },
     {
       "date": "2026-03-12",
-      "bankroll": 86.02,
+      "bankroll": 58.75,
       "label": "Seattle Kraken",
       "pl": -25.0
     },
     {
       "date": "2026-03-12",
-      "bankroll": 102.15,
+      "bankroll": 74.88,
       "label": "Nashville Predators",
       "pl": 16.13
     },
     {
       "date": "2026-03-13",
-      "bankroll": 77.15,
+      "bankroll": 49.88,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 79.0,
+      "bankroll": 51.73,
       "label": "Detroit Pistons",
       "pl": 1.85
     },
     {
       "date": "2026-03-13",
-      "bankroll": 54.0,
+      "bankroll": 26.73,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 29.0,
+      "bankroll": 1.73,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 4.0,
+      "bankroll": -23.27,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 15.36,
+      "bankroll": -11.91,
       "label": "Minnesota Timberwolves",
       "pl": 11.36
     },
     {
       "date": "2026-03-13",
-      "bankroll": 17.63,
+      "bankroll": -9.64,
       "label": "Portland Trail Blazers",
       "pl": 2.27
     },
     {
       "date": "2026-03-13",
-      "bankroll": 21.2,
+      "bankroll": -6.07,
       "label": "Los Angeles Clippers",
       "pl": 3.57
     },
     {
       "date": "2026-03-13",
-      "bankroll": 37.43,
+      "bankroll": 10.16,
       "label": "Edmonton Oilers",
       "pl": 16.23
     },
     {
       "date": "2026-03-13",
-      "bankroll": 51.55,
+      "bankroll": 24.28,
       "label": "Ottawa Senators",
       "pl": 14.12
     },
     {
       "date": "2026-03-13",
-      "bankroll": 71.55,
+      "bankroll": 44.28,
       "label": "Washington Capitals",
       "pl": 20.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 104.55,
+      "bankroll": 77.28,
       "label": "Winnipeg Jets",
       "pl": 33.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 79.55,
+      "bankroll": 52.28,
       "label": "New York Rangers",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 54.55,
+      "bankroll": 27.28,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 97.05,
+      "bankroll": 69.78,
       "label": "Calgary Flames",
       "pl": 42.5
     },
     {
       "date": "2026-03-13",
-      "bankroll": 72.05,
+      "bankroll": 44.78,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-03-13",
-      "bankroll": 83.16,
+      "bankroll": 55.89,
       "label": "Montr\u00e9al Canadiens",
       "pl": 11.11
     },
     {
       "date": "2026-03-13",
-      "bankroll": 97.28,
+      "bankroll": 70.01,
       "label": "Dallas Stars",
       "pl": 14.12
     },
     {
       "date": "2026-03-13",
-      "bankroll": 131.78,
+      "bankroll": 104.51,
       "label": "Pittsburgh Penguins",
       "pl": 34.5
     },
     {
       "date": "2026-03-13",
-      "bankroll": 141.21,
+      "bankroll": 113.94,
       "label": "Vegas Golden Knights",
       "pl": 9.43
     },
     {
       "date": "2026-03-14",
-      "bankroll": 147.62,
+      "bankroll": 120.35,
       "label": "Philadelphia 76ers",
       "pl": 6.41
     },
     {
       "date": "2026-03-14",
-      "bankroll": 122.62,
+      "bankroll": 95.35,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 97.62,
+      "bankroll": 70.35,
       "label": "San Antonio Spurs",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 72.62,
+      "bankroll": 45.35,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 90.23,
+      "bankroll": 62.96,
       "label": "Denver Nuggets",
       "pl": 17.61
     },
     {
       "date": "2026-03-14",
-      "bankroll": 65.23,
+      "bankroll": 37.96,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 40.23,
+      "bankroll": 12.96,
       "label": "Los Angeles Clippers",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 40.23,
+      "bankroll": 12.96,
       "label": "Ottawa Senators",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 59.17,
+      "bankroll": 31.9,
       "label": "Washington Capitals",
       "pl": 18.94
     },
     {
       "date": "2026-03-14",
-      "bankroll": 59.17,
+      "bankroll": 31.9,
       "label": "Winnipeg Jets",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 59.17,
+      "bankroll": 31.9,
       "label": "New York Rangers",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 34.17,
+      "bankroll": 6.9,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 34.17,
+      "bankroll": 6.9,
       "label": "Calgary Flames",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 9.17,
+      "bankroll": -18.1,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 24.14,
+      "bankroll": -3.13,
       "label": "Montr\u00e9al Canadiens",
       "pl": 14.97
     },
     {
       "date": "2026-03-14",
-      "bankroll": 24.14,
+      "bankroll": -3.13,
       "label": "Dallas Stars",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 24.14,
+      "bankroll": -3.13,
       "label": "Pittsburgh Penguins",
       "pl": 0
     },
     {
       "date": "2026-03-14",
-      "bankroll": 35.25,
+      "bankroll": 7.98,
       "label": "Vegas Golden Knights",
       "pl": 11.11
     },
     {
       "date": "2026-03-14",
-      "bankroll": 53.24,
+      "bankroll": 25.97,
       "label": "Seattle Kraken",
       "pl": 17.99
     },
     {
       "date": "2026-03-15",
-      "bankroll": 59.41,
+      "bankroll": 32.14,
       "label": "Oklahoma City Thunder",
       "pl": 6.17
     },
     {
       "date": "2026-03-15",
-      "bankroll": 34.41,
+      "bankroll": 7.14,
       "label": "Cleveland Cavaliers",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 67.41,
+      "bankroll": 40.14,
       "label": "Toronto Raptors",
       "pl": 33.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 126.16,
+      "bankroll": 98.89,
       "label": "Indiana Pacers",
       "pl": 58.75
     },
     {
       "date": "2026-03-15",
-      "bankroll": 101.16,
+      "bankroll": 73.89,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 119.28,
+      "bankroll": 92.01,
       "label": "Sacramento Kings",
       "pl": 18.12
     },
     {
       "date": "2026-03-15",
-      "bankroll": 94.28,
+      "bankroll": 67.01,
       "label": "St Louis Blues",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 94.28,
+      "bankroll": 67.01,
       "label": "Ottawa Senators",
       "pl": 0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 110.41,
+      "bankroll": 83.14,
       "label": "Montr\u00e9al Canadiens",
       "pl": 16.13
     },
     {
       "date": "2026-03-15",
-      "bankroll": 85.41,
+      "bankroll": 58.14,
       "label": "Minnesota Wild",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 98.92,
+      "bankroll": 71.65,
       "label": "Edmonton Oilers",
       "pl": 13.51
     },
     {
       "date": "2026-03-15",
-      "bankroll": 127.42,
+      "bankroll": 100.15,
       "label": "Seattle Kraken",
       "pl": 28.5
     },
     {
       "date": "2026-03-15",
-      "bankroll": 149.54,
+      "bankroll": 122.27,
       "label": "New Jersey Devils",
       "pl": 22.12
     },
     {
       "date": "2026-03-15",
-      "bankroll": 124.54,
+      "bankroll": 97.27,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 99.54,
+      "bankroll": 72.27,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-15",
-      "bankroll": 134.04,
+      "bankroll": 106.77,
       "label": "Utah Mammoth",
       "pl": 34.5
     },
     {
       "date": "2026-03-15",
-      "bankroll": 109.04,
+      "bankroll": 81.77,
       "label": "Colorado Avalanche",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 84.04,
+      "bankroll": 56.77,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 59.04,
+      "bankroll": 31.77,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 34.04,
+      "bankroll": 6.77,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 44.46,
+      "bankroll": 17.19,
       "label": "Chicago Bulls",
       "pl": 10.42
     },
     {
       "date": "2026-03-16",
-      "bankroll": 52.04,
+      "bankroll": 24.77,
       "label": "New Orleans Pelicans",
       "pl": 7.58
     },
     {
       "date": "2026-03-16",
-      "bankroll": 27.04,
+      "bankroll": -0.23,
       "label": "Houston Rockets",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 107.04,
+      "bankroll": 79.77,
       "label": "Los Angeles Clippers",
       "pl": 80.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 126.42,
+      "bankroll": 99.15,
       "label": "New Jersey Devils",
       "pl": 19.38
     },
     {
       "date": "2026-03-16",
-      "bankroll": 101.42,
+      "bankroll": 74.15,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 76.42,
+      "bankroll": 49.15,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 111.42,
+      "bankroll": 84.15,
       "label": "Utah Mammoth",
       "pl": 35.0
     },
     {
       "date": "2026-03-16",
-      "bankroll": 86.42,
+      "bankroll": 59.15,
       "label": "Colorado Avalanche",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": 61.42,
+      "bankroll": 34.15,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": 36.42,
+      "bankroll": 9.15,
       "label": "Washington Wizards",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": 11.42,
+      "bankroll": -15.85,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -13.58,
+      "bankroll": -40.85,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -38.58,
+      "bankroll": -65.85,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -24.69,
+      "bankroll": -51.96,
       "label": "Minnesota Timberwolves",
       "pl": 13.89
     },
     {
       "date": "2026-03-17",
-      "bankroll": -22.61,
+      "bankroll": -49.88,
       "label": "Denver Nuggets",
       "pl": 2.08
     },
     {
       "date": "2026-03-17",
-      "bankroll": -47.61,
+      "bankroll": -74.88,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -19.61,
+      "bankroll": -46.88,
       "label": "Columbus Blue Jackets",
       "pl": 28.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -44.61,
+      "bankroll": -71.88,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -69.61,
+      "bankroll": -96.88,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": -55.72,
+      "bankroll": -82.99,
       "label": "Edmonton Oilers",
       "pl": 13.89
     },
     {
       "date": "2026-03-17",
-      "bankroll": -36.03,
+      "bankroll": -63.3,
       "label": "Vegas Golden Knights",
       "pl": 19.69
     },
     {
       "date": "2026-03-17",
-      "bankroll": -7.03,
+      "bankroll": -34.3,
       "label": "Vancouver Canucks",
       "pl": 29.0
     },
     {
       "date": "2026-03-17",
-      "bankroll": 5.79,
+      "bankroll": -21.48,
       "label": "Tampa Bay Lightning",
       "pl": 12.82
     },
     {
       "date": "2026-03-18",
-      "bankroll": 9.82,
+      "bankroll": -17.45,
       "label": "Boston Celtics",
       "pl": 4.03
     },
     {
       "date": "2026-03-18",
-      "bankroll": 10.82,
+      "bankroll": -16.45,
       "label": "Oklahoma City Thunder",
       "pl": 1.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -14.18,
+      "bankroll": -41.45,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -39.18,
+      "bankroll": -66.45,
       "label": "Chicago Bulls",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -64.18,
+      "bankroll": -91.45,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -61.06,
+      "bankroll": -88.33,
       "label": "Minnesota Timberwolves",
       "pl": 3.12
     },
     {
       "date": "2026-03-18",
-      "bankroll": -86.06,
+      "bankroll": -113.33,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -111.06,
+      "bankroll": -138.33,
       "label": "Denver Nuggets",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -93.45,
+      "bankroll": -120.72,
       "label": "Houston Rockets",
       "pl": 17.61
     },
     {
       "date": "2026-03-18",
-      "bankroll": -118.45,
+      "bankroll": -145.72,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -143.45,
+      "bankroll": -170.72,
       "label": "Carolina Hurricanes",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -168.45,
+      "bankroll": -195.72,
       "label": "Ottawa Senators",
       "pl": -25.0
     },
     {
       "date": "2026-03-18",
-      "bankroll": -152.83,
+      "bankroll": -180.1,
       "label": "Colorado Avalanche",
       "pl": 15.62
     },
     {
       "date": "2026-03-19",
-      "bankroll": -177.83,
+      "bankroll": -205.1,
       "label": "Washington Wizards",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -202.83,
+      "bankroll": -230.1,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -227.83,
+      "bankroll": -255.1,
       "label": "Chicago Bulls",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -252.83,
+      "bankroll": -280.1,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -277.83,
+      "bankroll": -305.1,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -302.83,
+      "bankroll": -330.1,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -327.83,
+      "bankroll": -355.1,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -352.83,
+      "bankroll": -380.1,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -377.83,
+      "bankroll": -405.1,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -366.36,
+      "bankroll": -393.63,
       "label": "Columbus Blue Jackets",
       "pl": 11.47
     },
     {
       "date": "2026-03-19",
-      "bankroll": -343.63,
+      "bankroll": -370.9,
       "label": "Detroit Red Wings",
       "pl": 22.73
     },
     {
       "date": "2026-03-19",
-      "bankroll": -325.11,
+      "bankroll": -352.38,
       "label": "Ottawa Senators",
       "pl": 18.52
     },
     {
       "date": "2026-03-19",
-      "bankroll": -350.11,
+      "bankroll": -377.38,
       "label": "Minnesota Wild",
       "pl": -25.0
     },
     {
       "date": "2026-03-19",
-      "bankroll": -331.59,
+      "bankroll": -358.86,
       "label": "Nashville Predators",
       "pl": 18.52
     },
     {
       "date": "2026-03-19",
-      "bankroll": -315.46,
+      "bankroll": -342.73,
       "label": "Edmonton Oilers",
       "pl": 16.13
     },
     {
       "date": "2026-03-19",
-      "bankroll": -298.1,
+      "bankroll": -325.37,
       "label": "Buffalo Sabres",
       "pl": 17.36
     },
     {
       "date": "2026-03-19",
-      "bankroll": -279.98,
+      "bankroll": -307.25,
       "label": "Vegas Golden Knights",
       "pl": 18.12
     },
     {
       "date": "2026-03-19",
-      "bankroll": -265.27,
+      "bankroll": -292.54,
       "label": "Los Angeles Kings",
       "pl": 14.71
     },
     {
       "date": "2026-03-20",
-      "bankroll": -290.27,
+      "bankroll": -317.54,
       "label": "Houston Rockets",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -315.27,
+      "bankroll": -342.54,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -340.27,
+      "bankroll": -367.54,
       "label": "Minnesota Timberwolves",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -331.18,
+      "bankroll": -358.45,
       "label": "Denver Nuggets",
       "pl": 9.09
     },
     {
       "date": "2026-03-20",
-      "bankroll": -298.18,
+      "bankroll": -325.45,
       "label": "Orlando Magic",
       "pl": 33.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -270.68,
+      "bankroll": -297.95,
       "label": "New Jersey Devils",
       "pl": 27.5
     },
     {
       "date": "2026-03-20",
-      "bankroll": -295.68,
+      "bankroll": -322.95,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -271.87,
+      "bankroll": -299.14,
       "label": "Calgary Flames",
       "pl": 23.81
     },
     {
       "date": "2026-03-20",
-      "bankroll": -296.87,
+      "bankroll": -324.14,
       "label": "Utah Mammoth",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -273.72,
+      "bankroll": -300.99,
       "label": "Nashville Predators",
       "pl": 23.15
     },
     {
       "date": "2026-03-20",
-      "bankroll": -298.72,
+      "bankroll": -325.99,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -323.72,
+      "bankroll": -350.99,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -303.72,
+      "bankroll": -330.99,
       "label": "San Jose Sharks",
       "pl": 20.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -285.47,
+      "bankroll": -312.74,
       "label": "Montr\u00e9al Canadiens",
       "pl": 18.25
     },
     {
       "date": "2026-03-20",
-      "bankroll": -265.47,
+      "bankroll": -292.74,
       "label": "St Louis Blues",
       "pl": 20.0
     },
     {
       "date": "2026-03-20",
-      "bankroll": -290.47,
+      "bankroll": -317.74,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -289.76,
+      "bankroll": -317.03,
       "label": "Oklahoma City Thunder",
       "pl": 0.71
     },
     {
       "date": "2026-03-21",
-      "bankroll": -288.09,
+      "bankroll": -315.36,
       "label": "Charlotte Hornets",
       "pl": 1.67
     },
     {
       "date": "2026-03-21",
-      "bankroll": -313.09,
+      "bankroll": -340.36,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -313.09,
+      "bankroll": -340.36,
       "label": "Orlando Magic",
       "pl": 0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -338.09,
+      "bankroll": -365.36,
       "label": "Golden State Warriors",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -363.09,
+      "bankroll": -390.36,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -388.09,
+      "bankroll": -415.36,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -388.09,
+      "bankroll": -415.36,
       "label": "Los Angeles Clippers",
       "pl": 0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -413.09,
+      "bankroll": -440.36,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -385.59,
+      "bankroll": -412.86,
       "label": "Nashville Predators",
       "pl": 27.5
     },
     {
       "date": "2026-03-21",
-      "bankroll": -410.59,
+      "bankroll": -437.86,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -391.65,
+      "bankroll": -418.92,
       "label": "Dallas Stars",
       "pl": 18.94
     },
     {
       "date": "2026-03-21",
-      "bankroll": -371.96,
+      "bankroll": -399.23,
       "label": "San Jose Sharks",
       "pl": 19.69
     },
     {
       "date": "2026-03-21",
-      "bankroll": -357.67,
+      "bankroll": -384.94,
       "label": "Columbus Blue Jackets",
       "pl": 14.29
     },
     {
       "date": "2026-03-21",
-      "bankroll": -339.42,
+      "bankroll": -366.69,
       "label": "Montr\u00e9al Canadiens",
       "pl": 18.25
     },
     {
       "date": "2026-03-21",
-      "bankroll": -330.68,
+      "bankroll": -357.95,
       "label": "Ottawa Senators",
       "pl": 8.74
     },
     {
       "date": "2026-03-21",
-      "bankroll": -312.43,
+      "bankroll": -339.7,
       "label": "St Louis Blues",
       "pl": 18.25
     },
     {
       "date": "2026-03-21",
-      "bankroll": -337.43,
+      "bankroll": -364.7,
       "label": "Detroit Red Wings",
       "pl": -25.0
     },
     {
       "date": "2026-03-21",
-      "bankroll": -307.93,
+      "bankroll": -335.2,
       "label": "Edmonton Oilers",
       "pl": 29.5
     },
     {
       "date": "2026-03-22",
-      "bankroll": -301.17,
+      "bankroll": -328.44,
       "label": "Denver Nuggets",
       "pl": 6.76
     },
     {
       "date": "2026-03-22",
-      "bankroll": -289.27,
+      "bankroll": -316.54,
       "label": "Sacramento Kings",
       "pl": 11.9
     },
     {
       "date": "2026-03-22",
-      "bankroll": -288.27,
+      "bankroll": -315.54,
       "label": "New York Knicks",
       "pl": 1.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -313.27,
+      "bankroll": -340.54,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -338.27,
+      "bankroll": -365.54,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -324.53,
+      "bankroll": -351.8,
       "label": "Colorado Avalanche",
       "pl": 13.74
     },
     {
       "date": "2026-03-22",
-      "bankroll": -307.05,
+      "bankroll": -334.32,
       "label": "Carolina Hurricanes",
       "pl": 17.48
     },
     {
       "date": "2026-03-22",
-      "bankroll": -332.05,
+      "bankroll": -359.32,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -332.05,
+      "bankroll": -359.32,
       "label": "Columbus Blue Jackets",
       "pl": 0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -357.05,
+      "bankroll": -384.32,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -382.05,
+      "bankroll": -409.32,
       "label": "Buffalo Sabres",
       "pl": -25.0
     },
     {
       "date": "2026-03-22",
-      "bankroll": -367.76,
+      "bankroll": -395.03,
       "label": "Utah Mammoth",
       "pl": 14.29
     },
     {
       "date": "2026-03-23",
-      "bankroll": -392.76,
+      "bankroll": -420.03,
       "label": "Los Angeles Lakers",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -250.26,
+      "bankroll": -277.53,
       "label": "Indiana Pacers",
       "pl": 142.5
     },
     {
       "date": "2026-03-23",
-      "bankroll": -275.26,
+      "bankroll": -302.53,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -273.09,
+      "bankroll": -300.36,
       "label": "Oklahoma City Thunder",
       "pl": 2.17
     },
     {
       "date": "2026-03-23",
-      "bankroll": -270.46,
+      "bankroll": -297.73,
       "label": "Atlanta Hawks",
       "pl": 2.63
     },
     {
       "date": "2026-03-23",
-      "bankroll": -196.71,
+      "bankroll": -223.98,
       "label": "Chicago Bulls",
       "pl": 73.75
     },
     {
       "date": "2026-03-23",
-      "bankroll": -221.71,
+      "bankroll": -248.98,
       "label": "Utah Jazz",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -246.71,
+      "bankroll": -273.98,
       "label": "Golden State Warriors",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -271.71,
+      "bankroll": -298.98,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -296.71,
+      "bankroll": -323.98,
       "label": "Los Angeles Clippers",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -321.71,
+      "bankroll": -348.98,
       "label": "New York Rangers",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -346.71,
+      "bankroll": -373.98,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -371.71,
+      "bankroll": -398.98,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -396.71,
+      "bankroll": -423.98,
       "label": "Colorado Avalanche",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -369.96,
+      "bankroll": -397.23,
       "label": "Ottawa Senators",
       "pl": 26.75
     },
     {
       "date": "2026-03-23",
-      "bankroll": -394.96,
+      "bankroll": -422.23,
       "label": "Florida Panthers",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -380.67,
+      "bankroll": -407.94,
       "label": "Dallas Stars",
       "pl": 14.29
     },
     {
       "date": "2026-03-23",
-      "bankroll": -356.63,
+      "bankroll": -383.9,
       "label": "Washington Capitals",
       "pl": 24.04
     },
     {
       "date": "2026-03-23",
-      "bankroll": -333.05,
+      "bankroll": -360.32,
       "label": "Winnipeg Jets",
       "pl": 23.58
     },
     {
       "date": "2026-03-23",
-      "bankroll": -358.05,
+      "bankroll": -385.32,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-23",
-      "bankroll": -383.05,
+      "bankroll": -410.32,
       "label": "Vancouver Canucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -408.05,
+      "bankroll": -435.32,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -433.05,
+      "bankroll": -460.32,
       "label": "New York Knicks",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -458.05,
+      "bankroll": -485.32,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -483.05,
+      "bankroll": -510.32,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -508.05,
+      "bankroll": -535.32,
       "label": "Minnesota Timberwolves",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -465.55,
+      "bankroll": -492.82,
       "label": "Toronto Maple Leafs",
       "pl": 42.5
     },
     {
       "date": "2026-03-24",
-      "bankroll": -423.05,
+      "bankroll": -450.32,
       "label": "Chicago Blackhawks",
       "pl": 42.5
     },
     {
       "date": "2026-03-24",
-      "bankroll": -407.62,
+      "bankroll": -434.89,
       "label": "Colorado Avalanche",
       "pl": 15.43
     },
     {
       "date": "2026-03-24",
-      "bankroll": -432.62,
+      "bankroll": -459.89,
       "label": "Philadelphia Flyers",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -405.87,
+      "bankroll": -433.14,
       "label": "Ottawa Senators",
       "pl": 26.75
     },
     {
       "date": "2026-03-24",
-      "bankroll": -386.93,
+      "bankroll": -414.2,
       "label": "Florida Panthers",
       "pl": 18.94
     },
     {
       "date": "2026-03-24",
-      "bankroll": -372.64,
+      "bankroll": -399.91,
       "label": "Dallas Stars",
       "pl": 14.29
     },
     {
       "date": "2026-03-24",
-      "bankroll": -349.91,
+      "bankroll": -377.18,
       "label": "Washington Capitals",
       "pl": 22.73
     },
     {
       "date": "2026-03-24",
-      "bankroll": -321.91,
+      "bankroll": -349.18,
       "label": "Winnipeg Jets",
       "pl": 28.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -346.91,
+      "bankroll": -374.18,
       "label": "Calgary Flames",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -371.91,
+      "bankroll": -399.18,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-03-24",
-      "bankroll": -334.91,
+      "bankroll": -362.18,
       "label": "Vancouver Canucks",
       "pl": 37.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -318.68,
+      "bankroll": -345.95,
       "label": "Detroit Pistons",
       "pl": 16.23
     },
     {
       "date": "2026-03-25",
-      "bankroll": -343.68,
+      "bankroll": -370.95,
       "label": "Chicago Bulls",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -368.68,
+      "bankroll": -395.95,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -338.18,
+      "bankroll": -365.45,
       "label": "Boston Celtics",
       "pl": 30.5
     },
     {
       "date": "2026-03-25",
-      "bankroll": -304.68,
+      "bankroll": -331.95,
       "label": "Miami Heat",
       "pl": 33.5
     },
     {
       "date": "2026-03-25",
-      "bankroll": -329.68,
+      "bankroll": -356.95,
       "label": "Memphis Grizzlies",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -289.18,
+      "bankroll": -316.45,
       "label": "Washington Wizards",
       "pl": 40.5
     },
     {
       "date": "2026-03-25",
-      "bankroll": -314.18,
+      "bankroll": -341.45,
       "label": "Minnesota Timberwolves",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -311.06,
+      "bankroll": -338.33,
       "label": "Denver Nuggets",
       "pl": 3.12
     },
     {
       "date": "2026-03-25",
-      "bankroll": -336.06,
+      "bankroll": -363.33,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -322.02,
+      "bankroll": -349.29,
       "label": "Los Angeles Clippers",
       "pl": 14.04
     },
     {
       "date": "2026-03-25",
-      "bankroll": -347.02,
+      "bankroll": -374.29,
       "label": "Buffalo Sabres",
       "pl": -25.0
     },
     {
       "date": "2026-03-25",
-      "bankroll": -323.21,
+      "bankroll": -350.48,
       "label": "Toronto Maple Leafs",
       "pl": 23.81
     },
     {
       "date": "2026-03-26",
-      "bankroll": -298.7,
+      "bankroll": -325.97,
       "label": "New York Knicks",
       "pl": 24.51
     },
     {
       "date": "2026-03-26",
-      "bankroll": -296.53,
+      "bankroll": -323.8,
       "label": "Orlando Magic",
       "pl": 2.17
     },
     {
       "date": "2026-03-26",
-      "bankroll": -321.53,
+      "bankroll": -348.8,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-26",
-      "bankroll": -281.03,
+      "bankroll": -308.3,
       "label": "Miami Heat",
       "pl": 40.5
     },
     {
       "date": "2026-03-26",
-      "bankroll": -267.14,
+      "bankroll": -294.41,
       "label": "Philadelphia Flyers",
       "pl": 13.89
     },
     {
       "date": "2026-03-26",
-      "bankroll": -292.14,
+      "bankroll": -319.41,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-26",
-      "bankroll": -275.25,
+      "bankroll": -302.52,
       "label": "Minnesota Wild",
       "pl": 16.89
     },
     {
       "date": "2026-03-26",
-      "bankroll": -266.78,
+      "bankroll": -294.05,
       "label": "Tampa Bay Lightning",
       "pl": 8.47
     },
     {
       "date": "2026-03-26",
-      "bankroll": -291.78,
+      "bankroll": -319.05,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-03-26",
-      "bankroll": -316.78,
+      "bankroll": -344.05,
       "label": "St Louis Blues",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -341.78,
+      "bankroll": -369.05,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -329.88,
+      "bankroll": -357.15,
       "label": "Boston Celtics",
       "pl": 11.9
     },
     {
       "date": "2026-03-27",
-      "bankroll": -354.88,
+      "bankroll": -382.15,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -354.17,
+      "bankroll": -381.44,
       "label": "Oklahoma City Thunder",
       "pl": 0.71
     },
     {
       "date": "2026-03-27",
-      "bankroll": -351.12,
+      "bankroll": -378.39,
       "label": "Houston Rockets",
       "pl": 3.05
     },
     {
       "date": "2026-03-27",
-      "bankroll": -376.12,
+      "bankroll": -403.39,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -374.98,
+      "bankroll": -402.25,
       "label": "Denver Nuggets",
       "pl": 1.14
     },
     {
       "date": "2026-03-27",
-      "bankroll": -399.98,
+      "bankroll": -427.25,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -398.59,
+      "bankroll": -425.86,
       "label": "Los Angeles Lakers",
       "pl": 1.39
     },
     {
       "date": "2026-03-27",
-      "bankroll": -423.59,
+      "bankroll": -450.86,
       "label": "Buffalo Sabres",
       "pl": -25.0
     },
     {
       "date": "2026-03-27",
-      "bankroll": -448.59,
+      "bankroll": -475.86,
       "label": "Chicago Blackhawks",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -473.59,
+      "bankroll": -500.86,
       "label": "Collin Gillespie UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -498.59,
+      "bankroll": -525.86,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -523.59,
+      "bankroll": -550.86,
       "label": "Minnesota Timberwolves",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -476.09,
+      "bankroll": -503.36,
       "label": "Philadelphia 76ers",
       "pl": 47.5
     },
     {
       "date": "2026-03-28",
-      "bankroll": -501.09,
+      "bankroll": -528.36,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -526.09,
+      "bankroll": -553.36,
       "label": "Chicago Bulls",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -519.42,
+      "bankroll": -546.69,
       "label": "Oklahoma City Thunder",
       "pl": 6.67
     },
     {
       "date": "2026-03-28",
-      "bankroll": -544.42,
+      "bankroll": -571.69,
       "label": "Florida Panthers",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -528.5,
+      "bankroll": -555.77,
       "label": "Tampa Bay Lightning",
       "pl": 15.92
     },
     {
       "date": "2026-03-28",
-      "bankroll": -511.02,
+      "bankroll": -538.29,
       "label": "Edmonton Oilers",
       "pl": 17.48
     },
     {
       "date": "2026-03-28",
-      "bankroll": -486.75,
+      "bankroll": -514.02,
       "label": "Boston Bruins",
       "pl": 24.27
     },
     {
       "date": "2026-03-28",
-      "bankroll": -475.12,
+      "bankroll": -502.39,
       "label": "Carolina Hurricanes",
       "pl": 11.63
     },
     {
       "date": "2026-03-28",
-      "bankroll": -475.12,
+      "bankroll": -502.39,
       "label": "Columbus Blue Jackets",
       "pl": 0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -500.12,
+      "bankroll": -527.39,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -487.62,
+      "bankroll": -514.89,
       "label": "Buffalo Sabres",
       "pl": 12.5
     },
     {
       "date": "2026-03-28",
-      "bankroll": -512.62,
+      "bankroll": -539.89,
       "label": "Colorado Avalanche",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -486.62,
+      "bankroll": -513.89,
       "label": "Nashville Predators",
       "pl": 26.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -511.62,
+      "bankroll": -538.89,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -536.62,
+      "bankroll": -563.89,
       "label": "Detroit Red Wings",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -561.62,
+      "bankroll": -588.89,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -586.62,
+      "bankroll": -613.89,
       "label": "Vancouver Canucks",
       "pl": -25.0
     },
     {
       "date": "2026-03-28",
-      "bankroll": -611.62,
+      "bankroll": -638.89,
       "label": "Vegas Golden Knights",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -636.62,
+      "bankroll": -663.89,
       "label": "Davion Mitchell UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -586.95,
+      "bankroll": -614.22,
       "label": "Amen Thompson UNDER 8.5",
       "pl": 49.67
     },
     {
       "date": "2026-03-29",
-      "bankroll": -611.95,
+      "bankroll": -639.22,
       "label": "Taurean Prince UNDER 29.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -636.95,
+      "bankroll": -664.22,
       "label": "Andrew Wiggins UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -609.28,
+      "bankroll": -636.55,
       "label": "Deni Avdija UNDER 6.5",
       "pl": 27.67
     },
     {
       "date": "2026-03-29",
-      "bankroll": -606.23,
+      "bankroll": -633.5,
       "label": "Los Angeles Clippers",
       "pl": 3.05
     },
     {
       "date": "2026-03-29",
-      "bankroll": -528.73,
+      "bankroll": -556.0,
       "label": "Indiana Pacers",
       "pl": 77.5
     },
     {
       "date": "2026-03-29",
-      "bankroll": -505.58,
+      "bankroll": -532.85,
       "label": "Boston Celtics",
       "pl": 23.15
     },
     {
       "date": "2026-03-29",
-      "bankroll": -530.58,
+      "bankroll": -557.85,
       "label": "Sacramento Kings",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -555.58,
+      "bankroll": -582.85,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -580.58,
+      "bankroll": -607.85,
       "label": "Washington Wizards",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -605.58,
+      "bankroll": -632.85,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -598.64,
+      "bankroll": -625.91,
       "label": "Oklahoma City Thunder",
       "pl": 6.94
     },
     {
       "date": "2026-03-29",
-      "bankroll": -594.4,
+      "bankroll": -621.67,
       "label": "Denver Nuggets",
       "pl": 4.24
     },
     {
       "date": "2026-03-29",
-      "bankroll": -578.27,
+      "bankroll": -605.54,
       "label": "New York Rangers",
       "pl": 16.13
     },
     {
       "date": "2026-03-29",
-      "bankroll": -603.27,
+      "bankroll": -630.54,
       "label": "Columbus Blue Jackets",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -628.27,
+      "bankroll": -655.54,
       "label": "Carolina Hurricanes",
       "pl": -25.0
     },
     {
       "date": "2026-03-29",
-      "bankroll": -616.07,
+      "bankroll": -643.34,
       "label": "Tampa Bay Lightning",
       "pl": 12.2
     },
     {
       "date": "2026-03-29",
-      "bankroll": -600.64,
+      "bankroll": -627.91,
       "label": "New Jersey Devils",
       "pl": 15.43
     },
     {
       "date": "2026-03-30",
-      "bankroll": -570.89,
+      "bankroll": -598.16,
       "label": "Cason Wallace UNDER 2.5",
       "pl": 29.75
     },
     {
       "date": "2026-03-30",
-      "bankroll": -595.89,
+      "bankroll": -623.16,
       "label": "Davion Mitchell UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -566.89,
+      "bankroll": -594.16,
       "label": "Miami Heat",
       "pl": 29.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -591.89,
+      "bankroll": -619.16,
       "label": "Boston Celtics",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -616.89,
+      "bankroll": -644.16,
       "label": "Chicago Bulls",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -607.09,
+      "bankroll": -634.36,
       "label": "Minnesota Timberwolves",
       "pl": 9.8
     },
     {
       "date": "2026-03-30",
-      "bankroll": -632.09,
+      "bankroll": -659.36,
       "label": "Utah Jazz",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -630.7,
+      "bankroll": -657.97,
       "label": "Los Angeles Lakers",
       "pl": 1.39
     },
     {
       "date": "2026-03-30",
-      "bankroll": -655.7,
+      "bankroll": -682.97,
       "label": "New York Islanders",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -649.03,
+      "bankroll": -676.3,
       "label": "Colorado Avalanche",
       "pl": 6.67
     },
     {
       "date": "2026-03-30",
-      "bankroll": -674.03,
+      "bankroll": -701.3,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-03-30",
-      "bankroll": -699.03,
+      "bankroll": -726.3,
       "label": "St Louis Blues",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -673.78,
+      "bankroll": -701.05,
       "label": "Collin Gillespie UNDER 3.5",
       "pl": 25.25
     },
     {
       "date": "2026-03-31",
-      "bankroll": -644.78,
+      "bankroll": -672.05,
       "label": "Dwight Powell UNDER 5.5",
       "pl": 29.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -669.78,
+      "bankroll": -697.05,
       "label": "Ousmane Dieng UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -694.78,
+      "bankroll": -722.05,
       "label": "Toumani Camara UNDER 13.5",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -675.55,
+      "bankroll": -702.82,
       "label": "Orlando Magic",
       "pl": 19.23
     },
     {
       "date": "2026-03-31",
-      "bankroll": -700.55,
+      "bankroll": -727.82,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -725.55,
+      "bankroll": -752.82,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -750.55,
+      "bankroll": -777.82,
       "label": "Toronto Raptors",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -727.4,
+      "bankroll": -754.67,
       "label": "New York Knicks",
       "pl": 23.15
     },
     {
       "date": "2026-03-31",
-      "bankroll": -707.56,
+      "bankroll": -734.83,
       "label": "Los Angeles Lakers",
       "pl": 19.84
     },
     {
       "date": "2026-03-31",
-      "bankroll": -695.93,
+      "bankroll": -723.2,
       "label": "Los Angeles Clippers",
       "pl": 11.63
     },
     {
       "date": "2026-03-31",
-      "bankroll": -720.93,
+      "bankroll": -748.2,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -708.11,
+      "bankroll": -735.38,
       "label": "Buffalo Sabres",
       "pl": 12.82
     },
     {
       "date": "2026-03-31",
-      "bankroll": -733.11,
+      "bankroll": -760.38,
       "label": "Detroit Red Wings",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -696.86,
+      "bankroll": -724.13,
       "label": "Florida Panthers",
       "pl": 36.25
     },
     {
       "date": "2026-03-31",
-      "bankroll": -682.74,
+      "bankroll": -710.01,
       "label": "Tampa Bay Lightning",
       "pl": 14.12
     },
     {
       "date": "2026-03-31",
-      "bankroll": -707.74,
+      "bankroll": -735.01,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -732.74,
+      "bankroll": -760.01,
       "label": "Columbus Blue Jackets",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -716.61,
+      "bankroll": -743.88,
       "label": "Winnipeg Jets",
       "pl": 16.13
     },
     {
       "date": "2026-03-31",
-      "bankroll": -741.61,
+      "bankroll": -768.88,
       "label": "Seattle Kraken",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -766.61,
+      "bankroll": -793.88,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -791.61,
+      "bankroll": -818.88,
       "label": "Columbus Blue Jackets",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -773.09,
+      "bankroll": -800.36,
       "label": "Washington Capitals",
       "pl": 18.52
     },
     {
       "date": "2026-03-31",
-      "bankroll": -735.59,
+      "bankroll": -762.86,
       "label": "Florida Panthers",
       "pl": 37.5
     },
     {
       "date": "2026-03-31",
-      "bankroll": -760.59,
+      "bankroll": -787.86,
       "label": "Arizona Wildcats",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -785.59,
+      "bankroll": -812.86,
       "label": "Florida Panthers moneyline",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -810.59,
+      "bankroll": -837.86,
       "label": "Arizona moneyline",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -791.93,
+      "bankroll": -819.2,
       "label": "Washington Capitals moneyline",
       "pl": 18.66
     },
     {
       "date": "2026-03-31",
-      "bankroll": -816.93,
+      "bankroll": -844.2,
       "label": "Columbus Blue Jackets moneyline",
       "pl": -25.0
     },
     {
       "date": "2026-03-31",
-      "bankroll": -541.93,
+      "bankroll": -569.2,
       "label": "Brooklyn Nets moneyline",
       "pl": 275.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -566.93,
+      "bankroll": -594.2,
       "label": "Shohei Ohtani OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -591.93,
+      "bankroll": -619.2,
       "label": "Mookie Betts OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -616.93,
+      "bankroll": -644.2,
       "label": "Kyle Tucker OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -577.49,
+      "bankroll": -604.76,
       "label": "Freddie Freeman OVER 0.5",
       "pl": 39.44
     },
     {
       "date": "2026-04-01",
-      "bankroll": -602.49,
+      "bankroll": -629.76,
       "label": "Pat Spencer UNDER 5.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -627.49,
+      "bankroll": -654.76,
       "label": "Stephon Castle UNDER 4.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -652.49,
+      "bankroll": -679.76,
       "label": "Orlando Magic",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -650.82,
+      "bankroll": -678.09,
       "label": "Philadelphia 76ers",
       "pl": 1.67
     },
     {
       "date": "2026-04-01",
-      "bankroll": -675.82,
+      "bankroll": -703.09,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -700.82,
+      "bankroll": -728.09,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -725.82,
+      "bankroll": -753.09,
       "label": "Memphis Grizzlies",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -575.82,
+      "bankroll": -603.09,
       "label": "Sacramento Kings",
       "pl": 150.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -535.82,
+      "bankroll": -563.09,
       "label": "Indiana Pacers",
       "pl": 40.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -534.57,
+      "bankroll": -561.84,
       "label": "Denver Nuggets",
       "pl": 1.25
     },
     {
       "date": "2026-04-01",
-      "bankroll": -453.32,
+      "bankroll": -480.59,
       "label": "Vancouver Canucks",
       "pl": 81.25
     },
     {
       "date": "2026-04-01",
-      "bankroll": -478.32,
+      "bankroll": -505.59,
       "label": "San Jose Sharks",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -448.32,
+      "bankroll": -475.59,
       "label": "St Louis Blues",
       "pl": 30.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -414.32,
+      "bankroll": -441.59,
       "label": "Cincinnati Reds",
       "pl": 34.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -439.32,
+      "bankroll": -466.59,
       "label": "Washington Nationals",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -464.32,
+      "bankroll": -491.59,
       "label": "Miami Marlins",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -489.32,
+      "bankroll": -516.59,
       "label": "New York Mets",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -471.71,
+      "bankroll": -498.98,
       "label": "Milwaukee Brewers",
       "pl": 17.61
     },
     {
       "date": "2026-04-01",
-      "bankroll": -454.59,
+      "bankroll": -481.86,
       "label": "Boston Red Sox",
       "pl": 17.12
     },
     {
       "date": "2026-04-01",
-      "bankroll": -479.59,
+      "bankroll": -506.86,
       "label": "Chicago Cubs",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -454.59,
+      "bankroll": -481.86,
       "label": "New York Yankees",
       "pl": 25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -479.59,
+      "bankroll": -506.86,
       "label": "San Diego Padres",
       "pl": -25.0
     },
     {
       "date": "2026-04-01",
-      "bankroll": -458.4,
+      "bankroll": -485.67,
       "label": "Minnesota Twins",
       "pl": 21.19
     },
     {
       "date": "2026-04-01",
-      "bankroll": -483.4,
+      "bankroll": -510.67,
       "label": "Los Angeles Dodgers",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -508.4,
+      "bankroll": -535.67,
       "label": "Shai Gilgeous-Alexander UNDER 6.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -478.4,
+      "bankroll": -505.67,
       "label": "Toumani Camara UNDER 5.5",
       "pl": 30.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -503.4,
+      "bankroll": -530.67,
       "label": "Deni Avdija UNDER 7.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -474.4,
+      "bankroll": -501.67,
       "label": "Darius Garland UNDER 7.5",
       "pl": 29.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -444.9,
+      "bankroll": -472.17,
       "label": "Stephon Castle UNDER 5.5",
       "pl": 29.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -407.4,
+      "bankroll": -434.67,
       "label": "Royce Lewis OVER 0.5",
       "pl": 37.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -353.65,
+      "bankroll": -380.92,
       "label": "Kyle Isbel OVER 0.5",
       "pl": 53.75
     },
     {
       "date": "2026-04-02",
-      "bankroll": -378.65,
+      "bankroll": -405.92,
       "label": "Jose Fernandez OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -403.65,
+      "bankroll": -430.92,
       "label": "Jose Fernandez OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -367.4,
+      "bankroll": -394.67,
       "label": "Porter Martone OVER 2.5",
       "pl": 36.25
     },
     {
       "date": "2026-04-02",
-      "bankroll": -327.9,
+      "bankroll": -355.17,
       "label": "Jesper Bratt OVER 1.5",
       "pl": 39.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -290.4,
+      "bankroll": -317.67,
       "label": "Mark Scheifele OVER 1.5",
       "pl": 37.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -315.4,
+      "bankroll": -342.67,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -340.4,
+      "bankroll": -367.67,
       "label": "Minnesota Timberwolves",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -333.64,
+      "bankroll": -360.91,
       "label": "Oklahoma City Thunder",
       "pl": 6.76
     },
     {
       "date": "2026-04-02",
-      "bankroll": -328.21,
+      "bankroll": -355.48,
       "label": "Cleveland Cavaliers",
       "pl": 5.43
     },
     {
       "date": "2026-04-02",
-      "bankroll": -353.21,
+      "bankroll": -380.48,
       "label": "New Orleans Pelicans",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -378.21,
+      "bankroll": -405.48,
       "label": "Los Angeles Clippers",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -345.71,
+      "bankroll": -372.98,
       "label": "Florida Panthers",
       "pl": 32.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -324.52,
+      "bankroll": -351.79,
       "label": "Ottawa Senators",
       "pl": 21.19
     },
     {
       "date": "2026-04-02",
-      "bankroll": -311.7,
+      "bankroll": -338.97,
       "label": "Carolina Hurricanes",
       "pl": 12.82
     },
     {
       "date": "2026-04-02",
-      "bankroll": -311.7,
+      "bankroll": -338.97,
       "label": "Philadelphia Flyers",
       "pl": 0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -279.2,
+      "bankroll": -306.47,
       "label": "New York Rangers",
       "pl": 32.5
     },
     {
       "date": "2026-04-02",
-      "bankroll": -265.08,
+      "bankroll": -292.35,
       "label": "Tampa Bay Lightning",
       "pl": 14.12
     },
     {
       "date": "2026-04-02",
-      "bankroll": -290.08,
+      "bankroll": -317.35,
       "label": "Washington Capitals",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -315.08,
+      "bankroll": -342.35,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -309.33,
+      "bankroll": -336.6,
       "label": "Minnesota Wild",
       "pl": 5.75
     },
     {
       "date": "2026-04-02",
-      "bankroll": -334.33,
+      "bankroll": -361.6,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -324.33,
+      "bankroll": -351.6,
       "label": "Vegas Golden Knights",
       "pl": 10.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -303.84,
+      "bankroll": -331.11,
       "label": "San Jose Sharks",
       "pl": 20.49
     },
     {
       "date": "2026-04-02",
-      "bankroll": -328.84,
+      "bankroll": -356.11,
       "label": "Seattle Kraken",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -353.84,
+      "bankroll": -381.11,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -319.84,
+      "bankroll": -347.11,
       "label": "Minnesota Twins",
       "pl": 34.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -344.84,
+      "bankroll": -372.11,
       "label": "Arizona Diamondbacks",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -369.84,
+      "bankroll": -397.11,
       "label": "New York Mets",
       "pl": -25.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -379.84,
+      "bankroll": -407.11,
       "label": "Timberwolves ML",
       "pl": -10.0
     },
     {
       "date": "2026-04-02",
-      "bankroll": -389.84,
+      "bankroll": -417.11,
       "label": "parlay Timberwolves ML  Clippers -2.5 Predators +1.5 Panthers ML +135",
       "pl": -10.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -358.84,
+      "bankroll": -386.11,
       "label": "Ayo Dosunmu UNDER 4.5",
       "pl": 31.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -328.09,
+      "bankroll": -355.36,
       "label": "Jaylen Brown UNDER 5.5",
       "pl": 30.75
     },
     {
       "date": "2026-04-03",
-      "bankroll": -353.09,
+      "bankroll": -380.36,
       "label": "Porter Martone OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -378.09,
+      "bankroll": -405.36,
       "label": "Brandon Williams UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -325.59,
+      "bankroll": -352.86,
       "label": "Kyle Isbel OVER 0.5",
       "pl": 52.5
     },
     {
       "date": "2026-04-03",
-      "bankroll": -350.59,
+      "bankroll": -377.86,
       "label": "Joel Embiid UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -319.84,
+      "bankroll": -347.11,
       "label": "Mikal Bridges UNDER 22.5",
       "pl": 30.75
     },
     {
       "date": "2026-04-03",
-      "bankroll": -344.84,
+      "bankroll": -372.11,
       "label": "Washington Nationals",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -369.84,
+      "bankroll": -397.11,
       "label": "St. Louis Cardinals",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -355.8,
+      "bankroll": -383.07,
       "label": "New York Yankees",
       "pl": 14.04
     },
     {
       "date": "2026-04-03",
-      "bankroll": -335.31,
+      "bankroll": -362.58,
       "label": "Boston Red Sox",
       "pl": 20.49
     },
     {
       "date": "2026-04-03",
-      "bankroll": -360.31,
+      "bankroll": -387.58,
       "label": "Toronto Blue Jays",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -323.81,
+      "bankroll": -351.08,
       "label": "Cincinnati Reds",
       "pl": 36.5
     },
     {
       "date": "2026-04-03",
-      "bankroll": -298.81,
+      "bankroll": -326.08,
       "label": "Cleveland Guardians",
       "pl": 25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -286.31,
+      "bankroll": -313.58,
       "label": "Philadelphia Phillies",
       "pl": 12.5
     },
     {
       "date": "2026-04-03",
-      "bankroll": -263.99,
+      "bankroll": -291.26,
       "label": "Minnesota Twins",
       "pl": 22.32
     },
     {
       "date": "2026-04-03",
-      "bankroll": -237.49,
+      "bankroll": -264.76,
       "label": "Pittsburgh Pirates",
       "pl": 26.5
     },
     {
       "date": "2026-04-03",
-      "bankroll": -262.49,
+      "bankroll": -289.76,
       "label": "Kansas City Royals",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -287.49,
+      "bankroll": -314.76,
       "label": "Los Angeles Angels",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -312.49,
+      "bankroll": -339.76,
       "label": "Houston Astros",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -337.49,
+      "bankroll": -364.76,
       "label": "Arizona Diamondbacks",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -362.49,
+      "bankroll": -389.76,
       "label": "New York Mets",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -387.49,
+      "bankroll": -414.76,
       "label": "Indiana Pacers",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -368.26,
+      "bankroll": -395.53,
       "label": "Philadelphia 76ers",
       "pl": 19.23
     },
     {
       "date": "2026-04-03",
-      "bankroll": -393.26,
+      "bankroll": -420.53,
       "label": "Brooklyn Nets",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -391.59,
+      "bankroll": -418.86,
       "label": "New York Knicks",
       "pl": 1.67
     },
     {
       "date": "2026-04-03",
-      "bankroll": -390.2,
+      "bankroll": -417.47,
       "label": "Boston Celtics",
       "pl": 1.39
     },
     {
       "date": "2026-04-03",
-      "bankroll": -388.81,
+      "bankroll": -416.08,
       "label": "Houston Rockets",
       "pl": 1.39
     },
     {
       "date": "2026-04-03",
-      "bankroll": -413.81,
+      "bankroll": -441.08,
       "label": "Memphis Grizzlies",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -404.55,
+      "bankroll": -431.82,
       "label": "Orlando Magic",
       "pl": 9.26
     },
     {
       "date": "2026-04-03",
-      "bankroll": -359.55,
+      "bankroll": -386.82,
       "label": "Sacramento Kings",
       "pl": 45.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -384.55,
+      "bankroll": -411.82,
       "label": "Baylor Bears",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -356.55,
+      "bankroll": -383.82,
       "label": "UConn Huskies",
       "pl": 28.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -381.55,
+      "bankroll": -408.82,
       "label": "Arizona Wildcats",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -381.55,
+      "bankroll": -408.82,
       "label": "Tulsa Golden Hurricane",
       "pl": 0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -406.55,
+      "bankroll": -433.82,
       "label": "Arizona Wildcats",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -395.68,
+      "bankroll": -422.95,
       "label": "Michigan Wolverines",
       "pl": 10.87
     },
     {
       "date": "2026-04-03",
-      "bankroll": -365.68,
+      "bankroll": -392.95,
       "label": "Philadelphia Flyers",
       "pl": 30.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -335.68,
+      "bankroll": -362.95,
       "label": "St Louis Blues",
       "pl": 30.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -360.68,
+      "bankroll": -387.95,
       "label": "Detroit Red Wings",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -338.75,
+      "bankroll": -366.02,
       "label": "Minnesota Wild",
       "pl": 21.93
     },
     {
       "date": "2026-04-03",
-      "bankroll": -363.75,
+      "bankroll": -391.02,
       "label": "Dallas Stars",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -347.62,
+      "bankroll": -374.89,
       "label": "Tampa Bay Lightning",
       "pl": 16.13
     },
     {
       "date": "2026-04-03",
-      "bankroll": -336.26,
+      "bankroll": -363.53,
       "label": "Pittsburgh Penguins",
       "pl": 11.36
     },
     {
       "date": "2026-04-03",
-      "bankroll": -311.99,
+      "bankroll": -339.26,
       "label": "Washington Capitals",
       "pl": 24.27
     },
     {
       "date": "2026-04-03",
-      "bankroll": -300.36,
+      "bankroll": -327.63,
       "label": "Carolina Hurricanes",
       "pl": 11.63
     },
     {
       "date": "2026-04-03",
-      "bankroll": -273.61,
+      "bankroll": -300.88,
       "label": "Winnipeg Jets",
       "pl": 26.75
     },
     {
       "date": "2026-04-03",
-      "bankroll": -298.61,
+      "bankroll": -325.88,
       "label": "Toronto Maple Leafs",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -323.61,
+      "bankroll": -350.88,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-04-03",
-      "bankroll": -313.19,
+      "bankroll": -340.46,
       "label": "Utah Mammoth",
       "pl": 10.42
     },
     {
       "date": "2026-04-03",
-      "bankroll": -291.45,
+      "bankroll": -318.72,
       "label": "Edmonton Oilers",
       "pl": 21.74
     },
     {
       "date": "2026-04-03",
-      "bankroll": -267.18,
+      "bankroll": -294.45,
       "label": "San Jose Sharks",
       "pl": 24.27
     },
     {
       "date": "2026-04-05",
-      "bankroll": -234.18,
+      "bankroll": -261.45,
       "label": "Drake Powell UNDER 3.5",
       "pl": 33.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -259.18,
+      "bankroll": -286.45,
       "label": "Brice Sensabaugh UNDER 3.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -259.18,
+      "bankroll": -286.45,
       "label": "Quenton Jackson UNDER 4.0",
       "pl": 0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -284.18,
+      "bankroll": -311.45,
       "label": "Chris Paddack UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -202.93,
+      "bankroll": -230.2,
       "label": "Xavier Edwards OVER 0.5",
       "pl": 81.25
     },
     {
       "date": "2026-04-05",
-      "bankroll": -227.93,
+      "bankroll": -255.2,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -201.68,
+      "bankroll": -228.95,
       "label": "NRFI",
       "pl": 26.25
     },
     {
       "date": "2026-04-05",
-      "bankroll": -226.68,
+      "bankroll": -253.95,
       "label": "Brice Sensabaugh UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -251.68,
+      "bankroll": -278.95,
       "label": "Quenton Jackson UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -276.68,
+      "bankroll": -303.95,
       "label": "Desmond Bane UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -245.43,
+      "bankroll": -272.7,
       "label": "Ayo Dosunmu UNDER 4.5",
       "pl": 31.25
     },
     {
       "date": "2026-04-05",
-      "bankroll": -270.43,
+      "bankroll": -297.7,
       "label": "Cody Williams UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -295.43,
+      "bankroll": -322.7,
       "label": "Myles Turner UNDER 5.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -320.43,
+      "bankroll": -347.7,
       "label": "Desmond Bane UNDER 20.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -345.43,
+      "bankroll": -372.7,
       "label": "Joey Wiemer OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -265.43,
+      "bankroll": -292.7,
       "label": "Giancarlo Stanton OVER 0.5",
       "pl": 80.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -290.43,
+      "bankroll": -317.7,
       "label": "CJ Abrams OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -315.43,
+      "bankroll": -342.7,
       "label": "Munetaka Murakami OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -340.43,
+      "bankroll": -367.7,
       "label": "Cole Hutson OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -365.43,
+      "bankroll": -392.7,
       "label": "Nathan MacKinnon OVER 1.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -325.43,
+      "bankroll": -352.7,
       "label": "Jordan Kyrou OVER 1.5",
       "pl": 40.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -289.18,
+      "bankroll": -316.45,
       "label": "Evgeni Malkin OVER 1.5",
       "pl": 36.25
     },
     {
       "date": "2026-04-05",
-      "bankroll": -251.68,
+      "bankroll": -278.95,
       "label": "Andrei Svechnikov OVER 1.5",
       "pl": 37.5
     },
     {
       "date": "2026-04-05",
-      "bankroll": -276.68,
+      "bankroll": -303.95,
       "label": "Martin Necas OVER 1.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -240.18,
+      "bankroll": -267.45,
       "label": "Tim St\u00fctzle OVER 1.5",
       "pl": 36.5
     },
     {
       "date": "2026-04-05",
-      "bankroll": -202.68,
+      "bankroll": -229.95,
       "label": "Brady Tkachuk OVER 2.5",
       "pl": 37.5
     },
     {
       "date": "2026-04-05",
-      "bankroll": -165.18,
+      "bankroll": -192.45,
       "label": "Drake Batherson OVER 1.5",
       "pl": 37.5
     },
     {
       "date": "2026-04-05",
-      "bankroll": -141.14,
+      "bankroll": -168.41,
       "label": "NRFI",
       "pl": 24.04
     },
     {
       "date": "2026-04-05",
-      "bankroll": -110.39,
+      "bankroll": -137.66,
       "label": "Brandon Ingram UNDER 5.5",
       "pl": 30.75
     },
     {
       "date": "2026-04-05",
-      "bankroll": -135.39,
+      "bankroll": -162.66,
       "label": "Ousmane Dieng UNDER 4.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-05",
-      "bankroll": -160.39,
+      "bankroll": -187.66,
       "label": "Foster Griffin UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -185.39,
+      "bankroll": -212.66,
       "label": "Scoot Henderson UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -149.14,
+      "bankroll": -176.41,
       "label": "Cameron Johnson UNDER 2.5",
       "pl": 36.25
     },
     {
       "date": "2026-04-06",
-      "bankroll": -174.14,
+      "bankroll": -201.41,
       "label": "Karl-Anthony Towns UNDER 11.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -94.14,
+      "bankroll": -121.41,
       "label": "Andy Pages OVER 0.5",
       "pl": 80.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -54.14,
+      "bankroll": -81.41,
       "label": "Ian Happ OVER 0.5",
       "pl": 40.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -79.14,
+      "bankroll": -106.41,
       "label": "Javier Sanoja OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -30.39,
+      "bankroll": -57.66,
       "label": "Chandler Simpson OVER 0.5",
       "pl": 48.75
     },
     {
       "date": "2026-04-06",
-      "bankroll": -5.39,
+      "bankroll": -32.66,
       "label": "Anton Frondell OVER 0.5",
       "pl": 25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -30.39,
+      "bankroll": -57.66,
       "label": "Jonathan Marchessault OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -55.39,
+      "bankroll": -82.66,
       "label": "Artemi Panarin OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -80.39,
+      "bankroll": -107.66,
       "label": "Nikita Kucherov OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -105.39,
+      "bankroll": -132.66,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -81.35,
+      "bankroll": -108.62,
       "label": "NRFI",
       "pl": 24.04
     },
     {
       "date": "2026-04-06",
-      "bankroll": -57.77,
+      "bankroll": -85.04,
       "label": "Buffalo Sabres",
       "pl": 23.58
     },
     {
       "date": "2026-04-06",
-      "bankroll": -42.8,
+      "bankroll": -70.07,
       "label": "Winnipeg Jets",
       "pl": 14.97
     },
     {
       "date": "2026-04-06",
-      "bankroll": -27.83,
+      "bankroll": -55.1,
       "label": "San Jose Sharks",
       "pl": 14.97
     },
     {
       "date": "2026-04-06",
-      "bankroll": -9.58,
+      "bankroll": -36.85,
       "label": "Los Angeles Kings",
       "pl": 18.25
     },
     {
       "date": "2026-04-06",
-      "bankroll": 3.58,
+      "bankroll": -23.69,
       "label": "Carolina Hurricanes",
       "pl": 13.16
     },
     {
       "date": "2026-04-06",
-      "bankroll": 28.58,
+      "bankroll": 1.31,
       "label": "Columbus Blue Jackets",
       "pl": 25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 38.78,
+      "bankroll": 11.51,
       "label": "Montr\u00e9al Canadiens",
       "pl": 10.2
     },
     {
       "date": "2026-04-06",
-      "bankroll": 13.78,
+      "bankroll": -13.49,
       "label": "New Jersey Devils",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 36.51,
+      "bankroll": 9.24,
       "label": "Ottawa Senators",
       "pl": 22.73
     },
     {
       "date": "2026-04-06",
-      "bankroll": 46.71,
+      "bankroll": 19.44,
       "label": "Dallas Stars",
       "pl": 10.2
     },
     {
       "date": "2026-04-06",
-      "bankroll": 21.71,
+      "bankroll": -5.56,
       "label": "St Louis Blues",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 31.91,
+      "bankroll": 4.64,
       "label": "Minnesota Wild",
       "pl": 10.2
     },
     {
       "date": "2026-04-06",
-      "bankroll": 6.91,
+      "bankroll": -20.36,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -18.09,
+      "bankroll": -45.36,
       "label": "Anaheim Ducks",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -7.89,
+      "bankroll": -35.16,
       "label": "Vegas Golden Knights",
       "pl": 10.2
     },
     {
       "date": "2026-04-06",
-      "bankroll": 13.66,
+      "bankroll": -13.61,
       "label": "Tampa Bay Rays",
       "pl": 21.55
     },
     {
       "date": "2026-04-06",
-      "bankroll": 38.66,
+      "bankroll": 11.39,
       "label": "Kansas City Royals",
       "pl": 25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 13.66,
+      "bankroll": -13.61,
       "label": "Miami Marlins",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -11.34,
+      "bankroll": -38.61,
       "label": "Pittsburgh Pirates",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 10.21,
+      "bankroll": -17.06,
       "label": "Milwaukee Brewers",
       "pl": 21.55
     },
     {
       "date": "2026-04-06",
-      "bankroll": 34.72,
+      "bankroll": 7.45,
       "label": "Washington Nationals",
       "pl": 24.51
     },
     {
       "date": "2026-04-06",
-      "bankroll": 9.72,
+      "bankroll": -17.55,
       "label": "Toronto Blue Jays",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": -15.28,
+      "bankroll": -42.55,
       "label": "Chicago White Sox",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 4.56,
+      "bankroll": -22.71,
       "label": "Minnesota Twins",
       "pl": 19.84
     },
     {
       "date": "2026-04-06",
-      "bankroll": -20.44,
+      "bankroll": -47.71,
       "label": "Seattle Mariners",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 18.06,
+      "bankroll": -9.21,
       "label": "Colorado Rockies",
       "pl": 38.5
     },
     {
       "date": "2026-04-06",
-      "bankroll": 54.06,
+      "bankroll": 26.79,
       "label": "Los Angeles Angels",
       "pl": 36.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 75.61,
+      "bankroll": 48.34,
       "label": "Philadelphia Phillies",
       "pl": 21.55
     },
     {
       "date": "2026-04-06",
-      "bankroll": 100.61,
+      "bankroll": 73.34,
       "label": "New York Knicks",
       "pl": 25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 134.61,
+      "bankroll": 107.34,
       "label": "Orlando Magic",
       "pl": 34.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 109.61,
+      "bankroll": 82.34,
       "label": "Memphis Grizzlies",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 84.61,
+      "bankroll": 57.34,
       "label": "Philadelphia 76ers",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 92.42,
+      "bankroll": 65.15,
       "label": "Denver Nuggets",
       "pl": 7.81
     },
     {
       "date": "2026-04-06",
-      "bankroll": 67.42,
+      "bankroll": 40.15,
       "label": "Miami Heat",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 77.42,
+      "bankroll": 50.15,
       "label": "Boston Celtics",
       "pl": 10.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 52.42,
+      "bankroll": 25.15,
       "label": "Dallas Mavericks",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 54.27,
+      "bankroll": 27.0,
       "label": "Oklahoma City Thunder",
       "pl": 1.85
     },
     {
       "date": "2026-04-06",
-      "bankroll": 29.27,
+      "bankroll": 2.0,
       "label": "Phoenix Suns",
       "pl": -25.0
     },
     {
       "date": "2026-04-06",
-      "bankroll": 37.66,
+      "bankroll": 10.39,
       "label": "Michigan Wolverines",
       "pl": 8.39
     },
     {
       "date": "2026-04-07",
-      "bankroll": 12.66,
+      "bankroll": -14.61,
       "label": "Sandy Alcantara UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-07",
-      "bankroll": -12.34,
+      "bankroll": -39.61,
       "label": "Andrew Abbott UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-07",
-      "bankroll": -37.34,
+      "bankroll": -64.61,
       "label": "Matthew Liberatore UNDER 2.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-07",
-      "bankroll": -62.34,
+      "bankroll": -89.61,
       "label": "Matthew Liberatore UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-07",
-      "bankroll": -44.22,
+      "bankroll": -71.49,
       "label": "Nick Pivetta OVER 1.5",
       "pl": 18.12
     },
     {
       "date": "2026-04-08",
-      "bankroll": -69.22,
+      "bankroll": -96.49,
       "label": "Carolina Hurricanes -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": -94.22,
+      "bankroll": -121.49,
       "label": "Under 6.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": -71.49,
+      "bankroll": -98.76,
       "label": "Columbus Blue Jackets +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": -48.76,
+      "bankroll": -76.03,
       "label": "Over 6.0",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": -26.03,
+      "bankroll": -53.3,
       "label": "Florida Panthers +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": -3.3,
+      "bankroll": -30.57,
       "label": "Over 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 19.43,
+      "bankroll": -7.84,
       "label": "Philadelphia Flyers +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 19.43,
+      "bankroll": -7.84,
       "label": "Under 6.0",
       "pl": 0
     },
     {
       "date": "2026-04-08",
-      "bankroll": -5.57,
+      "bankroll": -32.84,
       "label": "Tampa Bay Lightning +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 17.16,
+      "bankroll": -10.11,
       "label": "Over 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 39.89,
+      "bankroll": 12.62,
       "label": "Calgary Flames +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 62.62,
+      "bankroll": 35.35,
       "label": "Over 5.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 85.35,
+      "bankroll": 58.08,
       "label": "Colorado Avalanche +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 60.35,
+      "bankroll": 33.08,
       "label": "Over 6.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 35.35,
+      "bankroll": 8.08,
       "label": "Seattle Kraken +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 10.35,
+      "bankroll": -16.92,
       "label": "Under 6.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 33.08,
+      "bankroll": 5.81,
       "label": "Edmonton Oilers +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 55.81,
+      "bankroll": 28.54,
       "label": "Over 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 78.54,
+      "bankroll": 51.27,
       "label": "Nashville Predators +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 101.27,
+      "bankroll": 74.0,
       "label": "Under 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 124.0,
+      "bankroll": 96.73,
       "label": "Vegas Golden Knights +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 146.73,
+      "bankroll": 119.46,
       "label": "Under 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 169.46,
+      "bankroll": 142.19,
       "label": "Washington Capitals +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 192.19,
+      "bankroll": 164.92,
       "label": "Under 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 214.92,
+      "bankroll": 187.65,
       "label": "Edmonton Oilers +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 237.65,
+      "bankroll": 210.38,
       "label": "Over 6.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 260.38,
+      "bankroll": 233.11,
       "label": "Chicago Bulls -5.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 283.11,
+      "bankroll": 255.84,
       "label": "Under 249.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 258.11,
+      "bankroll": 230.84,
       "label": "Indiana Pacers +12.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 280.84,
+      "bankroll": 253.57,
       "label": "Under 233.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 255.84,
+      "bankroll": 228.57,
       "label": "Milwaukee Bucks -2.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 278.57,
+      "bankroll": 251.3,
       "label": "Under 220.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 253.57,
+      "bankroll": 226.3,
       "label": "Miami Heat +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 276.3,
+      "bankroll": 249.03,
       "label": "Under 242.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 299.03,
+      "bankroll": 271.76,
       "label": "Boston Celtics -4.0",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 321.76,
+      "bankroll": 294.49,
       "label": "Under 220.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 344.49,
+      "bankroll": 317.22,
       "label": "New Orleans Pelicans -10.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 319.49,
+      "bankroll": 292.22,
       "label": "Under 243.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 294.49,
+      "bankroll": 267.22,
       "label": "Golden State Warriors -14.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 317.22,
+      "bankroll": 289.95,
       "label": "Under 233.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 292.22,
+      "bankroll": 264.95,
       "label": "Dallas Mavericks +12.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 314.95,
+      "bankroll": 287.68,
       "label": "Under 238.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-08",
-      "bankroll": 289.95,
+      "bankroll": 262.68,
       "label": "Los Angeles Lakers +18.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 264.95,
+      "bankroll": 237.68,
       "label": "Over 220.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 239.95,
+      "bankroll": 212.68,
       "label": "Phoenix Suns -1.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 214.95,
+      "bankroll": 187.68,
       "label": "Under 221.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 189.95,
+      "bankroll": 162.68,
       "label": "Milwaukee Bucks",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 164.95,
+      "bankroll": 137.68,
       "label": "Milwaukee Bucks +20.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-08",
-      "bankroll": 139.95,
+      "bankroll": 112.68,
       "label": "Under 222.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-09",
-      "bankroll": 114.95,
+      "bankroll": 87.68,
       "label": "Max Meyer UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-09",
-      "bankroll": 89.95,
+      "bankroll": 62.68,
       "label": "Rhett Lowder UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-09",
-      "bankroll": 111.88,
+      "bankroll": 84.61,
       "label": "Ryan Weathers UNDER 1.5",
       "pl": 21.93
     },
     {
       "date": "2026-04-10",
-      "bankroll": 86.88,
+      "bankroll": 59.61,
       "label": "Dyson Daniels UNDER 6.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 115.88,
+      "bankroll": 88.61,
       "label": "Scottie Barnes UNDER 5.5",
       "pl": 29.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 90.88,
+      "bankroll": 63.61,
       "label": "VJ Edgecombe UNDER 5.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 115.39,
+      "bankroll": 88.12,
       "label": "Onyeka Okongwu UNDER 7.5",
       "pl": 24.51
     },
     {
       "date": "2026-04-10",
-      "bankroll": 139.43,
+      "bankroll": 112.16,
       "label": "Desmond Bane UNDER 28.5",
       "pl": 24.04
     },
     {
       "date": "2026-04-10",
-      "bankroll": 114.43,
+      "bankroll": 87.16,
       "label": "Chris Paddack OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 89.43,
+      "bankroll": 62.16,
       "label": "Shota Imanaga OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 113.24,
+      "bankroll": 85.97,
       "label": "Slade Cecconi OVER 2.5",
       "pl": 23.81
     },
     {
       "date": "2026-04-10",
-      "bankroll": 88.24,
+      "bankroll": 60.97,
       "label": "Jack Kochanowicz OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 103.39,
+      "bankroll": 76.12,
       "label": "Ozzie Albies OVER 0.5",
       "pl": 15.15
     },
     {
       "date": "2026-04-10",
-      "bankroll": 78.39,
+      "bankroll": 51.12,
       "label": "Keider Montero OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 104.39,
+      "bankroll": 77.12,
       "label": "NRFI",
       "pl": 26.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 129.39,
+      "bankroll": 102.12,
       "label": "NRFI",
       "pl": 25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 151.13,
+      "bankroll": 123.86,
       "label": "NRFI",
       "pl": 21.74
     },
     {
       "date": "2026-04-10",
-      "bankroll": 126.13,
+      "bankroll": 98.86,
       "label": "Shane Baz UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 101.13,
+      "bankroll": 73.86,
       "label": "Michael Soroka UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 76.13,
+      "bankroll": 48.86,
       "label": "Chase Burns UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 107.88,
+      "bankroll": 80.61,
       "label": "Simeon Woods Richardson UNDER 1.5",
       "pl": 31.75
     },
     {
       "date": "2026-04-10",
-      "bankroll": 147.38,
+      "bankroll": 120.11,
       "label": "Arizona Diamondbacks",
       "pl": 39.5
     },
     {
       "date": "2026-04-10",
-      "bankroll": 122.38,
+      "bankroll": 95.11,
       "label": "Philadelphia Phillies -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 97.38,
+      "bankroll": 70.11,
       "label": "Under 8.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 72.38,
+      "bankroll": 45.11,
       "label": "Cincinnati Reds",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 47.38,
+      "bankroll": 20.11,
       "label": "Cincinnati Reds -1.5",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-10",
-      "bankroll": 22.38,
-      "label": "Under 9.5",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-10",
-      "bankroll": -2.62,
-      "label": "New York Mets",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-10",
-      "bankroll": -27.62,
-      "label": "New York Mets -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
       "bankroll": -4.89,
+      "label": "Under 9.5",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-10",
+      "bankroll": -29.89,
+      "label": "New York Mets",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-10",
+      "bankroll": -54.89,
+      "label": "New York Mets -1.5",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-10",
+      "bankroll": -32.16,
       "label": "Under 8.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-10",
-      "bankroll": 13.49,
+      "bankroll": -13.78,
       "label": "Atlanta Braves",
       "pl": 18.38
     },
     {
       "date": "2026-04-10",
-      "bankroll": 36.22,
+      "bankroll": 8.95,
       "label": "Atlanta Braves -1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-10",
-      "bankroll": 11.22,
+      "bankroll": -16.05,
       "label": "Under 8.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": 22.09,
+      "bankroll": -5.18,
       "label": "Los Angeles Dodgers",
       "pl": 10.87
     },
     {
       "date": "2026-04-10",
-      "bankroll": -2.91,
+      "bankroll": -30.18,
       "label": "Los Angeles Dodgers -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-10",
-      "bankroll": -27.91,
+      "bankroll": -55.18,
       "label": "Under 9.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -5.79,
+      "bankroll": -33.06,
       "label": "Casey Mize UNDER 1.5",
       "pl": 22.12
     },
     {
       "date": "2026-04-11",
-      "bankroll": -30.79,
+      "bankroll": -58.06,
       "label": "Brandon Pfaadt UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -6.28,
+      "bankroll": -33.55,
       "label": "Brandon Williamson OVER 2.5",
       "pl": 24.51
     },
     {
       "date": "2026-04-11",
-      "bankroll": -31.28,
+      "bankroll": -58.55,
       "label": "Taijuan Walker OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -56.28,
+      "bankroll": -83.55,
       "label": "Janson Junk UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -81.28,
+      "bankroll": -108.55,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -106.28,
+      "bankroll": -133.55,
       "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-11",
-      "bankroll": -131.28,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-11",
-      "bankroll": -156.28,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-11",
-      "bankroll": -181.28,
-      "label": "Miami Marlins",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
       "bankroll": -158.55,
-      "label": "Detroit Tigers -1.5",
-      "pl": 22.73
+      "label": "NRFI",
+      "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -135.82,
-      "label": "Under 7.5",
-      "pl": 22.73
+      "bankroll": -183.55,
+      "label": "NRFI",
+      "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -160.82,
-      "label": "Chicago Cubs",
+      "bankroll": -208.55,
+      "label": "Miami Marlins",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
       "bankroll": -185.82,
+      "label": "Detroit Tigers -1.5",
+      "pl": 22.73
+    },
+    {
+      "date": "2026-04-11",
+      "bankroll": -163.09,
+      "label": "Under 7.5",
+      "pl": 22.73
+    },
+    {
+      "date": "2026-04-11",
+      "bankroll": -188.09,
+      "label": "Chicago Cubs",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-11",
+      "bankroll": -213.09,
       "label": "Chicago Cubs -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -210.82,
+      "bankroll": -238.09,
       "label": "Under 6.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -186.31,
+      "bankroll": -213.58,
       "label": "Minnesota Twins",
       "pl": 24.51
     },
     {
       "date": "2026-04-11",
-      "bankroll": -211.31,
+      "bankroll": -238.58,
       "label": "Toronto Blue Jays +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -236.31,
+      "bankroll": -263.58,
       "label": "Under 8.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -223.15,
+      "bankroll": -250.42,
       "label": "Kansas City Royals",
       "pl": 13.16
     },
     {
       "date": "2026-04-11",
-      "bankroll": -200.42,
+      "bankroll": -227.69,
       "label": "Kansas City Royals -1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-11",
-      "bankroll": -177.69,
+      "bankroll": -204.96,
       "label": "Under 9.0",
       "pl": 22.73
     },
     {
       "date": "2026-04-11",
-      "bankroll": -158.75,
+      "bankroll": -186.02,
       "label": "Cincinnati Reds",
       "pl": 18.94
     },
     {
       "date": "2026-04-11",
-      "bankroll": -136.02,
+      "bankroll": -163.29,
       "label": "Cincinnati Reds -1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-11",
-      "bankroll": -161.02,
+      "bankroll": -188.29,
       "label": "Under 9.0",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -186.02,
+      "bankroll": -213.29,
       "label": "San Francisco Giants",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -163.29,
+      "bankroll": -190.56,
       "label": "Baltimore Orioles +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-11",
-      "bankroll": -188.29,
+      "bankroll": -215.56,
       "label": "Under 7.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -213.29,
+      "bankroll": -240.56,
       "label": "St. Louis Cardinals",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -238.29,
+      "bankroll": -265.56,
       "label": "St. Louis Cardinals +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-11",
-      "bankroll": -263.29,
+      "bankroll": -290.56,
       "label": "Under 7.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
-      "bankroll": -288.29,
+      "bankroll": -315.56,
       "label": "Andrew Abbott UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
-      "bankroll": -313.29,
+      "bankroll": -340.56,
       "label": "Adrian Houser UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
-      "bankroll": -289.93,
+      "bankroll": -317.2,
       "label": "Aaron Civale UNDER 1.5",
       "pl": 23.36
     },
     {
       "date": "2026-04-12",
-      "bankroll": -272.07,
+      "bankroll": -299.34,
       "label": "Andrew Painter UNDER 2.5",
       "pl": 17.86
     },
     {
       "date": "2026-04-12",
-      "bankroll": -255.62,
+      "bankroll": -282.89,
       "label": "Taj Bradley UNDER 2.5",
       "pl": 16.45
     },
     {
       "date": "2026-04-12",
-      "bankroll": -280.62,
+      "bankroll": -307.89,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
-      "bankroll": -305.62,
+      "bankroll": -332.89,
       "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-12",
-      "bankroll": -330.62,
-      "label": "Pittsburgh Penguins",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-12",
-      "bankroll": -355.62,
-      "label": "Pittsburgh Penguins +1.5",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-12",
-      "bankroll": -380.62,
-      "label": "Anaheim Ducks",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
       "bankroll": -357.89,
-      "label": "Vancouver Canucks +1.5",
-      "pl": 22.73
+      "label": "Pittsburgh Penguins",
+      "pl": -25.0
     },
     {
       "date": "2026-04-12",
       "bankroll": -382.89,
-      "label": "Utah Mammoth",
+      "label": "Pittsburgh Penguins +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
       "bankroll": -407.89,
-      "label": "St. Louis Cardinals",
+      "label": "Anaheim Ducks",
       "pl": -25.0
     },
     {
       "date": "2026-04-12",
       "bankroll": -385.16,
-      "label": "Boston Red Sox -1.5",
+      "label": "Vancouver Canucks +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-12",
       "bankroll": -410.16,
+      "label": "Utah Mammoth",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-12",
+      "bankroll": -435.16,
+      "label": "St. Louis Cardinals",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-12",
+      "bankroll": -412.43,
+      "label": "Boston Red Sox -1.5",
+      "pl": 22.73
+    },
+    {
+      "date": "2026-04-12",
+      "bankroll": -437.43,
       "label": "Under 8.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -380.16,
+      "bankroll": -407.43,
       "label": "Randal Grichuk UNDER 1.5",
       "pl": 30.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -405.16,
+      "bankroll": -432.43,
       "label": "Cade Cavalli UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -390.01,
+      "bankroll": -417.28,
       "label": "Will Warren UNDER 2.5",
       "pl": 15.15
     },
     {
       "date": "2026-04-13",
-      "bankroll": -415.01,
+      "bankroll": -442.28,
       "label": "Matthew Liberatore UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -400.3,
+      "bankroll": -427.57,
       "label": "Paul Skenes UNDER 18.5",
       "pl": 14.71
     },
     {
       "date": "2026-04-13",
-      "bankroll": -425.3,
+      "bankroll": -452.57,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -412.67,
+      "bankroll": -439.94,
       "label": "Tampa Bay Lightning",
       "pl": 12.63
     },
     {
       "date": "2026-04-13",
-      "bankroll": -437.67,
+      "bankroll": -464.94,
       "label": "Minnesota Wild",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -462.67,
+      "bankroll": -489.94,
       "label": "Minnesota Wild +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -487.67,
+      "bankroll": -514.94,
       "label": "Nashville Predators",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -512.67,
+      "bankroll": -539.94,
       "label": "Nashville Predators -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-13",
-      "bankroll": -501.2,
+      "bankroll": -528.47,
       "label": "Buffalo Sabres",
       "pl": 11.47
     },
     {
       "date": "2026-04-13",
-      "bankroll": -479.46,
+      "bankroll": -506.73,
       "label": "Colorado Avalanche",
       "pl": 21.74
     },
     {
       "date": "2026-04-13",
-      "bankroll": -462.57,
+      "bankroll": -489.84,
       "label": "Los Angeles Kings",
       "pl": 16.89
     },
     {
       "date": "2026-04-13",
-      "bankroll": -487.57,
+      "bankroll": -514.84,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -512.57,
+      "bankroll": -539.84,
       "label": "Cole Ragans OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -537.57,
+      "bankroll": -564.84,
       "label": "Mick Abel OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -562.57,
+      "bankroll": -589.84,
       "label": "Trevor Rogers UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -546.44,
+      "bankroll": -573.71,
       "label": "Sonny Gray OVER 1.5",
       "pl": 16.13
     },
     {
       "date": "2026-04-14",
-      "bankroll": -506.44,
+      "bankroll": -533.71,
       "label": "Anders Lee OVER 1.5",
       "pl": 40.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -531.44,
+      "bankroll": -558.71,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -508.71,
+      "bankroll": -535.98,
       "label": "NRFI",
       "pl": 22.73
     },
     {
       "date": "2026-04-14",
-      "bankroll": -490.19,
+      "bankroll": -517.46,
       "label": "Boston Bruins",
       "pl": 18.52
     },
     {
       "date": "2026-04-14",
-      "bankroll": -515.19,
+      "bankroll": -542.46,
       "label": "New Jersey Devils +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -491.38,
+      "bankroll": -518.65,
       "label": "Washington Capitals",
       "pl": 23.81
     },
     {
       "date": "2026-04-14",
-      "bankroll": -468.65,
+      "bankroll": -495.92,
       "label": "Washington Capitals +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-14",
-      "bankroll": -452.52,
+      "bankroll": -479.79,
       "label": "Colorado Avalanche",
       "pl": 16.13
     },
     {
       "date": "2026-04-14",
-      "bankroll": -477.52,
+      "bankroll": -504.79,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -502.52,
+      "bankroll": -529.79,
       "label": "Pittsburgh Penguins",
       "pl": -25.0
     },
     {
       "date": "2026-04-14",
-      "bankroll": -527.52,
+      "bankroll": -554.79,
       "label": "Los Angeles Kings",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -500.02,
+      "bankroll": -527.29,
       "label": "Jake Irvin UNDER 3.5",
       "pl": 27.5
     },
     {
       "date": "2026-04-15",
-      "bankroll": -525.02,
+      "bankroll": -552.29,
       "label": "Dustin May OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -550.02,
+      "bankroll": -577.29,
       "label": "Slade Cecconi OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -575.02,
+      "bankroll": -602.29,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -550.02,
+      "bankroll": -577.29,
       "label": "NRFI",
       "pl": 25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -575.02,
+      "bankroll": -602.29,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -600.02,
+      "bankroll": -627.29,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-15",
-      "bankroll": -586.13,
+      "bankroll": -613.4,
       "label": "Ottawa Senators",
       "pl": 13.89
     },
     {
       "date": "2026-04-15",
-      "bankroll": -558.63,
+      "bankroll": -585.9,
       "label": "Chicago Blackhawks",
       "pl": 27.5
     },
     {
       "date": "2026-04-16",
-      "bankroll": -583.63,
+      "bankroll": -610.9,
       "label": "Brandon Sproat OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -608.63,
+      "bankroll": -635.9,
       "label": "Brandon Sproat UNDER 14.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -572.38,
+      "bankroll": -599.65,
       "label": "Jordan Kyrou OVER 1.5",
       "pl": 36.25
     },
     {
       "date": "2026-04-16",
-      "bankroll": -549.65,
+      "bankroll": -576.92,
       "label": "NRFI",
       "pl": 22.73
     },
     {
       "date": "2026-04-16",
-      "bankroll": -574.65,
+      "bankroll": -601.92,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -599.65,
+      "bankroll": -626.92,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -577.91,
+      "bankroll": -605.18,
       "label": "NRFI",
       "pl": 21.74
     },
     {
       "date": "2026-04-16",
-      "bankroll": -602.91,
+      "bankroll": -630.18,
       "label": "Utah Mammoth",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -627.91,
+      "bankroll": -655.18,
       "label": "Utah Mammoth -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -652.91,
+      "bankroll": -680.18,
       "label": "Winnipeg Jets",
       "pl": -25.0
     },
     {
       "date": "2026-04-16",
-      "bankroll": -645.45,
+      "bankroll": -672.72,
       "label": "Edmonton Oilers",
       "pl": 7.46
     },
     {
       "date": "2026-04-16",
-      "bankroll": -631.94,
+      "bankroll": -659.21,
       "label": "Colorado Avalanche",
       "pl": 13.51
     },
     {
       "date": "2026-04-17",
-      "bankroll": -602.44,
+      "bankroll": -629.71,
       "label": "Logan Webb OVER 2.5",
       "pl": 29.5
     },
     {
       "date": "2026-04-17",
-      "bankroll": -585.2,
+      "bankroll": -612.47,
       "label": "Casey Mize UNDER 2.5",
       "pl": 17.24
     },
     {
       "date": "2026-04-17",
-      "bankroll": -569.96,
+      "bankroll": -597.23,
       "label": "Taijuan Walker OVER 2.5",
       "pl": 15.24
     },
     {
       "date": "2026-04-17",
-      "bankroll": -594.96,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-17",
-      "bankroll": -619.96,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-17",
-      "bankroll": -644.96,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-17",
       "bankroll": -622.23,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-17",
+      "bankroll": -647.23,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-17",
+      "bankroll": -672.23,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-17",
+      "bankroll": -649.5,
       "label": "NRFI",
       "pl": 22.73
     },
     {
       "date": "2026-04-17",
-      "bankroll": -612.23,
+      "bankroll": -639.5,
       "label": "Colorado Avalanche",
       "pl": 10.0
     },
     {
       "date": "2026-04-17",
-      "bankroll": -589.5,
+      "bankroll": -616.77,
       "label": "Los Angeles Kings +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-17",
-      "bankroll": -550.0,
+      "bankroll": -577.27,
       "label": "Montr\u00e9al Canadiens",
       "pl": 39.5
     },
     {
       "date": "2026-04-17",
-      "bankroll": -575.0,
+      "bankroll": -602.27,
       "label": "Boston Bruins",
       "pl": -25.0
     },
     {
       "date": "2026-04-17",
-      "bankroll": -600.0,
+      "bankroll": -627.27,
       "label": "Utah Mammoth",
       "pl": -25.0
     },
     {
       "date": "2026-04-17",
-      "bankroll": -625.0,
+      "bankroll": -652.27,
       "label": "Anaheim Ducks",
       "pl": -25.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -650.0,
+      "bankroll": -677.27,
       "label": "Bailey Ober UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -619.0,
+      "bankroll": -646.27,
       "label": "Mitch Keller UNDER 1.5",
       "pl": 31.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -592.75,
+      "bankroll": -620.02,
       "label": "Matthew Liberatore UNDER 2.5",
       "pl": 26.25
     },
     {
       "date": "2026-04-19",
-      "bankroll": -578.46,
+      "bankroll": -605.73,
       "label": "Ryan Weathers UNDER 2.5",
       "pl": 14.29
     },
     {
       "date": "2026-04-19",
-      "bankroll": -603.46,
+      "bankroll": -630.73,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -572.46,
+      "bankroll": -599.73,
       "label": "NRFI",
       "pl": 31.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -597.46,
+      "bankroll": -624.73,
       "label": "Roki Sasaki UNDER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -581.84,
+      "bankroll": -609.11,
       "label": "Michael Lorenzen UNDER 15.5",
       "pl": 15.62
     },
     {
       "date": "2026-04-19",
-      "bankroll": -572.85,
+      "bankroll": -600.12,
       "label": "Colorado Avalanche",
       "pl": 8.99
     },
     {
       "date": "2026-04-19",
-      "bankroll": -550.12,
+      "bankroll": -577.39,
       "label": "Los Angeles Kings +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-19",
-      "bankroll": -575.12,
+      "bankroll": -602.39,
       "label": "Tampa Bay Lightning",
       "pl": -25.0
     },
     {
       "date": "2026-04-19",
-      "bankroll": -552.39,
+      "bankroll": -579.66,
       "label": "Montr\u00e9al Canadiens +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-20",
-      "bankroll": -523.39,
+      "bankroll": -550.66,
       "label": "Slade Cecconi OVER 2.5",
       "pl": 29.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -548.39,
+      "bankroll": -575.66,
       "label": "Jose Quintana UNDER 3.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -523.14,
+      "bankroll": -550.41,
       "label": "Vladimir Tarasenko OVER 1.5",
       "pl": 25.25
     },
     {
       "date": "2026-04-20",
-      "bankroll": -548.14,
+      "bankroll": -575.41,
       "label": "Trevor Zegras OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -525.41,
+      "bankroll": -552.68,
       "label": "Shane Pinto OVER 1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-20",
-      "bankroll": -550.41,
+      "bankroll": -577.68,
       "label": "John Carlson OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -575.41,
+      "bankroll": -602.68,
       "label": "Shayne Gostisbehere OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -600.41,
+      "bankroll": -627.68,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -625.41,
+      "bankroll": -652.68,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -611.52,
+      "bankroll": -638.79,
       "label": "Edmonton Oilers",
       "pl": 13.89
     },
     {
       "date": "2026-04-20",
-      "bankroll": -636.52,
+      "bankroll": -663.79,
       "label": "Tampa Bay Lightning",
       "pl": -25.0
     },
     {
       "date": "2026-04-20",
-      "bankroll": -613.79,
+      "bankroll": -641.06,
       "label": "Montr\u00e9al Canadiens +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-21",
-      "bankroll": -592.05,
+      "bankroll": -619.32,
       "label": "Chris Paddack OVER 2.5",
       "pl": 21.74
     },
     {
       "date": "2026-04-21",
-      "bankroll": -617.05,
+      "bankroll": -644.32,
       "label": "Dustin May OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -642.05,
+      "bankroll": -669.32,
       "label": "Kris Bubic UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -667.05,
+      "bankroll": -694.32,
       "label": "Connelly Early UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -643.9,
+      "bankroll": -671.17,
       "label": "Josh Doan OVER 1.5",
       "pl": 23.15
     },
     {
       "date": "2026-04-21",
-      "bankroll": -623.07,
+      "bankroll": -650.34,
       "label": "Brent Burns OVER 1.5",
       "pl": 20.83
     },
     {
       "date": "2026-04-21",
-      "bankroll": -648.07,
+      "bankroll": -675.34,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -623.07,
+      "bankroll": -650.34,
       "label": "NRFI",
       "pl": 25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -590.57,
+      "bankroll": -617.84,
       "label": "NRFI",
       "pl": 32.5
     },
     {
       "date": "2026-04-21",
-      "bankroll": -568.05,
+      "bankroll": -595.32,
       "label": "NRFI",
       "pl": 22.52
     },
     {
       "date": "2026-04-21",
-      "bankroll": -550.44,
+      "bankroll": -577.71,
       "label": "Cleveland Guardians",
       "pl": 17.61
     },
     {
       "date": "2026-04-21",
-      "bankroll": -575.44,
+      "bankroll": -602.71,
       "label": "Houston Astros +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -600.44,
+      "bankroll": -627.71,
       "label": "Detroit Tigers",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -579.25,
+      "bankroll": -606.52,
       "label": "Texas Rangers",
       "pl": 21.19
     },
     {
       "date": "2026-04-21",
-      "bankroll": -604.25,
+      "bankroll": -631.52,
       "label": "Pittsburgh Pirates -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -586.64,
+      "bankroll": -613.91,
       "label": "San Diego Padres",
       "pl": 17.61
     },
     {
       "date": "2026-04-21",
-      "bankroll": -611.64,
+      "bankroll": -638.91,
       "label": "San Diego Padres -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -636.64,
+      "bankroll": -663.91,
       "label": "Seattle Mariners",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -613.91,
+      "bankroll": -641.18,
       "label": "Athletics +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-21",
-      "bankroll": -638.91,
+      "bankroll": -666.18,
       "label": "Tampa Bay Lightning",
       "pl": -25.0
     },
     {
       "date": "2026-04-21",
-      "bankroll": -616.18,
+      "bankroll": -643.45,
       "label": "Montr\u00e9al Canadiens +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-21",
-      "bankroll": -607.79,
+      "bankroll": -635.06,
       "label": "Colorado Avalanche",
       "pl": 8.39
     },
     {
       "date": "2026-04-21",
-      "bankroll": -585.06,
+      "bankroll": -612.33,
       "label": "Los Angeles Kings +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-21",
-      "bankroll": -563.87,
+      "bankroll": -591.14,
       "label": "Philadelphia Flyers",
       "pl": 21.19
     },
     {
       "date": "2026-04-21",
-      "bankroll": -588.87,
+      "bankroll": -616.14,
       "label": "Pittsburgh Penguins +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -613.87,
+      "bankroll": -641.14,
       "label": "Peter Lambert OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -589.36,
+      "bankroll": -616.63,
       "label": "Brandon Williamson OVER 2.5",
       "pl": 24.51
     },
     {
       "date": "2026-04-22",
-      "bankroll": -614.36,
+      "bankroll": -641.63,
       "label": "Chad Patrick UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -597.58,
+      "bankroll": -624.85,
       "label": "Logan Gilbert OVER 1.5",
       "pl": 16.78
     },
     {
       "date": "2026-04-22",
-      "bankroll": -576.75,
+      "bankroll": -604.02,
       "label": "Jacob Trouba OVER 1.5",
       "pl": 20.83
     },
     {
       "date": "2026-04-22",
-      "bankroll": -601.75,
+      "bankroll": -629.02,
       "label": "Mikael Granlund OVER 1.5",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-22",
-      "bankroll": -626.75,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-22",
-      "bankroll": -651.75,
-      "label": "NRFI",
-      "pl": -25.0
-    },
-    {
-      "date": "2026-04-22",
-      "bankroll": -676.75,
-      "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
       "bankroll": -654.02,
       "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-22",
+      "bankroll": -679.02,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-22",
+      "bankroll": -704.02,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-22",
+      "bankroll": -681.29,
+      "label": "NRFI",
       "pl": 22.73
     },
     {
       "date": "2026-04-22",
-      "bankroll": -635.36,
+      "bankroll": -662.63,
       "label": "Tampa Bay Rays",
       "pl": 18.66
     },
     {
       "date": "2026-04-22",
-      "bankroll": -660.36,
+      "bankroll": -687.63,
       "label": "Cincinnati Reds +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -685.36,
+      "bankroll": -712.63,
       "label": "Cleveland Guardians",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -662.63,
+      "bankroll": -689.9,
       "label": "Houston Astros +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-22",
-      "bankroll": -687.63,
+      "bankroll": -714.9,
       "label": "Seattle Mariners",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -664.9,
+      "bankroll": -692.17,
       "label": "Athletics +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-22",
-      "bankroll": -645.96,
+      "bankroll": -673.23,
       "label": "Detroit Tigers",
       "pl": 18.94
     },
     {
       "date": "2026-04-22",
-      "bankroll": -670.96,
+      "bankroll": -698.23,
       "label": "New York Mets",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -648.23,
+      "bankroll": -675.5,
       "label": "Minnesota Twins +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-22",
-      "bankroll": -673.23,
+      "bankroll": -700.5,
       "label": "Arizona Diamondbacks",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -650.5,
+      "bankroll": -677.77,
       "label": "Chicago White Sox +1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-22",
-      "bankroll": -675.5,
+      "bankroll": -702.77,
       "label": "Los Angeles Dodgers",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -700.5,
+      "bankroll": -727.77,
       "label": "Los Angeles Dodgers -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -679.67,
+      "bankroll": -706.94,
       "label": "Philadelphia Flyers",
       "pl": 20.83
     },
     {
       "date": "2026-04-22",
-      "bankroll": -704.67,
+      "bankroll": -731.94,
       "label": "Pittsburgh Penguins +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-22",
-      "bankroll": -692.04,
+      "bankroll": -719.31,
       "label": "Edmonton Oilers",
       "pl": 12.63
     },
     {
       "date": "2026-04-23",
-      "bankroll": -664.04,
+      "bankroll": -691.31,
       "label": "Brandon Sproat OVER 2.5",
       "pl": 28.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -689.04,
+      "bankroll": -716.31,
       "label": "Matt Waldron UNDER 14.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -668.21,
+      "bankroll": -695.48,
       "label": "Cade Cavalli UNDER 2.5",
       "pl": 20.83
     },
     {
       "date": "2026-04-23",
-      "bankroll": -645.89,
+      "bankroll": -673.16,
       "label": "Logan Webb OVER 2.5",
       "pl": 22.32
     },
     {
       "date": "2026-04-23",
-      "bankroll": -670.89,
+      "bankroll": -698.16,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -695.89,
+      "bankroll": -723.16,
       "label": "Washington Nationals",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -685.02,
+      "bankroll": -712.29,
       "label": "Detroit Tigers",
       "pl": 10.87
     },
     {
       "date": "2026-04-23",
-      "bankroll": -710.02,
+      "bankroll": -737.29,
       "label": "Philadelphia Phillies",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -735.02,
+      "bankroll": -762.29,
       "label": "Philadelphia Phillies -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -760.02,
+      "bankroll": -787.29,
       "label": "Colorado Rockies",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -737.29,
+      "bankroll": -764.56,
       "label": "San Diego Padres -1.5",
       "pl": 22.73
     },
     {
       "date": "2026-04-23",
-      "bankroll": -762.29,
+      "bankroll": -789.56,
       "label": "Los Angeles Dodgers",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -787.29,
+      "bankroll": -814.56,
       "label": "Los Angeles Dodgers -1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-23",
-      "bankroll": -771.26,
+      "bankroll": -798.53,
       "label": "New York Yankees",
       "pl": 16.03
     },
     {
       "date": "2026-04-23",
-      "bankroll": -756.73,
+      "bankroll": -784.0,
       "label": "Texas Rangers",
       "pl": 14.53
     },
     {
       "date": "2026-04-23",
-      "bankroll": -733.58,
+      "bankroll": -760.85,
       "label": "Utah Mammoth",
       "pl": 23.15
     },
     {
       "date": "2026-04-24",
-      "bankroll": -758.58,
+      "bankroll": -785.85,
       "label": "Andrew Painter UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -783.58,
+      "bankroll": -810.85,
       "label": "Taj Bradley UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -808.58,
+      "bankroll": -835.85,
       "label": "Max Scherzer UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -833.58,
+      "bankroll": -860.85,
       "label": "Michael Lorenzen UNDER 15.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -858.58,
+      "bankroll": -885.85,
       "label": "Gavin Williams UNDER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -833.58,
+      "bankroll": -860.85,
       "label": "NRFI",
       "pl": 25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -807.58,
+      "bankroll": -834.85,
       "label": "NRFI",
       "pl": 26.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -832.58,
+      "bankroll": -859.85,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -832.58,
+      "bankroll": -859.85,
       "label": "Max Scherzer UNDER 14.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Brayan Bello OVER 2.5",
       "pl": 21.19
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Troy Johnston OVER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Daulton Varsho OVER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Ke'Bryan Hayes UNDER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "TJ Rumfield OVER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Daniel Schneemann OVER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -811.39,
+      "bankroll": -838.66,
       "label": "Jonathan Aranda OVER 0.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -836.39,
+      "bankroll": -863.66,
       "label": "Tomas Hertl OVER 2.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -861.39,
+      "bankroll": -888.66,
       "label": "Nikita Kucherov OVER 1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -886.39,
+      "bankroll": -913.66,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -911.39,
+      "bankroll": -938.66,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -936.39,
+      "bankroll": -963.66,
       "label": "NRFI",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -913.87,
+      "bankroll": -941.14,
       "label": "NRFI",
       "pl": 22.52
     },
     {
       "date": "2026-04-24",
-      "bankroll": -938.87,
+      "bankroll": -966.14,
       "label": "Oswald Peraza OVER 0.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -938.87,
+      "bankroll": -966.14,
       "label": "Mattias Ekholm OVER 1.5",
       "pl": 0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -910.37,
+      "bankroll": -937.64,
       "label": "Beckett Sennecke OVER 2.5",
       "pl": 28.5
     },
     {
       "date": "2026-04-24",
-      "bankroll": -935.37,
+      "bankroll": -962.64,
       "label": "Edmonton Oilers",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -960.37,
+      "bankroll": -987.64,
       "label": "Edmonton Oilers +1.5",
       "pl": -25.0
     },
     {
       "date": "2026-04-24",
-      "bankroll": -937.64,
+      "bankroll": -964.91,
       "label": "Over 6.5",
       "pl": 22.73
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -964.91,
+      "label": "Joey Wiemer OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -964.91,
+      "label": "Masyn Winn OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -964.91,
+      "label": "Brooks Lee OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -964.91,
+      "label": "Connor Norby OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -964.91,
+      "label": "Lourdes Gurriel Jr. UNDER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -989.91,
+      "label": "Shayne Gostisbehere OVER 0.5",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1014.91,
+      "label": "Quinn Hughes OVER 2.5",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1014.91,
+      "label": "K'Andre Miller OVER 1.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -962.41,
+      "label": "NRFI",
+      "pl": 52.5
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -987.41,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -960.91,
+      "label": "NRFI",
+      "pl": 26.5
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -985.91,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1010.91,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1035.91,
+      "label": "Philadelphia Flyers",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1013.18,
+      "label": "Pittsburgh Penguins +1.5",
+      "pl": 22.73
+    },
+    {
+      "date": "2026-04-25",
+      "bankroll": -1038.18,
+      "label": "Under 5.5",
+      "pl": -25.0
     }
   ],
   "line_alerts": [],
@@ -53449,142 +53995,51 @@
       "game": "Colorado Avalanche @ Los Angeles Kings",
       "market": "player_goals",
       "line": 0.5,
-      "over_odds": 2400.0,
-      "under_odds": -440.0,
+      "over_odds": 2200.0,
+      "under_odds": -420.0,
       "recommendation": "OVER",
       "hit_prob": 49.8,
-      "edge": 45.16,
+      "edge": 44.73,
       "rolling_avg": 0.69,
       "notes": null
     },
     {
-      "player": "Troy Johnston",
-      "game": "Colorado Rockies @ New York Mets",
+      "player": "Joey Wiemer",
+      "game": "Washington Nationals @ Chicago White Sox",
       "market": "batter_total_bases",
       "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": -104.0,
+      "over_odds": 280.0,
+      "under_odds": -110.0,
       "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 40.67,
-      "rolling_avg": 1.6,
+      "hit_prob": 76.3,
+      "edge": 42.87,
+      "rolling_avg": 1.44,
       "notes": null
     },
     {
-      "player": "Troy Johnston",
+      "player": "Mickey Moniak",
       "game": "Colorado Rockies @ New York Mets",
-      "market": "batter_total_bases",
+      "market": "batter_hits",
       "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": -104.0,
+      "over_odds": 410.0,
+      "under_odds": 122.0,
       "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 40.67,
-      "rolling_avg": 1.6,
-      "notes": null
-    },
-    {
-      "player": "Troy Johnston",
-      "game": "Colorado Rockies @ New York Mets",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": -104.0,
-      "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 40.67,
-      "rolling_avg": 1.6,
+      "hit_prob": 68.3,
+      "edge": 38.01,
+      "rolling_avg": 1.15,
       "notes": null
     },
     {
       "player": "Troy Johnston",
       "game": "Colorado Rockies @ New York Mets",
-      "market": "batter_total_bases",
+      "market": "batter_hits",
       "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": -104.0,
+      "over_odds": 440.0,
+      "under_odds": 114.0,
       "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 40.67,
-      "rolling_avg": 1.6,
-      "notes": null
-    },
-    {
-      "player": "Tomas Hertl",
-      "game": "Vegas Golden Knights @ Utah Mammoth",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 148.0,
-      "under_odds": -160.0,
-      "recommendation": "OVER",
-      "hit_prob": 78.3,
-      "edge": 38.72,
-      "rolling_avg": 4.15,
-      "notes": null
-    },
-    {
-      "player": "Tomas Hertl",
-      "game": "Vegas Golden Knights @ Utah Mammoth",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 146.0,
-      "under_odds": -160.0,
-      "recommendation": "OVER",
-      "hit_prob": 78.3,
-      "edge": 38.53,
-      "rolling_avg": 4.15,
-      "notes": null
-    },
-    {
-      "player": "Daulton Varsho",
-      "game": "Cleveland Guardians @ Toronto Blue Jays",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": 100.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.7,
-      "edge": 38.09,
-      "rolling_avg": 1.5,
-      "notes": null
-    },
-    {
-      "player": "Daulton Varsho",
-      "game": "Cleveland Guardians @ Toronto Blue Jays",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 205.0,
-      "under_odds": 100.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.7,
-      "edge": 38.09,
-      "rolling_avg": 1.5,
-      "notes": null
-    },
-    {
-      "player": "Daulton Varsho",
-      "game": "Cleveland Guardians @ Toronto Blue Jays",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 200.0,
-      "under_odds": 100.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.7,
-      "edge": 37.69,
-      "rolling_avg": 1.5,
-      "notes": null
-    },
-    {
-      "player": "Daulton Varsho",
-      "game": "Cleveland Guardians @ Toronto Blue Jays",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 200.0,
-      "under_odds": 100.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.7,
-      "edge": 37.69,
-      "rolling_avg": 1.5,
+      "hit_prob": 66.0,
+      "edge": 37.66,
+      "rolling_avg": 1.08,
       "notes": null
     },
     {
@@ -53593,119 +54048,210 @@
       "market": "player_points",
       "line": 1.5,
       "over_odds": 130.0,
-      "under_odds": -165.0,
+      "under_odds": -166.0,
       "recommendation": "OVER",
       "hit_prob": 78.2,
-      "edge": 37.1,
+      "edge": 37.16,
       "rolling_avg": 2.88,
       "notes": null
     },
     {
-      "player": "Nikita Kucherov",
-      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "player": "Shayne Gostisbehere",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
       "market": "player_points",
-      "line": 1.5,
-      "over_odds": 130.0,
-      "under_odds": -165.0,
-      "recommendation": "OVER",
-      "hit_prob": 78.2,
-      "edge": 37.1,
-      "rolling_avg": 2.88,
-      "notes": null
-    },
-    {
-      "player": "Quinn Hughes",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 122.0,
-      "under_odds": -140.0,
-      "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 36.19,
-      "rolling_avg": 4.26,
-      "notes": null
-    },
-    {
-      "player": "Quinn Hughes",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 122.0,
-      "under_odds": -140.0,
-      "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 36.19,
-      "rolling_avg": 4.26,
-      "notes": null
-    },
-    {
-      "player": "Connor Clifton",
-      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
-      "market": "player_blocked_shots",
-      "line": 1.5,
+      "line": 0.5,
       "over_odds": 125.0,
-      "under_odds": -165.0,
+      "under_odds": -160.0,
       "recommendation": "OVER",
-      "hit_prob": 77.4,
-      "edge": 35.75,
-      "rolling_avg": 2.83,
+      "hit_prob": 78.4,
+      "edge": 36.41,
+      "rolling_avg": 1.53,
       "notes": null
     },
     {
-      "player": "Connor Clifton",
-      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
-      "market": "player_blocked_shots",
+      "player": "Mickey Moniak",
+      "game": "Colorado Rockies @ New York Mets",
+      "market": "batter_total_bases",
       "line": 1.5,
-      "over_odds": 125.0,
-      "under_odds": -165.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.4,
-      "edge": 35.75,
-      "rolling_avg": 2.83,
-      "notes": null
-    },
-    {
-      "player": "Brayden McNabb",
-      "game": "Vegas Golden Knights @ Utah Mammoth",
-      "market": "player_blocked_shots",
-      "line": 2.5,
-      "over_odds": 150.0,
-      "under_odds": -195.0,
+      "over_odds": 170.0,
+      "under_odds": null,
       "recommendation": "OVER",
       "hit_prob": 73.1,
-      "edge": 35.41,
-      "rolling_avg": 3.8,
+      "edge": 36.03,
+      "rolling_avg": 2.59,
       "notes": null
     },
     {
-      "player": "Ke'Bryan Hayes",
-      "game": "Detroit Tigers @ Cincinnati Reds",
-      "market": "batter_hits",
+      "player": "Brayan Rocchio",
+      "game": "Cleveland Guardians @ Toronto Blue Jays",
+      "market": "batter_total_bases",
       "line": 0.5,
-      "over_odds": -140.0,
-      "under_odds": 117.0,
-      "recommendation": "UNDER",
-      "hit_prob": 79.4,
-      "edge": 35.32,
-      "rolling_avg": 0.23,
+      "over_odds": 225.0,
+      "under_odds": 103.0,
+      "recommendation": "OVER",
+      "hit_prob": 73.8,
+      "edge": 35.37,
+      "rolling_avg": 1.34,
       "notes": null
     },
     {
-      "player": "Ke'Bryan Hayes",
-      "game": "Detroit Tigers @ Cincinnati Reds",
+      "player": "Cole Caufield",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "market": "player_shots_on_goal",
+      "line": 3.5,
+      "over_odds": 120.0,
+      "under_odds": -148.0,
+      "recommendation": "OVER",
+      "hit_prob": 78.3,
+      "edge": 35.07,
+      "rolling_avg": 5.37,
+      "notes": null
+    },
+    {
+      "player": "Quinn Hughes",
+      "game": "Dallas Stars @ Minnesota Wild",
+      "market": "player_shots_on_goal",
+      "line": 2.5,
+      "over_odds": 110.0,
+      "under_odds": -140.0,
+      "recommendation": "OVER",
+      "hit_prob": 79.8,
+      "edge": 34.82,
+      "rolling_avg": 4.26,
+      "notes": null
+    },
+    {
+      "player": "Masyn Winn",
+      "game": "Seattle Mariners @ St. Louis Cardinals",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": 200.0,
+      "under_odds": 124.0,
+      "recommendation": "OVER",
+      "hit_prob": 77.5,
+      "edge": 34.71,
+      "rolling_avg": 1.49,
+      "notes": null
+    },
+    {
+      "player": "K'Andre Miller",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
+      "market": "player_shots_on_goal",
+      "line": 1.5,
+      "over_odds": 114.0,
+      "under_odds": -145.0,
+      "recommendation": "OVER",
+      "hit_prob": 78.2,
+      "edge": 34.1,
+      "rolling_avg": 2.88,
+      "notes": null
+    },
+    {
+      "player": "Porter Martone",
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
+      "market": "player_goals",
+      "line": 1.0,
+      "over_odds": 5500.0,
+      "under_odds": -250.0,
+      "recommendation": "OVER",
+      "hit_prob": 36.2,
+      "edge": 33.81,
+      "rolling_avg": 1.27,
+      "notes": null
+    },
+    {
+      "player": "Brooks Lee",
+      "game": "Minnesota Twins @ Tampa Bay Rays",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": 180.0,
+      "under_odds": 109.0,
+      "recommendation": "OVER",
+      "hit_prob": 76.5,
+      "edge": 33.8,
+      "rolling_avg": 1.45,
+      "notes": null
+    },
+    {
+      "player": "Anthony Mantha",
+      "game": "Pittsburgh Penguins @ Philadelphia Flyers",
+      "market": "player_points",
+      "line": 0.5,
+      "over_odds": 135.0,
+      "under_odds": -175.0,
+      "recommendation": "OVER",
+      "hit_prob": 73.6,
+      "edge": 33.48,
+      "rolling_avg": 1.33,
+      "notes": null
+    },
+    {
+      "player": "Brandon Hagel",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "market": "player_shots_on_goal",
+      "line": 3.5,
+      "over_odds": 128.0,
+      "under_odds": -160.0,
+      "recommendation": "OVER",
+      "hit_prob": 74.6,
+      "edge": 32.99,
+      "rolling_avg": 5.08,
+      "notes": null
+    },
+    {
+      "player": "Connor Norby",
+      "game": "Miami Marlins @ San Francisco Giants",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": 188.0,
+      "under_odds": 120.0,
+      "recommendation": "OVER",
+      "hit_prob": 76.1,
+      "edge": 32.76,
+      "rolling_avg": 1.43,
+      "notes": null
+    },
+    {
+      "player": "Tim St\u00fctzle",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
+      "market": "player_shots_on_goal",
+      "line": 2.5,
+      "over_odds": 112.0,
+      "under_odds": -135.0,
+      "recommendation": "OVER",
+      "hit_prob": 77.5,
+      "edge": 32.39,
+      "rolling_avg": 4.09,
+      "notes": null
+    },
+    {
+      "player": "Nikolaj Ehlers",
+      "game": "Carolina Hurricanes @ Ottawa Senators",
+      "market": "player_shots_on_goal",
+      "line": 2.5,
+      "over_odds": 102.0,
+      "under_odds": -120.0,
+      "recommendation": "OVER",
+      "hit_prob": 79.8,
+      "edge": 32.18,
+      "rolling_avg": 4.26,
+      "notes": null
+    },
+    {
+      "player": "Daniel Schneemann",
+      "game": "Cleveland Guardians @ Toronto Blue Jays",
       "market": "batter_hits",
       "line": 0.5,
-      "over_odds": -140.0,
-      "under_odds": 117.0,
-      "recommendation": "UNDER",
-      "hit_prob": 79.4,
-      "edge": 35.32,
-      "rolling_avg": 0.23,
+      "over_odds": 450.0,
+      "under_odds": 130.0,
+      "recommendation": "OVER",
+      "hit_prob": 61.3,
+      "edge": 31.84,
+      "rolling_avg": 0.95,
       "notes": null
     }
   ],
-  "player_props_date": "2026-04-24",
+  "player_props_date": "2026-04-25",
   "clv_by_sport": {
     "nba": {
       "n": 39,
@@ -53716,12 +54262,12 @@
       "pos_rate": 35.9
     },
     "nhl": {
-      "n": 110,
-      "sum": -334.73,
-      "pos": 41,
-      "neg": 69,
-      "avg_clv": -3.043,
-      "pos_rate": 37.3
+      "n": 112,
+      "sum": -336.69,
+      "pos": 42,
+      "neg": 70,
+      "avg_clv": -3.006,
+      "pos_rate": 37.5
     },
     "ncaab": {
       "n": 32,
@@ -53840,15 +54386,20 @@
       "date": "2026-04-24",
       "avg_clv": 3.71,
       "n": 2
+    },
+    {
+      "date": "2026-04-25",
+      "avg_clv": -0.98,
+      "n": 2
     }
   ],
   "clv_decision_gate": {
-    "n_eligible": 192,
-    "avg_clv": -1.575,
+    "n_eligible": 194,
+    "avg_clv": -1.569,
     "min_bets_required": 500,
     "target_clv": 1.0,
     "ready_for_live": false,
-    "progress_bets_pct": 38.4
+    "progress_bets_pct": 38.8
   },
   "calibration_buckets": {
     "nba:prop": {
@@ -53876,11 +54427,11 @@
         "delta_pp": 74.8
       },
       "75-80": {
-        "n": 30,
-        "wins": 19,
-        "win_rate": 63.3,
-        "avg_conf": 77.6,
-        "delta_pp": 14.3
+        "n": 35,
+        "wins": 22,
+        "win_rate": 62.9,
+        "avg_conf": 77.5,
+        "delta_pp": 14.6
       }
     },
     "nhl:prop": {
@@ -53899,11 +54450,11 @@
         "delta_pp": 50.0
       },
       "75-80": {
-        "n": 10,
+        "n": 13,
         "wins": 5,
-        "win_rate": 50.0,
-        "avg_conf": 77.4,
-        "delta_pp": 27.4
+        "win_rate": 38.5,
+        "avg_conf": 77.7,
+        "delta_pp": 39.2
       }
     },
     "mlb:moneyline": {
@@ -54040,11 +54591,11 @@
         "delta_pp": -8.3
       },
       "65-70": {
-        "n": 18,
+        "n": 19,
         "wins": 9,
-        "win_rate": 50.0,
+        "win_rate": 47.4,
         "avg_conf": 67.9,
-        "delta_pp": 17.9
+        "delta_pp": 20.5
       },
       "75-80": {
         "n": 4,
@@ -54084,18 +54635,18 @@
     },
     "mlb:game_prop": {
       "60-65": {
-        "n": 39,
-        "wins": 14,
-        "win_rate": 35.9,
+        "n": 42,
+        "wins": 16,
+        "win_rate": 38.1,
         "avg_conf": 62.7,
-        "delta_pp": 26.8
+        "delta_pp": 24.6
       },
       "65-70": {
-        "n": 7,
+        "n": 9,
         "wins": 3,
-        "win_rate": 42.9,
-        "avg_conf": 65.9,
-        "delta_pp": 23.0
+        "win_rate": 33.3,
+        "avg_conf": 66.0,
+        "delta_pp": 32.7
       },
       "55-60": {
         "n": 3,
@@ -54114,11 +54665,11 @@
         "delta_pp": 1.5
       },
       "60-65": {
-        "n": 5,
-        "wins": 2,
-        "win_rate": 40.0,
+        "n": 6,
+        "wins": 3,
+        "win_rate": 50.0,
         "avg_conf": 62.3,
-        "delta_pp": 22.3
+        "delta_pp": 12.3
       },
       "80+": {
         "n": 6,
@@ -54184,6 +54735,13 @@
         "win_rate": 0.0,
         "avg_conf": 63.7,
         "delta_pp": 63.7
+      },
+      "80+": {
+        "n": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "avg_conf": 83.8,
+        "delta_pp": 83.8
       }
     },
     "nba:spread": {
@@ -54336,7 +54894,7 @@
     }
   },
   "todays_filter_decisions": {
-    "timestamp": "2026-04-25T00:38:41.781517",
+    "timestamp": null,
     "decisions": []
   },
   "user_bets": [
@@ -58282,6 +58840,70 @@
       {
         "date": "2026-04-24",
         "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -762.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -787.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -812.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -812.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -759.76
+      },
+      {
+        "date": "2026-04-25",
+        "value": -784.76
+      },
+      {
+        "date": "2026-04-25",
+        "value": -758.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -783.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -808.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -833.26
+      },
+      {
+        "date": "2026-04-25",
+        "value": -810.53
+      },
+      {
+        "date": "2026-04-25",
+        "value": -835.53
       }
     ]
   }
