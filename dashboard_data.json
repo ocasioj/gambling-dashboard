@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-01T08:00:02.391315",
+  "generated_at": "2026-05-02T08:00:01.552440",
   "summary": {
-    "total_pl": -818.78,
+    "total_pl": -789.78,
     "win_rate": 50.0,
-    "roi": -3.23,
-    "total_bets": 1994,
+    "roi": -3.08,
+    "total_bets": 2009,
     "avg_clv": -1.61
   },
   "bets": [
@@ -39887,6 +39887,306 @@
       "confidence": 65.6,
       "model_edge": 12.16,
       "edge_novig": null
+    },
+    {
+      "id": 3434,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Milwaukee Brewers @ Washington Nationals",
+      "pick": "Tyler Black OVER 0.5",
+      "odds": 300.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 75.3,
+      "model_edge": 38.04,
+      "edge_novig": null
+    },
+    {
+      "id": 3435,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "pick": "Ildemaro Vargas OVER 1.5",
+      "odds": 170.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 42.5,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 75.0,
+      "model_edge": 37.91,
+      "edge_novig": null
+    },
+    {
+      "id": 3436,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "pick": "Ildemaro Vargas OVER 0.5",
+      "odds": 280.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 77.0,
+      "model_edge": 36.95,
+      "edge_novig": null
+    },
+    {
+      "id": 3437,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Philadelphia Phillies @ Miami Marlins",
+      "pick": "Rafael Marchan UNDER 0.5",
+      "odds": 100.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 76.3,
+      "model_edge": 29.32,
+      "edge_novig": null
+    },
+    {
+      "id": 3438,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Milwaukee Brewers @ Washington Nationals",
+      "pick": "Brady House OVER 0.5",
+      "odds": 145.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 75.6,
+      "model_edge": 27.72,
+      "edge_novig": null
+    },
+    {
+      "id": 3439,
+      "date": "2026-05-01",
+      "sport": "nhl",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "pick": "Cole Caufield OVER 3.5",
+      "odds": 126.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 31.5,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.3,
+      "model_edge": 35.18,
+      "edge_novig": null
+    },
+    {
+      "id": 3440,
+      "date": "2026-05-01",
+      "sport": "nhl",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "pick": "Nikita Kucherov OVER 1.5",
+      "odds": 114.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.2,
+      "model_edge": 34.1,
+      "edge_novig": null
+    },
+    {
+      "id": 3441,
+      "date": "2026-05-01",
+      "sport": "nhl",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "pick": "Anthony Cirelli OVER 1.5",
+      "odds": -105.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 79.6,
+      "model_edge": 31.01,
+      "edge_novig": null
+    },
+    {
+      "id": 3442,
+      "date": "2026-05-01",
+      "sport": "nhl",
+      "game": "Vegas Golden Knights @ Utah Mammoth",
+      "pick": "Noah Hanifin OVER 1.5",
+      "odds": 100.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 76.0,
+      "model_edge": 29.09,
+      "edge_novig": null
+    },
+    {
+      "id": 3443,
+      "date": "2026-05-01",
+      "sport": "nhl",
+      "game": "Buffalo Sabres @ Boston Bruins",
+      "pick": "David Pastrnak OVER 0.5",
+      "odds": -115.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "prop",
+      "source": "props",
+      "confidence": 78.8,
+      "model_edge": 28.78,
+      "edge_novig": null
+    },
+    {
+      "id": 3444,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Cleveland Guardians @ Athletics",
+      "pick": "NRFI",
+      "odds": 110.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 67.5,
+      "model_edge": 19.83,
+      "edge_novig": null
+    },
+    {
+      "id": 3445,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Baltimore Orioles @ New York Yankees",
+      "pick": "NRFI",
+      "odds": 102.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 64.5,
+      "model_edge": 15.05,
+      "edge_novig": null
+    },
+    {
+      "id": 3446,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Chicago White Sox @ San Diego Padres",
+      "pick": "NRFI",
+      "odds": -113.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 65.8,
+      "model_edge": 12.7,
+      "edge_novig": null
+    },
+    {
+      "id": 3447,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "Atlanta Braves @ Colorado Rockies",
+      "pick": "NRFI",
+      "odds": 120.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 30.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 56.9,
+      "model_edge": 11.4,
+      "edge_novig": null
+    },
+    {
+      "id": 3448,
+      "date": "2026-05-01",
+      "sport": "mlb",
+      "game": "San Francisco Giants @ Tampa Bay Rays",
+      "pick": "NRFI",
+      "odds": -119.0,
+      "amount_wagered": 25.0,
+      "outcome": "pending",
+      "profit_loss": 0.0,
+      "notes": null,
+      "closing_odds": null,
+      "clv": null,
+      "clv_checked_at": null,
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 65.7,
+      "model_edge": 11.36,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -49859,6 +50159,81 @@
       "date": "2026-04-30",
       "cumulative_pl": -818.78,
       "game": "Detroit Tigers @ Atlanta Braves"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -818.78,
+      "game": "Milwaukee Brewers @ Washington Nationals"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -776.28,
+      "game": "Arizona Diamondbacks @ Chicago Cubs"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -776.28,
+      "game": "Arizona Diamondbacks @ Chicago Cubs"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -776.28,
+      "game": "Philadelphia Phillies @ Miami Marlins"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -776.28,
+      "game": "Milwaukee Brewers @ Washington Nationals"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -744.78,
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -769.78,
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -769.78,
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -769.78,
+      "game": "Vegas Golden Knights @ Utah Mammoth"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -769.78,
+      "game": "Buffalo Sabres @ Boston Bruins"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -794.78,
+      "game": "Cleveland Guardians @ Athletics"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -819.78,
+      "game": "Baltimore Orioles @ New York Yankees"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -819.78,
+      "game": "Chicago White Sox @ San Diego Padres"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -789.78,
+      "game": "Atlanta Braves @ Colorado Rockies"
+    },
+    {
+      "date": "2026-05-01",
+      "cumulative_pl": -789.78,
+      "game": "San Francisco Giants @ Tampa Bay Rays"
     }
   ],
   "sport_breakdown": [
@@ -49868,7 +50243,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -910.36
+      "pl": -887.86
     },
     {
       "sport": "nba",
@@ -49880,7 +50255,7 @@
     },
     {
       "sport": "nhl",
-      "pl": 872.67
+      "pl": 879.17
     }
   ],
   "bankroll_curve": [
@@ -56086,60 +56461,165 @@
       "bankroll": -954.78,
       "label": "NRFI",
       "pl": 21.74
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -954.78,
+      "label": "Tyler Black OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -912.28,
+      "label": "Ildemaro Vargas OVER 1.5",
+      "pl": 42.5
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -912.28,
+      "label": "Ildemaro Vargas OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -912.28,
+      "label": "Brady House OVER 0.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -880.78,
+      "label": "Cole Caufield OVER 3.5",
+      "pl": 31.5
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -905.78,
+      "label": "Nikita Kucherov OVER 1.5",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -905.78,
+      "label": "Anthony Cirelli OVER 1.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -905.78,
+      "label": "Noah Hanifin OVER 1.5",
+      "pl": 0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -930.78,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -955.78,
+      "label": "NRFI",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-01",
+      "bankroll": -925.78,
+      "label": "NRFI",
+      "pl": 30.0
     }
   ],
   "line_alerts": [],
   "top_player_props": [
     {
-      "player": "Tyler Black",
-      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
+      "player": "Seiya Suzuki",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
       "market": "batter_hits",
       "line": 0.5,
-      "over_odds": 350.0,
-      "under_odds": 113.0,
+      "over_odds": 390.0,
+      "under_odds": 125.0,
       "recommendation": "OVER",
-      "hit_prob": 71.4,
-      "edge": 39.22,
-      "rolling_avg": 1.25,
+      "hit_prob": 70.5,
+      "edge": 39.01,
+      "rolling_avg": 1.22,
       "notes": null
     },
     {
-      "player": "Anthony Cirelli",
+      "player": "Tyler Black",
+      "game": "Milwaukee Brewers @ Washington Nationals",
+      "market": "batter_rbis",
+      "line": 0.5,
+      "over_odds": 195.0,
+      "under_odds": -275.0,
+      "recommendation": "OVER",
+      "hit_prob": 69.9,
+      "edge": 38.27,
+      "rolling_avg": 1.2,
+      "notes": null
+    },
+    {
+      "player": "Tyler Black",
+      "game": "Milwaukee Brewers @ Washington Nationals",
+      "market": "batter_hits",
+      "line": 0.5,
+      "over_odds": 300.0,
+      "under_odds": 138.0,
+      "recommendation": "OVER",
+      "hit_prob": 75.3,
+      "edge": 38.04,
+      "rolling_avg": 1.4,
+      "notes": null
+    },
+    {
+      "player": "Ildemaro Vargas",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "market": "batter_total_bases",
+      "line": 1.5,
+      "over_odds": 170.0,
+      "under_odds": null,
+      "recommendation": "OVER",
+      "hit_prob": 75.0,
+      "edge": 37.91,
+      "rolling_avg": 2.69,
+      "notes": null
+    },
+    {
+      "player": "Ildemaro Vargas",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "market": "batter_hits",
+      "line": 0.5,
+      "over_odds": 280.0,
+      "under_odds": 154.0,
+      "recommendation": "OVER",
+      "hit_prob": 77.0,
+      "edge": 36.95,
+      "rolling_avg": 1.47,
+      "notes": null
+    },
+    {
+      "player": "Cole Caufield",
       "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
       "market": "player_shots_on_goal",
-      "line": 1.5,
-      "over_odds": 124.0,
-      "under_odds": -160.0,
+      "line": 3.5,
+      "over_odds": 126.0,
+      "under_odds": -140.0,
       "recommendation": "OVER",
-      "hit_prob": 79.6,
-      "edge": 37.59,
-      "rolling_avg": 2.97,
+      "hit_prob": 78.3,
+      "edge": 35.18,
+      "rolling_avg": 5.37,
       "notes": null
     },
     {
-      "player": "Quinn Hughes",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 122.0,
-      "under_odds": -145.0,
-      "recommendation": "OVER",
-      "hit_prob": 79.8,
-      "edge": 36.54,
-      "rolling_avg": 4.26,
-      "notes": null
-    },
-    {
-      "player": "Brady House",
-      "game": "Washington Nationals @ New York Mets",
-      "market": "batter_total_bases",
+      "player": "Adley Rutschman",
+      "game": "Baltimore Orioles @ New York Yankees",
+      "market": "batter_rbis",
       "line": 0.5,
-      "over_odds": 210.0,
-      "under_odds": 103.0,
+      "over_odds": 209.0,
+      "under_odds": -275.0,
       "recommendation": "OVER",
-      "hit_prob": 75.6,
-      "edge": 36.02,
-      "rolling_avg": 1.41,
+      "hit_prob": 65.4,
+      "edge": 34.73,
+      "rolling_avg": 1.06,
       "notes": null
     },
     {
@@ -56147,129 +56627,12 @@
       "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
       "market": "player_points",
       "line": 1.5,
-      "over_odds": 120.0,
-      "under_odds": -154.0,
+      "over_odds": 114.0,
+      "under_odds": -145.0,
       "recommendation": "OVER",
       "hit_prob": 78.2,
-      "edge": 35.37,
+      "edge": 34.1,
       "rolling_avg": 2.88,
-      "notes": null
-    },
-    {
-      "player": "Adrian Del Castillo",
-      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 195.0,
-      "under_odds": -105.0,
-      "recommendation": "OVER",
-      "hit_prob": 75.1,
-      "edge": 35.26,
-      "rolling_avg": 1.39,
-      "notes": null
-    },
-    {
-      "player": "Daylen Lile",
-      "game": "Washington Nationals @ New York Mets",
-      "market": "batter_hits",
-      "line": 0.5,
-      "over_odds": 400.0,
-      "under_odds": 130.0,
-      "recommendation": "OVER",
-      "hit_prob": 66.7,
-      "edge": 35.2,
-      "rolling_avg": 1.1,
-      "notes": null
-    },
-    {
-      "player": "Morgan Geekie",
-      "game": "Buffalo Sabres @ Boston Bruins",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 150.0,
-      "under_odds": -195.0,
-      "recommendation": "OVER",
-      "hit_prob": 72.6,
-      "edge": 34.92,
-      "rolling_avg": 3.77,
-      "notes": null
-    },
-    {
-      "player": "Ryan Hartman",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_goals",
-      "line": 0.5,
-      "over_odds": 2200.0,
-      "under_odds": -440.0,
-      "recommendation": "OVER",
-      "hit_prob": 40.0,
-      "edge": 34.88,
-      "rolling_avg": 0.51,
-      "notes": null
-    },
-    {
-      "player": "Daniel Johnson",
-      "game": "Houston Astros @ Baltimore Orioles",
-      "market": "batter_hits",
-      "line": 0.5,
-      "over_odds": -155.0,
-      "under_odds": 115.0,
-      "recommendation": "UNDER",
-      "hit_prob": 77.9,
-      "edge": 34.53,
-      "rolling_avg": 0.25,
-      "notes": null
-    },
-    {
-      "player": "Daniel Johnson",
-      "game": "Houston Astros @ Baltimore Orioles",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": -155.0,
-      "under_odds": 115.0,
-      "recommendation": "UNDER",
-      "hit_prob": 77.9,
-      "edge": 34.53,
-      "rolling_avg": 0.25,
-      "notes": null
-    },
-    {
-      "player": "Jordan Walker",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "market": "batter_hits",
-      "line": 0.5,
-      "over_odds": 380.0,
-      "under_odds": 120.0,
-      "recommendation": "OVER",
-      "hit_prob": 65.7,
-      "edge": 34.27,
-      "rolling_avg": 1.07,
-      "notes": null
-    },
-    {
-      "player": "Tyler Black",
-      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
-      "market": "batter_total_bases",
-      "line": 0.5,
-      "over_odds": 170.0,
-      "under_odds": 110.0,
-      "recommendation": "OVER",
-      "hit_prob": 77.7,
-      "edge": 33.94,
-      "rolling_avg": 1.5,
-      "notes": null
-    },
-    {
-      "player": "Matt Chapman",
-      "game": "San Francisco Giants @ Philadelphia Phillies",
-      "market": "batter_hits",
-      "line": 0.5,
-      "over_odds": 410.0,
-      "under_odds": 124.0,
-      "recommendation": "OVER",
-      "hit_prob": 64.3,
-      "edge": 33.78,
-      "rolling_avg": 1.03,
       "notes": null
     },
     {
@@ -56286,72 +56649,150 @@
       "notes": null
     },
     {
-      "player": "Masyn Winn",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
+      "player": "Adrian Del Castillo",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": 215.0,
+      "under_odds": 115.0,
+      "recommendation": "OVER",
+      "hit_prob": 73.0,
+      "edge": 32.45,
+      "rolling_avg": 1.31,
+      "notes": null
+    },
+    {
+      "player": "CJ Abrams",
+      "game": "Milwaukee Brewers @ Washington Nationals",
       "market": "batter_hits",
       "line": 0.5,
-      "over_odds": 425.0,
-      "under_odds": 111.0,
+      "over_odds": 360.0,
+      "under_odds": 118.0,
       "recommendation": "OVER",
-      "hit_prob": 61.7,
-      "edge": 33.04,
-      "rolling_avg": 0.96,
+      "hit_prob": 64.3,
+      "edge": 32.15,
+      "rolling_avg": 1.03,
       "notes": null
     },
     {
-      "player": "Jamie Benn",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_points",
+      "player": "Jose Caballero",
+      "game": "Baltimore Orioles @ New York Yankees",
+      "market": "batter_hits",
       "line": 0.5,
-      "over_odds": 210.0,
-      "under_odds": -275.0,
+      "over_odds": 400.0,
+      "under_odds": -101.0,
       "recommendation": "OVER",
-      "hit_prob": 63.6,
-      "edge": 33.03,
-      "rolling_avg": 1.01,
-      "notes": null
-    },
-    {
-      "player": "Matt Duchene",
-      "game": "Dallas Stars @ Minnesota Wild",
-      "market": "player_goals",
-      "line": 0.5,
-      "over_odds": 2200.0,
-      "under_odds": -450.0,
-      "recommendation": "OVER",
-      "hit_prob": 37.5,
-      "edge": 32.45,
-      "rolling_avg": 0.47,
-      "notes": null
-    },
-    {
-      "player": "Rasmus Andersson",
-      "game": "Vegas Golden Knights @ Utah Mammoth",
-      "market": "player_shots_on_goal",
-      "line": 2.5,
-      "over_odds": 140.0,
-      "under_odds": -180.0,
-      "recommendation": "OVER",
-      "hit_prob": 71.5,
-      "edge": 32.13,
-      "rolling_avg": 3.7,
+      "hit_prob": 60.5,
+      "edge": 32.07,
+      "rolling_avg": 0.93,
       "notes": null
     },
     {
       "player": "Ildemaro Vargas",
-      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
       "market": "batter_rbis",
       "line": 0.5,
-      "over_odds": 243.0,
-      "under_odds": -325.0,
+      "over_odds": 259.0,
+      "under_odds": -378.0,
       "recommendation": "OVER",
-      "hit_prob": 59.3,
-      "edge": 31.74,
-      "rolling_avg": 0.9,
+      "hit_prob": 58.1,
+      "edge": 32.05,
+      "rolling_avg": 0.87,
+      "notes": null
+    },
+    {
+      "player": "Nico Hoerner",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "market": "batter_rbis",
+      "line": 0.5,
+      "over_odds": 294.0,
+      "under_odds": -300.0,
+      "recommendation": "OVER",
+      "hit_prob": 56.8,
+      "edge": 31.55,
+      "rolling_avg": 0.84,
+      "notes": null
+    },
+    {
+      "player": "Daylen Lile",
+      "game": "Milwaukee Brewers @ Washington Nationals",
+      "market": "batter_hits",
+      "line": 0.5,
+      "over_odds": 350.0,
+      "under_odds": 130.0,
+      "recommendation": "OVER",
+      "hit_prob": 65.4,
+      "edge": 31.53,
+      "rolling_avg": 1.06,
+      "notes": null
+    },
+    {
+      "player": "Jack Flaherty",
+      "game": "Texas Rangers @ Detroit Tigers",
+      "market": "pitcher_outs",
+      "line": 14.5,
+      "over_odds": -162.0,
+      "under_odds": 123.0,
+      "recommendation": "UNDER",
+      "hit_prob": 73.5,
+      "edge": 31.43,
+      "rolling_avg": 12.4,
+      "notes": null
+    },
+    {
+      "player": "Brandon Marsh",
+      "game": "Philadelphia Phillies @ Miami Marlins",
+      "market": "batter_hits",
+      "line": 0.5,
+      "over_odds": 340.0,
+      "under_odds": 130.0,
+      "recommendation": "OVER",
+      "hit_prob": 65.7,
+      "edge": 31.37,
+      "rolling_avg": 1.07,
+      "notes": null
+    },
+    {
+      "player": "Jasson Dom\u00ednguez",
+      "game": "Baltimore Orioles @ New York Yankees",
+      "market": "batter_hits",
+      "line": 0.5,
+      "over_odds": -175.0,
+      "under_odds": 130.0,
+      "recommendation": "UNDER",
+      "hit_prob": 71.9,
+      "edge": 31.3,
+      "rolling_avg": 0.33,
+      "notes": null
+    },
+    {
+      "player": "Jasson Dom\u00ednguez",
+      "game": "Baltimore Orioles @ New York Yankees",
+      "market": "batter_total_bases",
+      "line": 0.5,
+      "over_odds": -175.0,
+      "under_odds": 130.0,
+      "recommendation": "UNDER",
+      "hit_prob": 71.9,
+      "edge": 31.3,
+      "rolling_avg": 0.33,
+      "notes": null
+    },
+    {
+      "player": "Anthony Cirelli",
+      "game": "Tampa Bay Lightning @ Montr\u00e9al Canadiens",
+      "market": "player_shots_on_goal",
+      "line": 1.5,
+      "over_odds": -105.0,
+      "under_odds": -118.0,
+      "recommendation": "OVER",
+      "hit_prob": 79.6,
+      "edge": 31.01,
+      "rolling_avg": 2.97,
       "notes": null
     }
   ],
-  "player_props_date": "2026-04-30",
+  "player_props_date": "2026-05-01",
   "clv_by_sport": {
     "nba": {
       "n": 39,
@@ -56387,11 +56828,6 @@
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-01",
-      "avg_clv": -1.605,
-      "n": 30
-    },
     {
       "date": "2026-04-02",
       "avg_clv": 0.047,
@@ -56532,11 +56968,11 @@
         "delta_pp": 74.8
       },
       "75-80": {
-        "n": 52,
-        "wins": 29,
-        "win_rate": 55.8,
-        "avg_conf": 77.4,
-        "delta_pp": 21.6
+        "n": 56,
+        "wins": 33,
+        "win_rate": 58.9,
+        "avg_conf": 77.3,
+        "delta_pp": 18.4
       }
     },
     "nhl:prop": {
@@ -56555,11 +56991,11 @@
         "delta_pp": 50.0
       },
       "75-80": {
-        "n": 26,
-        "wins": 9,
-        "win_rate": 34.6,
+        "n": 30,
+        "wins": 10,
+        "win_rate": 33.3,
         "avg_conf": 77.8,
-        "delta_pp": 43.2
+        "delta_pp": 44.5
       }
     },
     "mlb:moneyline": {
@@ -56740,25 +57176,25 @@
     },
     "mlb:game_prop": {
       "60-65": {
-        "n": 46,
+        "n": 47,
         "wins": 19,
-        "win_rate": 41.3,
+        "win_rate": 40.4,
         "avg_conf": 62.7,
-        "delta_pp": 21.4
+        "delta_pp": 22.3
       },
       "65-70": {
-        "n": 19,
+        "n": 20,
         "wins": 8,
-        "win_rate": 42.1,
+        "win_rate": 40.0,
         "avg_conf": 66.4,
-        "delta_pp": 24.3
+        "delta_pp": 26.4
       },
       "55-60": {
-        "n": 3,
-        "wins": 2,
-        "win_rate": 66.7,
-        "avg_conf": 55.0,
-        "delta_pp": -11.7
+        "n": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "avg_conf": 55.5,
+        "delta_pp": -19.5
       },
       "70-75": {
         "n": 2,
@@ -61216,6 +61652,50 @@
       {
         "date": "2026-04-30",
         "value": -818.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -818.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -776.28
+      },
+      {
+        "date": "2026-05-01",
+        "value": -776.28
+      },
+      {
+        "date": "2026-05-01",
+        "value": -776.28
+      },
+      {
+        "date": "2026-05-01",
+        "value": -744.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -769.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -769.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -769.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -794.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -819.78
+      },
+      {
+        "date": "2026-05-01",
+        "value": -789.78
       }
     ]
   }
