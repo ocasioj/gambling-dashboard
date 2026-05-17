@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-16T08:00:02.702890",
+  "generated_at": "2026-05-17T08:00:02.655066",
   "summary": {
-    "total_pl": -926.65,
-    "win_rate": 49.1,
-    "roi": -3.32,
-    "total_bets": 2142,
-    "avg_clv": -0.96
+    "total_pl": -857.68,
+    "win_rate": 49.2,
+    "roi": -3.07,
+    "total_bets": 2145,
+    "avg_clv": -0.95
   },
   "bets": [
     {
@@ -42847,6 +42847,66 @@
       "confidence": null,
       "model_edge": null,
       "edge_novig": null
+    },
+    {
+      "id": 3583,
+      "date": "2026-05-16",
+      "sport": "mlb",
+      "game": "Toronto Blue Jays @ Detroit Tigers",
+      "pick": "Toronto Blue Jays",
+      "odds": 100.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 25.0,
+      "notes": "steam_alert_id=13",
+      "closing_odds": -104.25,
+      "clv": 1.04,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3584,
+      "date": "2026-05-16",
+      "sport": "mlb",
+      "game": "Baltimore Orioles @ Washington Nationals",
+      "pick": "Washington Nationals",
+      "odds": -105.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 23.81,
+      "notes": "steam_alert_id=15",
+      "closing_odds": -112.75,
+      "clv": 1.78,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3585,
+      "date": "2026-05-16",
+      "sport": "mlb",
+      "game": "Milwaukee Brewers @ Minnesota Twins",
+      "pick": "Milwaukee Brewers",
+      "odds": -124.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 20.16,
+      "notes": "steam_alert_id=18",
+      "closing_odds": -131.5,
+      "clv": 1.45,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -53559,6 +53619,21 @@
       "date": "2026-05-14",
       "cumulative_pl": -926.65,
       "game": "Chicago Cubs @ Atlanta Braves"
+    },
+    {
+      "date": "2026-05-16",
+      "cumulative_pl": -901.65,
+      "game": "Toronto Blue Jays @ Detroit Tigers"
+    },
+    {
+      "date": "2026-05-16",
+      "cumulative_pl": -877.84,
+      "game": "Baltimore Orioles @ Washington Nationals"
+    },
+    {
+      "date": "2026-05-16",
+      "cumulative_pl": -857.68,
+      "game": "Milwaukee Brewers @ Minnesota Twins"
     }
   ],
   "sport_breakdown": [
@@ -53568,7 +53643,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -799.73
+      "pl": -730.76
     },
     {
       "sport": "nba",
@@ -60386,6 +60461,24 @@
       "bankroll": -1088.25,
       "label": "Atlanta Braves",
       "pl": -25.0
+    },
+    {
+      "date": "2026-05-16",
+      "bankroll": -1063.25,
+      "label": "Toronto Blue Jays",
+      "pl": 25.0
+    },
+    {
+      "date": "2026-05-16",
+      "bankroll": -1039.44,
+      "label": "Washington Nationals",
+      "pl": 23.81
+    },
+    {
+      "date": "2026-05-16",
+      "bankroll": -1019.28,
+      "label": "Milwaukee Brewers",
+      "pl": 20.16
     }
   ],
   "line_alerts": [],
@@ -60678,20 +60771,15 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 216,
-      "sum": 96.51,
-      "pos": 137,
+      "n": 219,
+      "sum": 100.78,
+      "pos": 140,
       "neg": 79,
-      "avg_clv": 0.447,
-      "pos_rate": 63.4
+      "avg_clv": 0.46,
+      "pos_rate": 63.9
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-16",
-      "avg_clv": -0.553,
-      "n": 10
-    },
     {
       "date": "2026-04-17",
       "avg_clv": -1.562,
@@ -60820,6 +60908,11 @@
     {
       "date": "2026-05-14",
       "avg_clv": 1.043,
+      "n": 3
+    },
+    {
+      "date": "2026-05-16",
+      "avg_clv": 1.423,
       "n": 3
     }
   ],
@@ -65941,6 +66034,18 @@
       {
         "date": "2026-05-14",
         "value": -926.65
+      },
+      {
+        "date": "2026-05-16",
+        "value": -901.65
+      },
+      {
+        "date": "2026-05-16",
+        "value": -877.84
+      },
+      {
+        "date": "2026-05-16",
+        "value": -857.68
       }
     ]
   }
