@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-17T08:00:02.655066",
+  "generated_at": "2026-05-18T08:00:02.890343",
   "summary": {
-    "total_pl": -857.68,
+    "total_pl": -873.93,
     "win_rate": 49.2,
-    "roi": -3.07,
-    "total_bets": 2145,
-    "avg_clv": -0.95
+    "roi": -3.12,
+    "total_bets": 2148,
+    "avg_clv": -0.83
   },
   "bets": [
     {
@@ -42859,9 +42859,9 @@
       "outcome": "win",
       "profit_loss": 25.0,
       "notes": "steam_alert_id=13",
-      "closing_odds": -104.25,
-      "clv": 1.04,
-      "clv_checked_at": null,
+      "closing_odds": -133.0,
+      "clv": 7.08,
+      "clv_checked_at": "2026-05-17T23:15:02.813526",
       "bet_type": "moneyline",
       "source": "steam",
       "confidence": null,
@@ -42879,9 +42879,9 @@
       "outcome": "win",
       "profit_loss": 23.81,
       "notes": "steam_alert_id=15",
-      "closing_odds": -112.75,
-      "clv": 1.78,
-      "clv_checked_at": null,
+      "closing_odds": -3257.6666666666665,
+      "clv": 45.8,
+      "clv_checked_at": "2026-05-17T23:15:03.511828",
       "bet_type": "moneyline",
       "source": "steam",
       "confidence": null,
@@ -42899,8 +42899,68 @@
       "outcome": "win",
       "profit_loss": 20.16,
       "notes": "steam_alert_id=18",
-      "closing_odds": -131.5,
-      "clv": 1.45,
+      "closing_odds": -131.25,
+      "clv": 1.4,
+      "clv_checked_at": "2026-05-17T23:15:04.083278",
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3586,
+      "date": "2026-05-17",
+      "sport": "mlb",
+      "game": "Milwaukee Brewers @ Minnesota Twins",
+      "pick": "Milwaukee Brewers",
+      "odds": -129.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": "steam_alert_id=19",
+      "closing_odds": -134.0,
+      "clv": 0.93,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3587,
+      "date": "2026-05-17",
+      "sport": "mlb",
+      "game": "Arizona Diamondbacks @ Colorado Rockies",
+      "pick": "Colorado Rockies",
+      "odds": 120.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": "steam_alert_id=20",
+      "closing_odds": 122.25,
+      "clv": -0.46,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3588,
+      "date": "2026-05-17",
+      "sport": "mlb",
+      "game": "San Diego Padres @ Seattle Mariners",
+      "pick": "San Diego Padres",
+      "odds": 135.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 33.75,
+      "notes": "steam_alert_id=23",
+      "closing_odds": 128.5,
+      "clv": 1.21,
       "clv_checked_at": null,
       "bet_type": "moneyline",
       "source": "steam",
@@ -53634,6 +53694,21 @@
       "date": "2026-05-16",
       "cumulative_pl": -857.68,
       "game": "Milwaukee Brewers @ Minnesota Twins"
+    },
+    {
+      "date": "2026-05-17",
+      "cumulative_pl": -882.68,
+      "game": "Milwaukee Brewers @ Minnesota Twins"
+    },
+    {
+      "date": "2026-05-17",
+      "cumulative_pl": -907.68,
+      "game": "Arizona Diamondbacks @ Colorado Rockies"
+    },
+    {
+      "date": "2026-05-17",
+      "cumulative_pl": -873.93,
+      "game": "San Diego Padres @ Seattle Mariners"
     }
   ],
   "sport_breakdown": [
@@ -53643,7 +53718,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -730.76
+      "pl": -747.01
     },
     {
       "sport": "nba",
@@ -60479,6 +60554,24 @@
       "bankroll": -1019.28,
       "label": "Milwaukee Brewers",
       "pl": 20.16
+    },
+    {
+      "date": "2026-05-17",
+      "bankroll": -1044.28,
+      "label": "Milwaukee Brewers",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-17",
+      "bankroll": -1069.28,
+      "label": "Colorado Rockies",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-17",
+      "bankroll": -1035.53,
+      "label": "San Diego Padres",
+      "pl": 33.75
     }
   ],
   "line_alerts": [],
@@ -60771,20 +60864,15 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 219,
-      "sum": 100.78,
-      "pos": 140,
-      "neg": 79,
-      "avg_clv": 0.46,
-      "pos_rate": 63.9
+      "n": 222,
+      "sum": 152.47,
+      "pos": 142,
+      "neg": 80,
+      "avg_clv": 0.687,
+      "pos_rate": 64.0
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-17",
-      "avg_clv": -1.562,
-      "n": 10
-    },
     {
       "date": "2026-04-19",
       "avg_clv": -14.348,
@@ -60912,7 +61000,12 @@
     },
     {
       "date": "2026-05-16",
-      "avg_clv": 1.423,
+      "avg_clv": 18.093,
+      "n": 3
+    },
+    {
+      "date": "2026-05-17",
+      "avg_clv": 0.56,
       "n": 3
     }
   ],
@@ -66046,6 +66139,18 @@
       {
         "date": "2026-05-16",
         "value": -857.68
+      },
+      {
+        "date": "2026-05-17",
+        "value": -882.68
+      },
+      {
+        "date": "2026-05-17",
+        "value": -907.68
+      },
+      {
+        "date": "2026-05-17",
+        "value": -873.93
       }
     ]
   }
