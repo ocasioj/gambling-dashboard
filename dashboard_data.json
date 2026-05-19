@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-18T08:00:02.890343",
+  "generated_at": "2026-05-19T08:00:03.495072",
   "summary": {
-    "total_pl": -873.93,
+    "total_pl": -842.68,
     "win_rate": 49.2,
-    "roi": -3.12,
-    "total_bets": 2148,
+    "roi": -3.0,
+    "total_bets": 2149,
     "avg_clv": -0.83
   },
   "bets": [
@@ -42967,6 +42967,26 @@
       "confidence": null,
       "model_edge": null,
       "edge_novig": null
+    },
+    {
+      "id": 3589,
+      "date": "2026-05-18",
+      "sport": "mlb",
+      "game": "Cleveland Guardians @ Detroit Tigers",
+      "pick": "Cleveland Guardians",
+      "odds": 125.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 31.25,
+      "notes": "steam_alert_id=24",
+      "closing_odds": 127.25,
+      "clv": -0.44,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -53709,6 +53729,11 @@
       "date": "2026-05-17",
       "cumulative_pl": -873.93,
       "game": "San Diego Padres @ Seattle Mariners"
+    },
+    {
+      "date": "2026-05-18",
+      "cumulative_pl": -842.68,
+      "game": "Cleveland Guardians @ Detroit Tigers"
     }
   ],
   "sport_breakdown": [
@@ -53718,7 +53743,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -747.01
+      "pl": -715.76
     },
     {
       "sport": "nba",
@@ -60572,6 +60597,12 @@
       "bankroll": -1035.53,
       "label": "San Diego Padres",
       "pl": 33.75
+    },
+    {
+      "date": "2026-05-18",
+      "bankroll": -1004.28,
+      "label": "Cleveland Guardians",
+      "pl": 31.25
     }
   ],
   "line_alerts": [],
@@ -60864,12 +60895,12 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 222,
-      "sum": 152.47,
+      "n": 223,
+      "sum": 152.03,
       "pos": 142,
-      "neg": 80,
-      "avg_clv": 0.687,
-      "pos_rate": 64.0
+      "neg": 81,
+      "avg_clv": 0.682,
+      "pos_rate": 63.7
     }
   },
   "clv_over_time": [
@@ -61007,6 +61038,11 @@
       "date": "2026-05-17",
       "avg_clv": 0.56,
       "n": 3
+    },
+    {
+      "date": "2026-05-18",
+      "avg_clv": -0.44,
+      "n": 1
     }
   ],
   "clv_decision_gate": {
@@ -66151,6 +66187,10 @@
       {
         "date": "2026-05-17",
         "value": -873.93
+      },
+      {
+        "date": "2026-05-18",
+        "value": -842.68
       }
     ]
   }
