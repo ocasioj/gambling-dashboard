@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-20T08:00:02.308355",
+  "generated_at": "2026-05-21T08:00:02.609814",
   "summary": {
     "total_pl": -842.68,
     "win_rate": 49.2,
     "roi": -3.0,
-    "total_bets": 2149,
-    "avg_clv": -0.83
+    "total_bets": 2150,
+    "avg_clv": -0.85
   },
   "bets": [
     {
@@ -42987,6 +42987,26 @@
       "confidence": null,
       "model_edge": null,
       "edge_novig": null
+    },
+    {
+      "id": 3590,
+      "date": "2026-05-20",
+      "sport": "mlb",
+      "game": "San Francisco Giants @ Arizona Diamondbacks",
+      "pick": "San Francisco Giants",
+      "odds": 105.0,
+      "amount_wagered": 25.0,
+      "outcome": "push",
+      "profit_loss": 0.0,
+      "notes": "steam_alert_id=29",
+      "closing_odds": -55.75,
+      "clv": -12.99,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -53734,6 +53754,11 @@
       "date": "2026-05-18",
       "cumulative_pl": -842.68,
       "game": "Cleveland Guardians @ Detroit Tigers"
+    },
+    {
+      "date": "2026-05-20",
+      "cumulative_pl": -842.68,
+      "game": "San Francisco Giants @ Arizona Diamondbacks"
     }
   ],
   "sport_breakdown": [
@@ -60603,6 +60628,12 @@
       "bankroll": -1004.28,
       "label": "Cleveland Guardians",
       "pl": 31.25
+    },
+    {
+      "date": "2026-05-20",
+      "bankroll": -1004.28,
+      "label": "San Francisco Giants",
+      "pl": 0
     }
   ],
   "line_alerts": [],
@@ -60895,20 +60926,15 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 223,
-      "sum": 152.03,
+      "n": 224,
+      "sum": 139.04,
       "pos": 142,
-      "neg": 81,
-      "avg_clv": 0.682,
-      "pos_rate": 63.7
+      "neg": 82,
+      "avg_clv": 0.621,
+      "pos_rate": 63.4
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-20",
-      "avg_clv": -1.335,
-      "n": 10
-    },
     {
       "date": "2026-04-21",
       "avg_clv": -5.682,
@@ -61037,6 +61063,11 @@
     {
       "date": "2026-05-18",
       "avg_clv": -0.44,
+      "n": 1
+    },
+    {
+      "date": "2026-05-20",
+      "avg_clv": -12.99,
       "n": 1
     }
   ],
@@ -66185,6 +66216,10 @@
       },
       {
         "date": "2026-05-18",
+        "value": -842.68
+      },
+      {
+        "date": "2026-05-20",
         "value": -842.68
       }
     ]
