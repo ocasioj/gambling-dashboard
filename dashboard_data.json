@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-21T08:00:02.609814",
+  "generated_at": "2026-05-22T08:00:03.743990",
   "summary": {
     "total_pl": -842.68,
     "win_rate": 49.2,
     "roi": -3.0,
-    "total_bets": 2150,
+    "total_bets": 2151,
     "avg_clv": -0.85
   },
   "bets": [
@@ -43007,6 +43007,26 @@
       "confidence": null,
       "model_edge": null,
       "edge_novig": null
+    },
+    {
+      "id": 3591,
+      "date": "2026-05-21",
+      "sport": "mlb",
+      "game": "New York Mets @ Washington Nationals",
+      "pick": "New York Mets",
+      "odds": -110.0,
+      "amount_wagered": 25.0,
+      "outcome": "push",
+      "profit_loss": 0.0,
+      "notes": "steam_alert_id=30",
+      "closing_odds": -110.25,
+      "clv": 0.06,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -53759,6 +53779,11 @@
       "date": "2026-05-20",
       "cumulative_pl": -842.68,
       "game": "San Francisco Giants @ Arizona Diamondbacks"
+    },
+    {
+      "date": "2026-05-21",
+      "cumulative_pl": -842.68,
+      "game": "New York Mets @ Washington Nationals"
     }
   ],
   "sport_breakdown": [
@@ -60634,6 +60659,12 @@
       "bankroll": -1004.28,
       "label": "San Francisco Giants",
       "pl": 0
+    },
+    {
+      "date": "2026-05-21",
+      "bankroll": -1004.28,
+      "label": "New York Mets",
+      "pl": 0
     }
   ],
   "line_alerts": [],
@@ -60926,20 +60957,15 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 224,
-      "sum": 139.04,
-      "pos": 142,
+      "n": 225,
+      "sum": 139.1,
+      "pos": 143,
       "neg": 82,
-      "avg_clv": 0.621,
-      "pos_rate": 63.4
+      "avg_clv": 0.618,
+      "pos_rate": 63.6
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-21",
-      "avg_clv": -5.682,
-      "n": 21
-    },
     {
       "date": "2026-04-22",
       "avg_clv": 4.43,
@@ -61068,6 +61094,11 @@
     {
       "date": "2026-05-20",
       "avg_clv": -12.99,
+      "n": 1
+    },
+    {
+      "date": "2026-05-21",
+      "avg_clv": 0.06,
       "n": 1
     }
   ],
@@ -66220,6 +66251,10 @@
       },
       {
         "date": "2026-05-20",
+        "value": -842.68
+      },
+      {
+        "date": "2026-05-21",
         "value": -842.68
       }
     ]
