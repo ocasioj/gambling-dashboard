@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-22T08:00:03.743990",
+  "generated_at": "2026-05-23T08:00:02.723690",
   "summary": {
-    "total_pl": -842.68,
-    "win_rate": 49.2,
-    "roi": -3.0,
-    "total_bets": 2151,
-    "avg_clv": -0.85
+    "total_pl": -797.39,
+    "win_rate": 49.3,
+    "roi": -2.84,
+    "total_bets": 2154,
+    "avg_clv": -0.84
   },
   "bets": [
     {
@@ -43027,6 +43027,66 @@
       "confidence": null,
       "model_edge": null,
       "edge_novig": null
+    },
+    {
+      "id": 3592,
+      "date": "2026-05-22",
+      "sport": "mlb",
+      "game": "Colorado Rockies @ Arizona Diamondbacks",
+      "pick": "Colorado Rockies",
+      "odds": 185.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 46.25,
+      "notes": "steam_alert_id=31",
+      "closing_odds": 181.25,
+      "clv": 0.47,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3593,
+      "date": "2026-05-22",
+      "sport": "mlb",
+      "game": "Washington Nationals @ Atlanta Braves",
+      "pick": "Washington Nationals",
+      "odds": 183.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": "steam_alert_id=32",
+      "closing_odds": 160.75,
+      "clv": 3.02,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
+    },
+    {
+      "id": 3594,
+      "date": "2026-05-22",
+      "sport": "mlb",
+      "game": "Los Angeles Dodgers @ Milwaukee Brewers",
+      "pick": "Milwaukee Brewers",
+      "odds": -104.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 24.04,
+      "notes": "steam_alert_id=36",
+      "closing_odds": -109.25,
+      "clv": 1.23,
+      "clv_checked_at": null,
+      "bet_type": "moneyline",
+      "source": "steam",
+      "confidence": null,
+      "model_edge": null,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -53784,6 +53844,21 @@
       "date": "2026-05-21",
       "cumulative_pl": -842.68,
       "game": "New York Mets @ Washington Nationals"
+    },
+    {
+      "date": "2026-05-22",
+      "cumulative_pl": -796.43,
+      "game": "Colorado Rockies @ Arizona Diamondbacks"
+    },
+    {
+      "date": "2026-05-22",
+      "cumulative_pl": -821.43,
+      "game": "Washington Nationals @ Atlanta Braves"
+    },
+    {
+      "date": "2026-05-22",
+      "cumulative_pl": -797.39,
+      "game": "Los Angeles Dodgers @ Milwaukee Brewers"
     }
   ],
   "sport_breakdown": [
@@ -53793,7 +53868,7 @@
     },
     {
       "sport": "mlb",
-      "pl": -715.76
+      "pl": -670.47
     },
     {
       "sport": "nba",
@@ -60665,6 +60740,24 @@
       "bankroll": -1004.28,
       "label": "New York Mets",
       "pl": 0
+    },
+    {
+      "date": "2026-05-22",
+      "bankroll": -958.03,
+      "label": "Colorado Rockies",
+      "pl": 46.25
+    },
+    {
+      "date": "2026-05-22",
+      "bankroll": -983.03,
+      "label": "Washington Nationals",
+      "pl": -25.0
+    },
+    {
+      "date": "2026-05-22",
+      "bankroll": -958.99,
+      "label": "Milwaukee Brewers",
+      "pl": 24.04
     }
   ],
   "line_alerts": [],
@@ -60957,20 +61050,15 @@
       "pos_rate": 31.2
     },
     "mlb": {
-      "n": 225,
-      "sum": 139.1,
-      "pos": 143,
+      "n": 228,
+      "sum": 143.82,
+      "pos": 146,
       "neg": 82,
-      "avg_clv": 0.618,
-      "pos_rate": 63.6
+      "avg_clv": 0.631,
+      "pos_rate": 64.0
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-04-22",
-      "avg_clv": 4.43,
-      "n": 16
-    },
     {
       "date": "2026-04-23",
       "avg_clv": -1.873,
@@ -61100,6 +61188,11 @@
       "date": "2026-05-21",
       "avg_clv": 0.06,
       "n": 1
+    },
+    {
+      "date": "2026-05-22",
+      "avg_clv": 1.573,
+      "n": 3
     }
   ],
   "clv_decision_gate": {
@@ -66256,6 +66349,18 @@
       {
         "date": "2026-05-21",
         "value": -842.68
+      },
+      {
+        "date": "2026-05-22",
+        "value": -796.43
+      },
+      {
+        "date": "2026-05-22",
+        "value": -821.43
+      },
+      {
+        "date": "2026-05-22",
+        "value": -797.39
       }
     ]
   }
