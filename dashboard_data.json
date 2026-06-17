@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-16T08:00:04.051091",
+  "generated_at": "2026-06-17T08:00:03.331752",
   "summary": {
     "total_pl": -455.27,
     "win_rate": 49.7,
     "roi": -1.53,
-    "total_bets": 2199,
-    "avg_clv": 0.4
+    "total_bets": 2201,
+    "avg_clv": 0.41
   },
   "bets": [
     {
@@ -43987,6 +43987,46 @@
       "confidence": 49.7,
       "model_edge": 3.41,
       "edge_novig": null
+    },
+    {
+      "id": 3641,
+      "date": "2026-06-16",
+      "sport": "mlb",
+      "game": "Tampa Bay Rays @ Los Angeles Dodgers",
+      "pick": "NRFI",
+      "odds": 100.0,
+      "amount_wagered": 25.0,
+      "outcome": "win",
+      "profit_loss": 25.0,
+      "notes": null,
+      "closing_odds": -122.0,
+      "clv": 4.95,
+      "clv_checked_at": "2026-06-17T05:30:09.419604+00:00",
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 53.5,
+      "model_edge": 3.49,
+      "edge_novig": null
+    },
+    {
+      "id": 3642,
+      "date": "2026-06-16",
+      "sport": "mlb",
+      "game": "Pittsburgh Pirates @ Athletics",
+      "pick": "NRFI",
+      "odds": 144.0,
+      "amount_wagered": 25.0,
+      "outcome": "loss",
+      "profit_loss": -25.0,
+      "notes": null,
+      "closing_odds": 131.0,
+      "clv": 2.31,
+      "clv_checked_at": "2026-06-17T05:30:10.045623+00:00",
+      "bet_type": "game_prop",
+      "source": "nrfi",
+      "confidence": 44.4,
+      "model_edge": 3.38,
+      "edge_novig": null
     }
   ],
   "pl_over_time": [
@@ -54984,6 +55024,16 @@
       "date": "2026-06-15",
       "cumulative_pl": -455.27,
       "game": "Tampa Bay Rays @ Los Angeles Dodgers"
+    },
+    {
+      "date": "2026-06-16",
+      "cumulative_pl": -430.27,
+      "game": "Tampa Bay Rays @ Los Angeles Dodgers"
+    },
+    {
+      "date": "2026-06-16",
+      "cumulative_pl": -455.27,
+      "game": "Pittsburgh Pirates @ Athletics"
     }
   ],
   "sport_breakdown": [
@@ -62339,6 +62389,18 @@
       "bankroll": 650.05,
       "label": "NRFI",
       "pl": -25.0
+    },
+    {
+      "date": "2026-06-16",
+      "bankroll": 675.05,
+      "label": "NRFI",
+      "pl": 25.0
+    },
+    {
+      "date": "2026-06-16",
+      "bankroll": 650.05,
+      "label": "NRFI",
+      "pl": -25.0
     }
   ],
   "line_alerts": [],
@@ -62623,12 +62685,12 @@
       "pos_rate": 32.7
     },
     "mlb": {
-      "n": 218,
-      "sum": 192.24,
-      "pos": 158,
+      "n": 220,
+      "sum": 199.5,
+      "pos": 160,
       "neg": 60,
-      "avg_clv": 0.882,
-      "pos_rate": 72.5
+      "avg_clv": 0.907,
+      "pos_rate": 72.7
     },
     "ncaab": {
       "n": 19,
@@ -62640,11 +62702,6 @@
     }
   },
   "clv_over_time": [
-    {
-      "date": "2026-05-17",
-      "avg_clv": 0.56,
-      "n": 3
-    },
     {
       "date": "2026-05-18",
       "avg_clv": -0.44,
@@ -62754,15 +62811,20 @@
       "date": "2026-06-15",
       "avg_clv": 2.075,
       "n": 2
+    },
+    {
+      "date": "2026-06-16",
+      "avg_clv": 3.63,
+      "n": 2
     }
   ],
   "clv_decision_gate": {
-    "n_eligible": 323,
-    "avg_clv": 0.344,
+    "n_eligible": 325,
+    "avg_clv": 0.365,
     "min_bets_required": 500,
     "target_clv": 1.0,
     "ready_for_live": false,
-    "progress_bets_pct": 64.6
+    "progress_bets_pct": 65.0
   },
   "calibration_buckets": {
     "nba:prop": {
@@ -63026,11 +63088,11 @@
         "delta_pp": 4.2
       },
       "<55": {
-        "n": 4,
-        "wins": 1,
-        "win_rate": 25.0,
-        "avg_conf": 44.0,
-        "delta_pp": 19.0
+        "n": 6,
+        "wins": 2,
+        "win_rate": 33.3,
+        "avg_conf": 45.6,
+        "delta_pp": 12.3
       }
     },
     "nhl:spread": {
@@ -68232,6 +68294,14 @@
       },
       {
         "date": "2026-06-15",
+        "value": -455.27
+      },
+      {
+        "date": "2026-06-16",
+        "value": -430.27
+      },
+      {
+        "date": "2026-06-16",
         "value": -455.27
       }
     ]
